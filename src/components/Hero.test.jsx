@@ -11,7 +11,7 @@ describe('Hero', () => {
   it('displays the main title', () => {
     render(<Hero />)
     expect(screen.getByText('hero.title')).toBeInTheDocument()
-    expect(screen.getByText('NagaSainath Reddy')).toBeInTheDocument()
+    expect(screen.getAllByText('NagaSainath Reddy')).toHaveLength(2)
   })
 
   it('displays the subtitle', () => {

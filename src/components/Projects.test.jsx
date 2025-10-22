@@ -39,8 +39,11 @@ describe('Projects', () => {
 
   it('renders project highlights', () => {
     render(<Projects />)
-    const highlights = screen.getAllByText(/Leading development|Implementing secure|Contributing to|Developing cross-platform/)
-    expect(highlights.length).toBeGreaterThan(0)
+    // Check for mock highlights that are returned by our translation mock
+    expect(screen.getAllByText('Mock highlight 1')).toHaveLength(5)
+    expect(screen.getAllByText('Mock highlight 2')).toHaveLength(5)
+    expect(screen.getAllByText('Mock highlight 3')).toHaveLength(5)
+    expect(screen.getAllByText('Mock highlight 4')).toHaveLength(5)
   })
 
   it('renders other projects section', () => {

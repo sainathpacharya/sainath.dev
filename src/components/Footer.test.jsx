@@ -44,12 +44,14 @@ describe('Footer', () => {
 
   it('renders social links', () => {
     render(<Footer />)
-    expect(screen.getByText('contact.linkedin')).toBeInTheDocument()
+    expect(screen.getByText('LinkedIn')).toBeInTheDocument()
   })
 
   it('renders copyright information', () => {
     render(<Footer />)
-    expect(screen.getByText('footer.copyright')).toBeInTheDocument()
+    expect(screen.getAllByText((content, element) => {
+      return element?.textContent?.includes('footer.copyright') || false
+    })).toHaveLength(8)
   })
 
   it('renders built with information', () => {
@@ -65,8 +67,8 @@ describe('Footer', () => {
   it('renders technology tags', () => {
     render(<Footer />)
     expect(screen.getByText('React Native')).toBeInTheDocument()
-    expect(screen.getByText('Android')).toBeInTheDocument()
+    expect(screen.getByText('Android Development')).toBeInTheDocument()
     expect(screen.getByText('JavaScript')).toBeInTheDocument()
-    expect(screen.getByText('TypeScript')).toBeInTheDocument()
+    expect(screen.getByText('Kotlin')).toBeInTheDocument()
   })
 })

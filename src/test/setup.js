@@ -4,7 +4,21 @@ import { vi } from 'vitest'
 // Mock i18next
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
-    t: (key) => key,
+    t: (key, options) => {
+      if (options?.returnObjects) {
+        // Return mock arrays for highlights
+        if (key.includes('highlights')) {
+          return [
+            'Mock highlight 1',
+            'Mock highlight 2',
+            'Mock highlight 3',
+            'Mock highlight 4'
+          ]
+        }
+        return {}
+      }
+      return key
+    },
     i18n: {
       changeLanguage: vi.fn(),
       language: 'en'

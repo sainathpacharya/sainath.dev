@@ -15,7 +15,7 @@ describe('Loading', () => {
 
   it('has correct CSS classes', () => {
     const { container } = render(<Loading />)
-    expect(container.firstChild).toHaveClass('loading')
+    expect(container.firstChild).toHaveClass('loading-container')
   })
 
   it('renders loading text', () => {

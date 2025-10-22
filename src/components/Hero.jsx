@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-image">
-            <div className="profile-card fade-in fade-in-delay-4">
+            <div className="profile-card fade-in fade-in-delay-4" data-testid="profile-card">
               <div className="profile-avatar">
                 <div className="avatar-placeholder">
                   <span>NS</span>
@@ -38,7 +38,7 @@ const Hero = () => {
                 <div className="profile-info">
                   <h3>NagaSainath Reddy</h3>
                   <p>Lead Engineer</p>
-                      <div className="profile-stats">
+                      <div className="profile-stats" data-testid="profile-stats">
                         <div className="stat">
                           <span className="stat-number">{getFormattedYears()}</span>
                           <span className="stat-label">{t('hero.yearsExperience')}</span>
