@@ -45,7 +45,54 @@
     "title": "Habilidades y Experiencia",
     "subtitle": "Habilidades técnicas y tecnologías con las que trabajo",
     "toolsTechnologies": "Herramientas y Tecnologías",
-    "languages": "Idiomas"
+    "languages": "Idiomas",
+    "categories": {
+      "mobileDevelopment": "Desarrollo Móvil",
+      "programmingLanguages": "Lenguajes de Programación",
+      "apiIntegration": "Integración de API",
+      "stateManagement": "Gestión de Estado",
+      "frontendDevelopment": "Desarrollo Frontend",
+      "uiFramework": "Framework de UI",
+      "networking": "Redes",
+      "dataHandling": "Manejo de Datos",
+      "dataStorage": "Almacenamiento de Datos",
+      "androidTools": "Herramientas Android"
+    },
+    "technicalSkills": {
+      "reactNative": "React Native",
+      "javaScript": "JavaScript",
+      "typeScript": "TypeScript",
+      "androidDevelopment": "Desarrollo Android",
+      "kotlin": "Kotlin",
+      "java": "Java",
+      "restApiIntegration": "Integración REST API",
+      "redux": "Redux",
+      "firebaseIntegration": "Integración Firebase",
+      "html": "HTML",
+      "css": "CSS",
+      "reactJs": "React.js",
+      "nativeBaseIo": "NativeBase.io",
+      "materialUi": "Material UI",
+      "retrofit": "Retrofit",
+      "volley": "Volley",
+      "jsonParsing": "Análisis JSON",
+      "asyncStorage": "AsyncStorage",
+      "butterknife": "Butterknife"
+    },
+    "tools": {
+      "androidStudio": "Android Studio",
+      "vsCode": "VS Code",
+      "reactNativeCli": "React Native CLI",
+      "git": "Git"
+    },
+    "spokenLanguages": {
+      "english": "Inglés",
+      "telugu": "Telugu",
+      "hindi": "Hindi",
+      "fluent": "Fluido",
+      "native": "Nativo",
+      "conversational": "Conversacional"
+    }
   },
   "experience": {
     "title": "Experiencia Laboral",

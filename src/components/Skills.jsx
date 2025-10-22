@@ -5,38 +5,38 @@ const Skills = () => {
   const { t } = useTranslation()
   
   const technicalSkills = [
-    { name: 'React Native', category: 'Mobile Development' },
-    { name: 'JavaScript', category: 'Programming Languages' },
-    { name: 'TypeScript', category: 'Programming Languages' },
-    { name: 'Android Development', category: 'Mobile Development' },
-    { name: 'Kotlin', category: 'Programming Languages' },
-    { name: 'Java', category: 'Programming Languages' },
-    { name: 'REST API Integration', category: 'API Integration' },
-    { name: 'Redux', category: 'State Management' },
-    { name: 'Firebase Integration', category: 'API Integration' },
-    { name: 'HTML', category: 'Frontend Development' },
-    { name: 'CSS', category: 'Frontend Development' },
-    { name: 'React.js', category: 'Frontend Development' },
-    { name: 'NativeBase.io', category: 'UI Framework' },
-    { name: 'Material UI', category: 'UI Framework' },
-    { name: 'Retrofit', category: 'Networking' },
-    { name: 'Volley', category: 'Networking' },
-    { name: 'JSON Parsing', category: 'Data Handling' },
-    { name: 'AsyncStorage', category: 'Data Storage' },
-    { name: 'Butterknife', category: 'Android Tools' }
+    { name: t('skills.technicalSkills.reactNative'), category: t('skills.categories.mobileDevelopment') },
+    { name: t('skills.technicalSkills.javaScript'), category: t('skills.categories.programmingLanguages') },
+    { name: t('skills.technicalSkills.typeScript'), category: t('skills.categories.programmingLanguages') },
+    { name: t('skills.technicalSkills.androidDevelopment'), category: t('skills.categories.mobileDevelopment') },
+    { name: t('skills.technicalSkills.kotlin'), category: t('skills.categories.programmingLanguages') },
+    { name: t('skills.technicalSkills.java'), category: t('skills.categories.programmingLanguages') },
+    { name: t('skills.technicalSkills.restApiIntegration'), category: t('skills.categories.apiIntegration') },
+    { name: t('skills.technicalSkills.redux'), category: t('skills.categories.stateManagement') },
+    { name: t('skills.technicalSkills.firebaseIntegration'), category: t('skills.categories.apiIntegration') },
+    { name: t('skills.technicalSkills.html'), category: t('skills.categories.frontendDevelopment') },
+    { name: t('skills.technicalSkills.css'), category: t('skills.categories.frontendDevelopment') },
+    { name: t('skills.technicalSkills.reactJs'), category: t('skills.categories.frontendDevelopment') },
+    { name: t('skills.technicalSkills.nativeBaseIo'), category: t('skills.categories.uiFramework') },
+    { name: t('skills.technicalSkills.materialUi'), category: t('skills.categories.uiFramework') },
+    { name: t('skills.technicalSkills.retrofit'), category: t('skills.categories.networking') },
+    { name: t('skills.technicalSkills.volley'), category: t('skills.categories.networking') },
+    { name: t('skills.technicalSkills.jsonParsing'), category: t('skills.categories.dataHandling') },
+    { name: t('skills.technicalSkills.asyncStorage'), category: t('skills.categories.dataStorage') },
+    { name: t('skills.technicalSkills.butterknife'), category: t('skills.categories.androidTools') }
   ]
 
   const frameworks = [
-    { name: 'Android Studio', icon: '📱' },
-    { name: 'VS Code', icon: '💻' },
-    { name: 'React Native CLI', icon: '⚛️' },
-    { name: 'Git', icon: '🔧' }
+    { name: t('skills.tools.androidStudio'), icon: '📱' },
+    { name: t('skills.tools.vsCode'), icon: '💻' },
+    { name: t('skills.tools.reactNativeCli'), icon: '⚛️' },
+    { name: t('skills.tools.git'), icon: '🔧' }
   ]
 
   const languages = [
-    { name: 'English', level: 'Fluent' },
-    { name: 'Telugu', level: 'Native' },
-    { name: 'Hindi', level: 'Conversational' }
+    { name: t('skills.spokenLanguages.english'), level: t('skills.spokenLanguages.fluent') },
+    { name: t('skills.spokenLanguages.telugu'), level: t('skills.spokenLanguages.native') },
+    { name: t('skills.spokenLanguages.hindi'), level: t('skills.spokenLanguages.conversational') }
   ]
 
   const groupedSkills = technicalSkills.reduce((acc, skill) => {

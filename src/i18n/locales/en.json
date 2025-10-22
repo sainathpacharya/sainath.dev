@@ -46,7 +46,54 @@
     "title": "Skills & Expertise",
     "subtitle": "Technical skills and technologies I work with",
     "toolsTechnologies": "Tools & Technologies",
-    "languages": "Languages"
+    "languages": "Languages",
+    "categories": {
+      "mobileDevelopment": "Mobile Development",
+      "programmingLanguages": "Programming Languages",
+      "apiIntegration": "API Integration",
+      "stateManagement": "State Management",
+      "frontendDevelopment": "Frontend Development",
+      "uiFramework": "UI Framework",
+      "networking": "Networking",
+      "dataHandling": "Data Handling",
+      "dataStorage": "Data Storage",
+      "androidTools": "Android Tools"
+    },
+    "technicalSkills": {
+      "reactNative": "React Native",
+      "javaScript": "JavaScript",
+      "typeScript": "TypeScript",
+      "androidDevelopment": "Android Development",
+      "kotlin": "Kotlin",
+      "java": "Java",
+      "restApiIntegration": "REST API Integration",
+      "redux": "Redux",
+      "firebaseIntegration": "Firebase Integration",
+      "html": "HTML",
+      "css": "CSS",
+      "reactJs": "React.js",
+      "nativeBaseIo": "NativeBase.io",
+      "materialUi": "Material UI",
+      "retrofit": "Retrofit",
+      "volley": "Volley",
+      "jsonParsing": "JSON Parsing",
+      "asyncStorage": "AsyncStorage",
+      "butterknife": "Butterknife"
+    },
+    "tools": {
+      "androidStudio": "Android Studio",
+      "vsCode": "VS Code",
+      "reactNativeCli": "React Native CLI",
+      "git": "Git"
+    },
+    "spokenLanguages": {
+      "english": "English",
+      "telugu": "Telugu",
+      "hindi": "Hindi",
+      "fluent": "Fluent",
+      "native": "Native",
+      "conversational": "Conversational"
+    }
   },
   "experience": {
     "title": "Work Experience",

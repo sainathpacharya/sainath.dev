@@ -45,7 +45,54 @@
     "title": "Taidot ja Asiantuntemus",
     "subtitle": "Tekniset taidot ja teknologiat, joita käytän",
     "toolsTechnologies": "Työkalut ja Teknologiat",
-    "languages": "Kielet"
+    "languages": "Kielet",
+    "categories": {
+      "mobileDevelopment": "Mobiilikehitys",
+      "programmingLanguages": "Ohjelmointikielet",
+      "apiIntegration": "API-integraatio",
+      "stateManagement": "Tilanhallinta",
+      "frontendDevelopment": "Frontend-kehitys",
+      "uiFramework": "UI-kehys",
+      "networking": "Verkkointi",
+      "dataHandling": "Tietojen käsittely",
+      "dataStorage": "Tietojen tallennus",
+      "androidTools": "Android-työkalut"
+    },
+    "technicalSkills": {
+      "reactNative": "React Native",
+      "javaScript": "JavaScript",
+      "typeScript": "TypeScript",
+      "androidDevelopment": "Android-kehitys",
+      "kotlin": "Kotlin",
+      "java": "Java",
+      "restApiIntegration": "REST API-integraatio",
+      "redux": "Redux",
+      "firebaseIntegration": "Firebase-integraatio",
+      "html": "HTML",
+      "css": "CSS",
+      "reactJs": "React.js",
+      "nativeBaseIo": "NativeBase.io",
+      "materialUi": "Material UI",
+      "retrofit": "Retrofit",
+      "volley": "Volley",
+      "jsonParsing": "JSON-jäsennys",
+      "asyncStorage": "AsyncStorage",
+      "butterknife": "Butterknife"
+    },
+    "tools": {
+      "androidStudio": "Android Studio",
+      "vsCode": "VS Code",
+      "reactNativeCli": "React Native CLI",
+      "git": "Git"
+    },
+    "spokenLanguages": {
+      "english": "Englanti",
+      "telugu": "Telugu",
+      "hindi": "Hindi",
+      "fluent": "Sujuva",
+      "native": "Äidinkieli",
+      "conversational": "Keskustelu"
+    }
   },
   "experience": {
     "title": "Työkokemus",
