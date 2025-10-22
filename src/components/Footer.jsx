@@ -44,15 +44,15 @@ const Footer = () => {
               <div className="footer-section">
                 <h4 className="footer-title">Connect</h4>
                 <div className="social-links">
-                  <a href="https://linkedin.com/in/nagasainath" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <a href="https://www.linkedin.com/in/naga-sainath-reddy-palle-32935a166/" target="_blank" rel="noopener noreferrer" className="social-link">
                     <span className="social-icon">💼</span>
                     LinkedIn
                   </a>
-                  <a href="https://github.com/nagasainath" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <a href="https://github.com/sainathpacharya" target="_blank" rel="noopener noreferrer" className="social-link">
                     <span className="social-icon">🐙</span>
                     GitHub
                   </a>
-                  <a href="mailto:nagasainath@example.com" className="social-link">
+                  <a href="mailto:sainathp.acharya@gmail.com" className="social-link">
                     <span className="social-icon">📧</span>
                     Email
                   </a>

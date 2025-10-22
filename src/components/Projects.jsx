@@ -3,6 +3,21 @@ import './Projects.css'
 const Projects = () => {
   const featuredProjects = [
     {
+      title: 'NSL Subeej Kisan',
+      description: 'Comprehensive agricultural app empowering Nuziveedu farmers with tools, insights, and advisory services to improve farming practices.',
+      role: 'Lead Developer',
+      tech: ['React Native', 'JavaScript'],
+      highlights: [
+        'Led development team and architected the complete mobile application solution',
+        'Developed weather updates and market price tracking features for farmers',
+        'Implemented multi-language support for diverse farming communities',
+        'Created farming calculators and product scan functionality for agricultural guidance',
+        'Built knowledge centre and nearby retailers locator for comprehensive farmer support'
+      ],
+      image: '/images/subbeej-logo.png',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.nsl.subeejkisan&hl=en_IN'
+    },
+    {
       title: 'NSL VyaparaMitra',
       description: 'Connect with retailers with the NSL\'s distribution system and implement NSL\'s sales excellence Programs.',
       role: 'Developer',
@@ -89,7 +104,17 @@ const Projects = () => {
           {featuredProjects.map((project, index) => (
             <div key={index} className="project-card">
               <div className="project-header">
-                <div className="project-icon">{project.image}</div>
+                <div className="project-icon">
+                  {project.image.startsWith('/') ? (
+                    <img 
+                      src={project.image} 
+                      alt={`${project.title} logo`}
+                      className="project-logo"
+                    />
+                  ) : (
+                    <span className="project-emoji">{project.image}</span>
+                  )}
+                </div>
                 <div className="project-info">
                   <h3 className="project-title">{project.title}</h3>
                   <span className="project-role">{project.role}</span>
@@ -112,7 +137,16 @@ const Projects = () => {
               
               <div className="project-actions">
                 <button className="btn-outline">View Details</button>
-                <button className="btn-primary">View Code</button>
+                {project.playStoreLink && (
+                  <a 
+                    href={project.playStoreLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
+                    View on Play Store
+                  </a>
+                )}
               </div>
             </div>
           ))}
