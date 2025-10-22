@@ -1,52 +1,53 @@
 import './Hero.css'
+import { useTranslation } from 'react-i18next'
+import { getFormattedYears, getFormattedProjects } from '../data/stats'
 
 const Hero = () => {
+  const { t } = useTranslation()
+  
   return (
     <section className="hero">
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">
-              Hi, I'm <span className="highlight">NagaSainath Reddy</span>
+            <h1 className="hero-title fade-in">
+              {t('hero.title')} <span className="highlight">NagaSainath Reddy</span>
             </h1>
-            <h2 className="hero-subtitle">
-              React Native & Android Developer
+            <h2 className="hero-subtitle fade-in fade-in-delay-1">
+              {t('hero.subtitle')}
             </h2>
-            <p className="hero-description">
-              9+ years of professional experience in Android application development 
-              with expertise in React Native, NativeBase.io, and Redux frameworks. 
-              Passionate about creating innovative mobile solutions and delivering 
-              client-focused results.
-            </p>
-            <div className="hero-buttons">
+                  <p className="hero-description fade-in fade-in-delay-2">
+                    {t('hero.description')}
+                  </p>
+            <div className="hero-buttons fade-in fade-in-delay-3">
               <a href="#projects" className="btn btn-primary">
-                View My Work
+                {t('hero.viewWork')}
               </a>
               <a href="#contact" className="btn btn-secondary">
-                Get In Touch
+                {t('hero.getInTouch')}
               </a>
             </div>
           </div>
           <div className="hero-image">
-            <div className="profile-card">
+            <div className="profile-card fade-in fade-in-delay-4">
               <div className="profile-avatar">
                 <div className="avatar-placeholder">
                   <span>NS</span>
                 </div>
               </div>
-              <div className="profile-info">
-                <h3>NagaSainath Reddy</h3>
-                <p>Mobile App Developer</p>
-                <div className="profile-stats">
-                  <div className="stat">
-                    <span className="stat-number">9+</span>
-                    <span className="stat-label">Years Experience</span>
-                  </div>
-                  <div className="stat">
-                    <span className="stat-number">20+</span>
-                    <span className="stat-label">Projects</span>
-                  </div>
-                </div>
+                <div className="profile-info">
+                  <h3>NagaSainath Reddy</h3>
+                  <p>Lead Engineer</p>
+                      <div className="profile-stats">
+                        <div className="stat">
+                          <span className="stat-number">{getFormattedYears()}</span>
+                          <span className="stat-label">{t('hero.yearsExperience')}</span>
+                        </div>
+                        <div className="stat">
+                          <span className="stat-number">{getFormattedProjects()}</span>
+                          <span className="stat-label">{t('hero.projects')}</span>
+                        </div>
+                      </div>
               </div>
             </div>
           </div>

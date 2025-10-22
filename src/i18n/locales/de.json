@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Hallo, ich bin",
+    "subtitle": "Lead Engineer - React Native & Android",
+    "description": "Mehr als 10 Jahre Berufserfahrung in der Android-Anwendungsentwicklung mit Expertise in React Native, NativeBase.io und Redux-Frameworks. Derzeit bei Ratna Global Technologies tätig, leidenschaftlich für die Erstellung innovativer mobiler Lösungen und die Bereitstellung kundenorientierter Ergebnisse.",
+    "viewWork": "Meine Arbeit ansehen",
+    "getInTouch": "Kontakt aufnehmen",
+    "yearsExperience": "Jahre Erfahrung",
+    "projects": "Projekte"
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Lernen Sie mich besser kennen",
+    "description": "Ich bin ein engagierter React Native und Android Entwickler mit über 10+ Jahren Berufserfahrung in der mobilen Anwendungsentwicklung. Derzeit bei Ratna Global Technologies Private Limited tätig, spezialisiere ich mich auf die Erstellung innovativer mobiler Lösungen, die außergewöhnliche Benutzererfahrungen bieten.",
+    "highlights": {
+      "quickLearner": {
+        "title": "Schneller Lerner",
+        "description": "Begeistert von der Übernahme neuer Technologien und deren Implementierung in Echtzeitanwendungen"
+      },
+      "teamPlayer": {
+        "title": "Teamplayer",
+        "description": "Bewiesene Fähigkeit, sowohl als Teammitglied als auch als Einzelbeitragender effektiv zu arbeiten"
+      },
+      "problemSolver": {
+        "title": "Problemlöser",
+        "description": "Starke Fähigkeit, Geschäftslogik zu verstehen und kundenorientierte Lösungen zu liefern"
+      }
+    },
+    "stats": {
+      "yearsExperience": "Jahre Erfahrung",
+      "projectsCompleted": "Abgeschlossene Projekte",
+      "companiesWorked": "Unternehmen",
+      "languages": "Sprachen"
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten und Expertise",
+    "subtitle": "Technische Fähigkeiten und Technologien, mit denen ich arbeite",
+    "toolsTechnologies": "Werkzeuge und Technologien",
+    "languages": "Sprachen"
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "subtitle": "Meine berufliche Reise in der mobilen Entwicklung"
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Einige meiner bemerkenswerten Arbeiten und Errungenschaften",
+    "otherProjects": "Andere Projekte",
+    "viewOnPlayStore": "Im Play Store ansehen",
+    "mobileApp": "Mobile App",
+    "featured": {
+      "collectiveHealth": {
+        "title": "Collective Health",
+        "description": "Aktuelles Projekt - Gesundheitsvorteile-Plattform, die das Gesundheitserlebnis mit klaren Deckungserklärungen, Anbieterfinder und Kostenschätzungstools vereinfacht.",
+        "role": "Hauptingenieur",
+        "highlights": [
+          "Leitung der Entwicklung der Gesundheitsvorteile-Plattform mit 50K+ Downloads und 4.4★ Bewertung",
+          "Implementierung sicherer Gesundheitsdatenverwaltung und HIPAA-Compliance-Features für Patientendatenschutz",
+          "Beitrag zur Anbieterfinder-Funktionalität und Kostenschätzungstools für bessere Benutzererfahrung",
+          "Entwicklung plattformübergreifender mobiler Lösungen mit React Native für Gesundheitsanbieter und Patienten"
+        ]
+      },
+      "nslSubeejKisan": {
+        "title": "NSL Subeej Kisan",
+        "description": "Umfassende landwirtschaftliche App, die Nuziveedu-Landwirte mit Tools, Erkenntnissen und Beratungsdiensten zur Verbesserung der landwirtschaftlichen Praktiken befähigt.",
+        "role": "Hauptentwickler",
+        "highlights": [
+          "Leitung des Entwicklungsteams und Architektur der vollständigen mobilen Anwendungslösung",
+          "Entwicklung von Wetterupdates und Marktpreisverfolgungsfunktionen für Landwirte",
+          "Implementierung mehrsprachiger Unterstützung für vielfältige landwirtschaftliche Gemeinschaften",
+          "Erstellung landwirtschaftlicher Rechner und Produktscan-Funktionalität für landwirtschaftliche Beratung",
+          "Aufbau von Wissenszentrum und nahegelegenen Händlerfinder für umfassende Landwirtunterstützung"
+        ]
+      },
+      "nslVyaparaMitra": {
+        "title": "NSL VyaparaMitra",
+        "description": "Verbinden Sie sich mit Händlern über das NSL-Vertriebssystem und implementieren Sie NSLs Verkaufsexzellenz-Programme.",
+        "role": "Entwickler",
+        "highlights": [
+          "Gewährleistung nahtloser Funktionalität und UI-Reaktionsfähigkeit auf verschiedenen mobilen Geräten und Tablets",
+          "Entwicklung und Integration aller App-Module, einschließlich Bildschirme, Logik und Backend-Verbindungen",
+          "Durchführung präziser UI-Verbesserungen zur Optimierung der Benutzererfahrung",
+          "Implementierung von NSLs Verkaufsexzellenz-Programmen und Vertriebssystem-Integration"
+        ]
+      },
+      "mcrcApp": {
+        "title": "MCRC App",
+        "description": "Entwicklung verbesserter Kulturpflanzensorten, hochwertiger Pflanzmaterialien und nachhaltiger Produktionspraktiken für Landwirte.",
+        "role": "Hauptentwickler",
+        "highlights": [
+          "Leitung des Entwicklungsteams und Verwaltung der Projektlieferung für landwirtschaftliche Lösungen",
+          "Gewährleistung nahtloser Funktionalität und UI-Reaktionsfähigkeit auf verschiedenen mobilen Geräten und Tablets",
+          "Durchführung präziser UI-Verbesserungen zur Optimierung der Benutzererfahrung und Gewährleistung konsistenter Usability",
+          "Entwicklung landwirtfreundlicher Schnittstelle und Mentoring von Teammitgliedern in Best Practices"
+        ]
+      },
+      "cortevaDaksh": {
+        "title": "Corteva Daksh",
+        "description": "Antreiben der Nachfragegenerierung von Corteva-Produkten durch Aktivitäten des Corteva-Feldpersonals mit standardisierten Berichten.",
+        "role": "Entwickler",
+        "highlights": [
+          "Entwurf und Entwicklung spezifischer Anwendungsmodule mit React Native",
+          "Implementierung von Features zur Erleichterung der Standardisierung von Aktivitäten für Corteva-Feldpersonal",
+          "Erstellung von Tools zur Verwaltung von Aktivitätsberichten und Verbesserung der Teamproduktivität",
+          "Aufbau von Nachfragegenerierungsfeatures für Corteva-Produkte mit standardisierten Berichten"
+        ]
+      },
+      "meetHourApp": {
+        "title": "MeetHour App",
+        "description": "Vollständig verschlüsselte, 100% kostenlose Videokonferenzlösung mit Planungs-, Neuplanungs- und Whiteboard-Features.",
+        "role": "Entwickler",
+        "highlights": [
+          "Verbesserte UI für Version 2.0 der MeetHour-App mit benutzerfreundlicher Oberfläche",
+          "Integration neuer Features wie Whiteboard in die Anwendung",
+          "Arbeit an der Verbindung nativer Java-Module zu React-Native für verbesserte Funktionalität",
+          "Implementierung von Planungs- und Neuplanungsfeatures für Videokonferenzlösung"
+        ]
+      }
+    },
+    "other": {
+      "mtrackerApp": "MTracker App",
+      "cortevaFarmerConnect": "Corteva Farmer Connect",
+      "cortevaRoots": "Corteva Roots",
+      "piqyu": "PIQYU",
+      "nslKissanVikas": "NSL Kissan Vikas",
+      "nslRetailAudit": "NSL Retail Audit",
+      "theatreMart": "TheatreMart",
+      "wakukPartner": "Wakuk - Partner",
+      "wakukPassenger": "Wakuk-Passenger",
+      "cortevaVts": "Corteva VTS",
+      "cortevaCdUpload": "Corteva CD Upload Tool",
+      "mpConnect": "mpConnect"
+    }
+  },
+  "testimonials": {
+    "title": "Was Kollegen Sagen",
+    "subtitle": "Testimonials von Teammitgliedern und Stakeholdern"
+  },
+  "cta": {
+    "title": "Bereit, Zusammen zu Arbeiten?",
+    "description": "Ich bin immer an neuen Möglichkeiten und aufregenden Projekten interessiert. Lassen Sie uns besprechen, wie wir Ihre mobilen App-Ideen zum Leben erwecken können.",
+    "getInTouch": "Kontakt aufnehmen",
+    "downloadResume": "Lebenslauf herunterladen"
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie eine Frage oder möchten Sie zusammenarbeiten? Zögern Sie nicht, mich zu kontaktieren.",
+    "contactInfo": "Kontaktinformationen",
+    "description": "Ich bin immer offen für die Diskussion neuer Projekte, kreativer Ideen oder Möglichkeiten, Teil Ihrer Visionen zu werden.",
+    "sendMessage": "Senden Sie mir eine Nachricht",
+    "name": "Name",
+    "email": "E-Mail",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success": "Danke! Ihre Nachricht wurde erfolgreich gesendet. Ich werde Ihnen bald antworten.",
+    "error": "Entschuldigung, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt.",
+    "followMe": "Folgen Sie mir"
+  },
+  "footer": {
+    "tagline": "React Native & Android Entwickler",
+    "description": "Leidenschaftlich für die Erstellung innovativer mobiler Lösungen, die außergewöhnliche Benutzererfahrungen bieten. Mehr als 10 Jahre Berufserfahrung in der mobilen Anwendungsentwicklung.",
+    "quickLinks": "Schnelle Links",
+    "technologies": "Technologien",
+    "connect": "Verbinden",
+    "copyright": "Alle Rechte vorbehalten.",
+    "builtWith": "Gebaut mit ❤️ mit React & Vite"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "fi": "Suomi"
+  }
+}

@@ -1,19 +1,29 @@
 import './Skills.css'
+import { useTranslation } from 'react-i18next'
 
 const Skills = () => {
+  const { t } = useTranslation()
+  
   const technicalSkills = [
-    { name: 'React Native', level: 95, category: 'Mobile Development' },
-    { name: 'JavaScript', level: 90, category: 'Programming' },
-    { name: 'Android Development', level: 88, category: 'Mobile Development' },
-    { name: 'Kotlin', level: 85, category: 'Programming' },
-    { name: 'REST API', level: 90, category: 'Backend' },
-    { name: 'Redux', level: 85, category: 'State Management' },
-    { name: 'NativeBase.io', level: 80, category: 'UI Framework' },
-    { name: 'Firebase', level: 75, category: 'Backend Services' },
-    { name: 'Retrofit', level: 80, category: 'Networking' },
-    { name: 'Volley', level: 75, category: 'Networking' },
-    { name: 'Butterknife', level: 70, category: 'Android Tools' },
-    { name: 'JSON Parsing', level: 90, category: 'Data Handling' }
+    { name: 'React Native', category: 'Mobile Development' },
+    { name: 'JavaScript', category: 'Programming Languages' },
+    { name: 'TypeScript', category: 'Programming Languages' },
+    { name: 'Android Development', category: 'Mobile Development' },
+    { name: 'Kotlin', category: 'Programming Languages' },
+    { name: 'Java', category: 'Programming Languages' },
+    { name: 'REST API Integration', category: 'API Integration' },
+    { name: 'Redux', category: 'State Management' },
+    { name: 'Firebase Integration', category: 'API Integration' },
+    { name: 'HTML', category: 'Frontend Development' },
+    { name: 'CSS', category: 'Frontend Development' },
+    { name: 'React.js', category: 'Frontend Development' },
+    { name: 'NativeBase.io', category: 'UI Framework' },
+    { name: 'Material UI', category: 'UI Framework' },
+    { name: 'Retrofit', category: 'Networking' },
+    { name: 'Volley', category: 'Networking' },
+    { name: 'JSON Parsing', category: 'Data Handling' },
+    { name: 'AsyncStorage', category: 'Data Storage' },
+    { name: 'Butterknife', category: 'Android Tools' }
   ]
 
   const frameworks = [
@@ -41,28 +51,19 @@ const Skills = () => {
     <section id="skills" className="skills">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Skills & Expertise</h2>
-          <p className="section-subtitle">Technical skills and technologies I work with</p>
+          <h2 className="section-title fade-in">{t('skills.title')}</h2>
+          <p className="section-subtitle fade-in fade-in-delay-1">{t('skills.subtitle')}</p>
         </div>
 
         <div className="skills-content">
           <div className="skills-main">
-            {Object.entries(groupedSkills).map(([category, skills]) => (
-              <div key={category} className="skill-category">
+            {Object.entries(groupedSkills).map(([category, skills], categoryIndex) => (
+              <div key={category} className={`skill-category fade-in fade-in-delay-${(categoryIndex % 3) + 2}`}>
                 <h3 className="category-title">{category}</h3>
                 <div className="skills-grid">
                   {skills.map((skill, index) => (
-                    <div key={index} className="skill-item">
-                      <div className="skill-header">
-                        <span className="skill-name">{skill.name}</span>
-                        <span className="skill-percentage">{skill.level}%</span>
-                      </div>
-                      <div className="skill-bar">
-                        <div 
-                          className="skill-progress" 
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                    <div key={index} className={`skill-tag bounce-in`} style={{animationDelay: `${index * 0.1}s`}}>
+                      {skill.name}
                     </div>
                   ))}
                 </div>
@@ -71,23 +72,23 @@ const Skills = () => {
           </div>
 
           <div className="skills-sidebar">
-            <div className="sidebar-section">
-              <h3 className="sidebar-title">Development Tools</h3>
+            <div className="sidebar-section slide-in-right">
+              <h3 className="sidebar-title">{t('skills.toolsTechnologies')}</h3>
               <div className="tools-grid">
                 {frameworks.map((tool, index) => (
-                  <div key={index} className="tool-item">
+                  <div key={index} className={`tool-item scale-in`} style={{animationDelay: `${index * 0.2}s`}}>
                     <span className="tool-icon">{tool.icon}</span>
                     <span className="tool-name">{tool.name}</span>
                   </div>
                 ))}
               </div>
             </div>
-
-            <div className="sidebar-section">
-              <h3 className="sidebar-title">Languages</h3>
+            
+            <div className="sidebar-section slide-in-right">
+              <h3 className="sidebar-title">{t('skills.languages')}</h3>
               <div className="languages-list">
                 {languages.map((lang, index) => (
-                  <div key={index} className="language-item">
+                  <div key={index} className={`language-item fade-in`} style={{animationDelay: `${index * 0.3}s`}}>
                     <span className="language-name">{lang.name}</span>
                     <span className="language-level">{lang.level}</span>
                   </div>

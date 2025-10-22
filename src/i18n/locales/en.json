@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm",
+    "subtitle": "Lead Engineer - React Native & Android",
+    "description": "10+ years of professional experience in Android application development with expertise in React Native, NativeBase.io, and Redux frameworks. Currently working at Ratna Global Technologies, passionate about creating innovative mobile solutions and delivering client-focused results.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "yearsExperience": "Years Experience",
+    "projects": "Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "passionateTitle": "Passionate Mobile Developer",
+    "description": "I'm a dedicated React Native and Android Developer with over 10+ years of professional experience in mobile application development. Currently working at Ratna Global Technologies Private Limited, I specialize in creating innovative mobile solutions that deliver exceptional user experiences.",
+    "highlights": {
+      "quickLearner": {
+        "title": "Quick Learner",
+        "description": "Enthusiastic about adopting new technologies and implementing them in real-time applications"
+      },
+      "teamPlayer": {
+        "title": "Team Player",
+        "description": "Proven ability to work effectively both as a team member and individual contributor"
+      },
+      "problemSolver": {
+        "title": "Problem Solver",
+        "description": "Strong ability to understand business logic and deliver client-focused solutions"
+      }
+    },
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "projectsCompleted": "Projects Completed",
+      "companiesWorked": "Companies Worked",
+      "languages": "Languages"
+    }
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Technical skills and technologies I work with",
+    "toolsTechnologies": "Tools & Technologies",
+    "languages": "Languages"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey in mobile development"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my notable work and achievements",
+    "otherProjects": "Other Projects",
+    "viewOnPlayStore": "View on Play Store",
+    "mobileApp": "Mobile App",
+    "featured": {
+      "collectiveHealth": {
+        "title": "Collective Health",
+        "description": "Current project - Health benefits platform that simplifies healthcare experience with clear coverage explanations, provider finder, and cost estimation tools.",
+        "role": "Lead Engineer",
+        "highlights": [
+          "Leading development of health benefits platform with 50K+ downloads and 4.4★ rating",
+          "Implementing secure health data management and HIPAA compliance features for patient data protection",
+          "Contributing to provider finder functionality and cost estimation tools for better user experience",
+          "Developing cross-platform mobile solutions using React Native for healthcare providers and patients"
+        ]
+      },
+      "nslSubeejKisan": {
+        "title": "NSL Subeej Kisan",
+        "description": "Comprehensive agricultural app empowering Nuziveedu farmers with tools, insights, and advisory services to improve farming practices.",
+        "role": "Lead Developer",
+        "highlights": [
+          "Led development team and architected the complete mobile application solution",
+          "Developed weather updates and market price tracking features for farmers",
+          "Implemented multi-language support for diverse farming communities",
+          "Created farming calculators and product scan functionality for agricultural guidance",
+          "Built knowledge centre and nearby retailers locator for comprehensive farmer support"
+        ]
+      },
+      "nslVyaparaMitra": {
+        "title": "NSL VyaparaMitra",
+        "description": "Connect with retailers with the NSL's distribution system and implement NSL's sales excellence Programs.",
+        "role": "Developer",
+        "highlights": [
+          "Ensured seamless functionality and UI responsiveness across diverse mobile devices and tablets",
+          "Developed and integrated all app modules, including screens, logic, and backend connections",
+          "Conducted precise UI enhancements to optimize user experience",
+          "Implemented NSL's sales excellence programs and distribution system integration"
+        ]
+      },
+      "mcrcApp": {
+        "title": "MCRC App",
+        "description": "Develop improved crop varieties, high-quality planting materials, and sustainable production practices for farmers.",
+        "role": "Lead Developer",
+        "highlights": [
+          "Led development team and managed project delivery for agricultural solutions",
+          "Ensured seamless functionality and UI responsiveness across diverse mobile devices and tablets",
+          "Conducted precise UI enhancements to optimize user experience and ensure consistent usability",
+          "Developed farmer-friendly interface and mentored team members on best practices"
+        ]
+      },
+      "cortevaDaksh": {
+        "title": "Corteva Daksh",
+        "description": "Drive Demand Generation of Corteva products through activities conducted by Corteva field staff with standardized reporting.",
+        "role": "Developer",
+        "highlights": [
+          "Designed and developed specific application modules using React Native",
+          "Implemented features facilitating standardization of activities for Corteva field staff",
+          "Created tools to manage activity reporting and enhance team productivity",
+          "Built demand generation features for Corteva products with standardized reporting"
+        ]
+      },
+      "meetHourApp": {
+        "title": "MeetHour App",
+        "description": "Fully encrypted, 100% free video conferencing solution with scheduling, rescheduling, and whiteboard features.",
+        "role": "Developer",
+        "highlights": [
+          "Enhanced UI for version 2.0 of the MeetHour app with user-friendly interface",
+          "Integrated new features like whiteboard into the application",
+          "Worked on bridging native Java Modules to React-Native for improved functionality",
+          "Implemented scheduling and rescheduling features for video conferencing solution"
+        ]
+      }
+    },
+    "other": {
+      "mtrackerApp": "MTracker App",
+      "cortevaFarmerConnect": "Corteva Farmer Connect",
+      "cortevaRoots": "Corteva Roots",
+      "piqyu": "PIQYU",
+      "nslKissanVikas": "NSL Kissan Vikas",
+      "nslRetailAudit": "NSL Retail Audit",
+      "theatreMart": "TheatreMart",
+      "wakukPartner": "Wakuk - Partner",
+      "wakukPassenger": "Wakuk-Passenger",
+      "cortevaVts": "Corteva VTS",
+      "cortevaCdUpload": "Corteva CD Upload tool",
+      "mpConnect": "mpConnect"
+    }
+  },
+  "testimonials": {
+    "title": "What Colleagues Say",
+    "subtitle": "Testimonials from team members and stakeholders",
+    "testimonial1": {
+      "name": "Project Manager",
+      "company": "NSL Group",
+      "role": "Agricultural Technology",
+      "content": "NagaSainath delivered exceptional mobile solutions for our agricultural platform. His technical expertise and leadership skills were instrumental in the success of our farmer-focused applications."
+    },
+    "testimonial2": {
+      "name": "Team Lead",
+      "company": "Corteva Agriscience",
+      "role": "Field Operations",
+      "content": "Working with NagaSainath was a great experience. His ability to lead teams and deliver complex mobile applications on time while maintaining high quality standards is remarkable."
+    },
+    "testimonial3": {
+      "name": "CTO",
+      "company": "Empover I-Tech",
+      "role": "Technology Leadership",
+      "content": "NagaSainath consistently demonstrated strong technical leadership and mentoring capabilities. His contributions to our mobile development processes significantly improved team productivity."
+    }
+  },
+  "cta": {
+    "title": "Ready to Work Together?",
+    "description": "I'm always interested in new opportunities and exciting projects. Let's discuss how we can bring your mobile app ideas to life.",
+    "getInTouch": "Get In Touch",
+    "downloadResume": "Download Resume"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project or just say hello",
+    "contactInfo": "Let's Connect",
+    "description": "I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "sendMessage": "Send me a message",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "linkedin": "LinkedIn",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent successfully. I'll get back to you soon.",
+    "error": "Sorry, there was an error sending your message. Please try again or contact me directly.",
+    "followMe": "Follow Me"
+  },
+  "footer": {
+    "tagline": "React Native & Android Developer",
+    "description": "Passionate about creating innovative mobile solutions that deliver exceptional user experiences. 10+ years of professional experience in mobile application development.",
+    "quickLinks": "Quick Links",
+    "technologies": "Technologies",
+    "connect": "Connect",
+    "copyright": "All rights reserved.",
+    "builtWith": "Built with ❤️ using React & Vite"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "fi": "Suomi"
+  }
+}

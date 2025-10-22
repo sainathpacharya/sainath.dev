@@ -1,6 +1,9 @@
 import './Footer.css'
+import { useTranslation } from 'react-i18next'
+import { getFormattedYears } from '../data/stats'
 
 const Footer = () => {
+  const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
 
   return (
@@ -10,28 +13,26 @@ const Footer = () => {
           <div className="footer-main">
             <div className="footer-brand">
               <h3 className="brand-name">NagaSainath Reddy</h3>
-              <p className="brand-tagline">React Native & Android Developer</p>
+              <p className="brand-tagline">{t('footer.tagline')}</p>
               <p className="brand-description">
-                Passionate about creating innovative mobile solutions that deliver 
-                exceptional user experiences. 9+ years of professional experience 
-                in mobile application development.
+                {t('footer.description')}
               </p>
             </div>
             
             <div className="footer-links">
               <div className="footer-section">
-                <h4 className="footer-title">Quick Links</h4>
+                <h4 className="footer-title">{t('footer.quickLinks')}</h4>
                 <ul className="footer-list">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#experience">Experience</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#about">{t('nav.about')}</a></li>
+                  <li><a href="#skills">{t('nav.skills')}</a></li>
+                  <li><a href="#experience">{t('nav.experience')}</a></li>
+                  <li><a href="#projects">{t('nav.projects')}</a></li>
+                  <li><a href="#contact">{t('nav.contact')}</a></li>
                 </ul>
               </div>
               
               <div className="footer-section">
-                <h4 className="footer-title">Technologies</h4>
+                <h4 className="footer-title">{t('footer.technologies')}</h4>
                 <ul className="footer-list">
                   <li>React Native</li>
                   <li>JavaScript</li>
@@ -42,7 +43,7 @@ const Footer = () => {
               </div>
               
               <div className="footer-section">
-                <h4 className="footer-title">Connect</h4>
+                <h4 className="footer-title">{t('footer.connect')}</h4>
                 <div className="social-links">
                   <a href="https://www.linkedin.com/in/naga-sainath-reddy-palle-32935a166/" target="_blank" rel="noopener noreferrer" className="social-link">
                     <span className="social-icon">💼</span>
@@ -63,10 +64,10 @@ const Footer = () => {
           
           <div className="footer-bottom">
             <div className="footer-copyright">
-              <p>&copy; {currentYear} NagaSainath Reddy. All rights reserved.</p>
+              <p>&copy; {currentYear} NagaSainath Reddy. {t('footer.copyright')}</p>
             </div>
             <div className="footer-credits">
-              <p>Built with ❤️ using React & Vite</p>
+              <p>{t('footer.builtWith')}</p>
             </div>
           </div>
         </div>

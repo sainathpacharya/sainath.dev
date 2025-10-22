@@ -1,108 +1,116 @@
 import './Projects.css'
+import { useTranslation } from 'react-i18next'
+import { portfolioStats } from '../data/stats'
 
 const Projects = () => {
+  const { t } = useTranslation()
+  
   const featuredProjects = [
     {
-      title: 'NSL Subeej Kisan',
-      description: 'Comprehensive agricultural app empowering Nuziveedu farmers with tools, insights, and advisory services to improve farming practices.',
-      role: 'Lead Developer',
+      title: t('projects.featured.collectiveHealth.title'),
+      description: t('projects.featured.collectiveHealth.description'),
+      role: t('projects.featured.collectiveHealth.role'),
+      tech: ['React Native', 'JavaScript', 'TypeScript'],
+      highlights: t('projects.featured.collectiveHealth.highlights', { returnObjects: true }),
+      downloads: '50K+',
+      rating: '4.4★',
+      image: '🏥',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.collectivehealth.member&hl=en_IN',
+      year: '2025',
+      show: true
+    },
+    {
+      title: t('projects.featured.nslSubeejKisan.title'),
+      description: t('projects.featured.nslSubeejKisan.description'),
+      role: t('projects.featured.nslSubeejKisan.role'),
       tech: ['React Native', 'JavaScript'],
-      highlights: [
-        'Led development team and architected the complete mobile application solution',
-        'Developed weather updates and market price tracking features for farmers',
-        'Implemented multi-language support for diverse farming communities',
-        'Created farming calculators and product scan functionality for agricultural guidance',
-        'Built knowledge centre and nearby retailers locator for comprehensive farmer support'
-      ],
+      highlights: t('projects.featured.nslSubeejKisan.highlights', { returnObjects: true }),
       image: '/images/subbeej-logo.png',
-      playStoreLink: 'https://play.google.com/store/apps/details?id=com.nsl.subeejkisan&hl=en_IN'
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.nsl.subeejkisan&hl=en_IN',
+      downloads: '10K+',
+      rating: '4.2★',
+      year: '2024',
+      show: true
     },
     {
-      title: 'NSL VyaparaMitra',
-      description: 'Connect with retailers with the NSL\'s distribution system and implement NSL\'s sales excellence Programs.',
-      role: 'Developer',
+      title: t('projects.featured.nslVyaparaMitra.title'),
+      description: t('projects.featured.nslVyaparaMitra.description'),
+      role: t('projects.featured.nslVyaparaMitra.role'),
       tech: ['React Native', 'JavaScript'],
-      highlights: [
-        'Ensured seamless functionality and UI responsiveness across diverse mobile devices and tablets',
-        'Developed and integrated all app modules, including screens, logic, and backend connections',
-        'Conducted precise UI enhancements to optimize user experience'
-      ],
-      image: '📱'
+      highlights: t('projects.featured.nslVyaparaMitra.highlights', { returnObjects: true }),
+      image: '📱',
+      show: false
     },
     {
-      title: 'MCRC App',
-      description: 'Develop improved crop varieties, high-quality planting materials, and sustainable production practices for farmers.',
-      role: 'Developer',
+      title: t('projects.featured.mcrcApp.title'),
+      description: t('projects.featured.mcrcApp.description'),
+      role: t('projects.featured.mcrcApp.role'),
       tech: ['React Native', 'JavaScript'],
-      highlights: [
-        'Ensured seamless functionality and UI responsiveness across diverse mobile devices and tablets',
-        'Conducted precise UI enhancements to optimize user experience and ensure consistent usability',
-        'Developed farmer-friendly interface for agricultural solutions'
-      ],
-      image: '🌾'
+      highlights: t('projects.featured.mcrcApp.highlights', { returnObjects: true }),
+      image: '/images/mcrc-logo.png',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.cortevaindia.mcrc&hl=en_IN',
+      downloads: '5K+',
+      rating: '4.0★',
+      year: '2023',
+      show: true
     },
     {
-      title: 'Corteva Daksh',
-      description: 'Drive Demand Generation of Corteva products through activities conducted by Corteva field staff with standardized reporting.',
-      role: 'Developer',
+      title: t('projects.featured.cortevaDaksh.title'),
+      description: t('projects.featured.cortevaDaksh.description'),
+      role: t('projects.featured.cortevaDaksh.role'),
       tech: ['React Native', 'JavaScript'],
-      highlights: [
-        'Designed and developed specific application modules using React Native',
-        'Implemented features facilitating standardization of activities for Corteva field staff',
-        'Created tools to manage activity reporting and enhance team productivity'
-      ],
-      image: '📊'
+      highlights: t('projects.featured.cortevaDaksh.highlights', { returnObjects: true }),
+      image: '📊',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.cortevaindia.amr&hl=en_IN',
+      downloads: '1K+',
+      rating: '3.8★',
+      year: '2022',
+      show: true
     },
     {
-      title: 'MeetHour App',
-      description: 'Fully encrypted, 100% free video conferencing solution with scheduling, rescheduling, and whiteboard features.',
-      role: 'Developer',
+      title: t('projects.featured.meetHourApp.title'),
+      description: t('projects.featured.meetHourApp.description'),
+      role: t('projects.featured.meetHourApp.role'),
       tech: ['React Native', 'JavaScript'],
-      highlights: [
-        'Enhanced UI for version 2.0 of the MeetHour app with user-friendly interface',
-        'Integrated new features like whiteboard into the application',
-        'Worked on bridging native Java Modules to React-Native for improved functionality'
-      ],
-      image: '🎥'
+      highlights: t('projects.featured.meetHourApp.highlights', { returnObjects: true }),
+      image: '🎥',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=go.meethour.io',
+      downloads: '100K+',
+      rating: '4.1★',
+      year: '2020',
+      show: true
     },
-    {
-      title: 'Wakuk-Passenger',
-      description: 'Ride-hailing service application offering multiple travel options across Hyderabad and Guam.',
-      role: 'Developer',
-      tech: ['React Native', 'JavaScript'],
-      highlights: [
-        'Designed and developed user-friendly UI for multiple travel options',
-        'Implemented various functionalities to ensure safety, ease, and affordability',
-        'Integrated backend systems for smooth booking and traveling operations'
-      ],
-      image: '🚗'
-    }
   ]
 
   const otherProjects = [
-    'MTracker App',
-    'Corteva VTS',
-    'Corteva CD Upload tool',
-    'PIQYU',
-    'mpConnect',
-    'TheatreMart',
-    'NSL Kissan Vikas',
-    'Wakuk - Partner',
-    'Corteva Roots',
-    'MCRC App'
+    // Projects with Play Store links (Priority) - Ordered by year
+    { name: t('projects.other.mtrackerApp'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.sivashakthi&hl=en_IN', year: '2019', logo: '📱', downloads: '10K+', rating: '4.2★' },
+    { name: t('projects.other.cortevaFarmerConnect'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.pioneer.india.directsales&hl=en_IN', year: '2021', logo: '🛒', downloads: '100K+', rating: '4.3★' },
+    { name: t('projects.other.cortevaRoots'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.corteva.rootsapplication&hl=en_IN', year: '2021', logo: '🌱', downloads: '10K+', rating: '4.0★' },
+    { name: t('projects.other.piqyu'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.ssr.piqyu&hl=en_IN', year: '2021', logo: '🚚', downloads: '1K+', rating: '3.9★' },
+    { name: t('projects.other.nslKissanVikas'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.KisanVikas.farmmanagement&hl=en_IN', year: '2022', logo: '🌾', downloads: '1K+', rating: '4.1★' },
+    { name: t('projects.other.nslRetailAudit'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.retailAuditSurvey.retailaudits&hl=en_IN', year: '2024', logo: '📊', downloads: '500+', rating: '4.0★' },
+    
+    // Projects without Play Store links - Ordered by year
+    { name: t('projects.other.theatreMart'), logo: '🎭' }, // 2019
+    { name: t('projects.other.wakukPartner'), logo: '🚗' }, // 2020
+    { name: t('projects.other.wakukPassenger'), logo: '🚗' }, // 2020
+    { name: t('projects.other.cortevaVts'), logo: '📈' }, // 2020
+    { name: t('projects.other.cortevaCdUpload'), logo: '📤' }, // 2020
+    { name: t('projects.other.mpConnect'), logo: '🔗' } // 2021
   ]
 
   return (
     <section id="projects" className="projects">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Featured Projects</h2>
-          <p className="section-subtitle">Some of my notable work and achievements</p>
+          <h2 className="section-title fade-in">{t('projects.title')}</h2>
+          <p className="section-subtitle fade-in fade-in-delay-1">{t('projects.subtitle')}</p>
         </div>
 
         <div className="projects-grid">
-          {featuredProjects.map((project, index) => (
-            <div key={index} className="project-card">
+          {featuredProjects.filter(project => project.show).map((project, index) => (
+            <div key={index} className={`project-card fade-in`} style={{animationDelay: `${index * 0.2}s`}}>
               <div className="project-header">
                 <div className="project-icon">
                   {project.image.startsWith('/') ? (
@@ -118,6 +126,12 @@ const Projects = () => {
                 <div className="project-info">
                   <h3 className="project-title">{project.title}</h3>
                   <span className="project-role">{project.role}</span>
+                  {project.downloads && project.rating && (
+                    <div className="project-stats">
+                      <span className="downloads">{project.downloads}</span>
+                      <span className="rating">{project.rating}</span>
+                    </div>
+                  )}
                 </div>
               </div>
               
@@ -135,33 +149,53 @@ const Projects = () => {
                 ))}
               </ul>
               
-              <div className="project-actions">
-                <button className="btn-outline">View Details</button>
-                {project.playStoreLink && (
-                  <a 
-                    href={project.playStoreLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
-                    View on Play Store
-                  </a>
-                )}
-              </div>
+                  <div className="project-actions">
+                    {project.playStoreLink && (
+                      <a 
+                        href={project.playStoreLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="btn-primary"
+                      >
+{t('projects.viewOnPlayStore')}
+                      </a>
+                    )}
+                  </div>
             </div>
           ))}
         </div>
 
         <div className="other-projects">
-          <h3 className="other-projects-title">Other Projects</h3>
-          <div className="other-projects-grid">
-            {otherProjects.map((project, index) => (
-              <div key={index} className="other-project-item">
-                <span className="project-name">{project}</span>
-                <span className="project-type">Mobile App</span>
+          <h3 className="other-projects-title">{t('projects.otherProjects')}</h3>
+        <div className="other-projects-grid">
+          {otherProjects.map((project, index) => (
+            <div key={index} className="other-project-item">
+              <div className="project-logo">
+                {project.logo}
               </div>
-            ))}
-          </div>
+              <span className="project-name">
+                {typeof project === 'string' ? project : project.name}
+              </span>
+              <span className="project-type">{t('projects.mobileApp')}</span>
+              {typeof project === 'object' && project.downloads && project.rating && (
+                <div className="project-stats">
+                  <span className="downloads">{project.downloads}</span>
+                  <span className="rating">{project.rating}</span>
+                </div>
+              )}
+              {typeof project === 'object' && project.playStoreLink && (
+                <a 
+                  href={project.playStoreLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+{t('projects.viewOnPlayStore')}
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
         </div>
       </div>
     </section>

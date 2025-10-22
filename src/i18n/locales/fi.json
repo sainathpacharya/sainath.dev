@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "Koti",
+    "about": "Tietoa",
+    "skills": "Taidot",
+    "experience": "Kokemus",
+    "projects": "Projektit",
+    "contact": "Yhteystiedot"
+  },
+  "hero": {
+    "title": "Hei, olen",
+    "subtitle": "Pääinsinööri - React Native & Android",
+    "description": "Yli 10 vuoden ammattimainen kokemus Android-sovelluskehityksessä React Native, NativeBase.io ja Redux-frameworkien asiantuntemuksella. Tällä hetkellä työskentelemässä Ratna Global Technologiesissa, intohimoisena luomaan innovatiivisia mobiiliratkaisuja ja toimittamaan asiakaskeskeisiä tuloksia.",
+    "viewWork": "Katso Työni",
+    "getInTouch": "Ota Yhteyttä",
+    "yearsExperience": "Vuoden Kokemus",
+    "projects": "Projektit"
+  },
+  "about": {
+    "title": "Tietoa Minusta",
+    "subtitle": "Tutustu minuun paremmin",
+    "description": "Olen omistautunut React Native ja Android -kehittäjä, jolla on yli 10+ vuoden ammattimainen kokemus mobiilisovelluskehityksessä. Tällä hetkellä työskentelemässä Ratna Global Technologies Private Limitedissä, erikoistun luomaan innovatiivisia mobiiliratkaisuja, jotka tarjoavat poikkeuksellisia käyttökokemuksia.",
+    "highlights": {
+      "quickLearner": {
+        "title": "Nopea Oppija",
+        "description": "Innokas omaksumaan uusia teknologioita ja toteuttamaan niitä reaaliaikaisissa sovelluksissa"
+      },
+      "teamPlayer": {
+        "title": "Tiimipelaaja",
+        "description": "Todettu kyky työskennellä tehokkaasti sekä tiimin jäsenenä että yksilöllisenä osallistujana"
+      },
+      "problemSolver": {
+        "title": "Ongelmaratkaisija",
+        "description": "Vahva kyky ymmärtää liiketoimintalogiikkaa ja toimittaa asiakaskeskeisiä ratkaisuja"
+      }
+    },
+    "stats": {
+      "yearsExperience": "Vuoden Kokemus",
+      "projectsCompleted": "Valmiit Projektit",
+      "companiesWorked": "Yritykset",
+      "languages": "Kielet"
+    }
+  },
+  "skills": {
+    "title": "Taidot ja Asiantuntemus",
+    "subtitle": "Tekniset taidot ja teknologiat, joita käytän",
+    "toolsTechnologies": "Työkalut ja Teknologiat",
+    "languages": "Kielet"
+  },
+  "experience": {
+    "title": "Työkokemus",
+    "subtitle": "Ammattimainen matkani mobiilikehityksessä"
+  },
+  "projects": {
+    "title": "Esittelyprojektit",
+    "subtitle": "Joitain merkittävistä töistäni ja saavutuksistani",
+    "otherProjects": "Muut Projektit",
+    "viewOnPlayStore": "Katso Play Storesta",
+    "mobileApp": "Mobiilisovellus",
+    "featured": {
+      "collectiveHealth": {
+        "title": "Collective Health",
+        "description": "Nykyinen projekti - Terveyshyötyjen alusta, joka yksinkertaistaa terveydenhuollon kokemusta selkeillä kattavuusselityksillä, palveluntarjoajahakijalla ja kustannusarviointityökaluilla.",
+        "role": "Pääinsinööri",
+        "highlights": [
+          "Johtaa terveyshyötyjen alustan kehitystä 50K+ latauksella ja 4.4★ arvosanalla",
+          "Toteuttaa turvallista terveystietojen hallintaa ja HIPAA-yhteensopivuusominaisuuksia potilastietojen suojaamiseksi",
+          "Osallistuu palveluntarjoajahakijan toiminnallisuuteen ja kustannusarviointityökaluihin paremman käyttökokemuksen saamiseksi",
+          "Kehittää monialustaisia mobiiliratkaisuja React Nativella terveydenhuollon palveluntarjoajille ja potilaille"
+        ]
+      },
+      "nslSubeejKisan": {
+        "title": "NSL Subeej Kisan",
+        "description": "Kattava maataloussovellus, joka vahvistaa Nuziveedu-viljelijöitä työkaluilla, oivalluksilla ja neuvontapalveluilla maatalouskäytäntöjen parantamiseksi.",
+        "role": "Pääkehittäjä",
+        "highlights": [
+          "Johti kehitystiimiä ja arkkitehtoi täyden mobiilisovellusratkaisun",
+          "Kehitti sääpäivityksiä ja markkinahintojen seurantaa viljelijöille",
+          "Toteutti monikielisen tuen erilaisille maatalousyhteisöille",
+          "Loi maatalouslaskimia ja tuotetutkintatoiminnallisuutta maatalousohjaukseen",
+          "Rakensi tietokeskuksen ja läheisten vähittäiskauppiaiden paikantimen kattavaan viljelijätukeen"
+        ]
+      },
+      "nslVyaparaMitra": {
+        "title": "NSL VyaparaMitra",
+        "description": "Yhdistä vähittäiskauppiaisiin NSL:n jakelujärjestelmän kautta ja toteuta NSL:n myynti-osaamisen ohjelmat.",
+        "role": "Kehittäjä",
+        "highlights": [
+          "Varmisti saumattoman toiminnallisuuden ja UI:n reagoinnin erilaisissa mobiililaitteissa ja tableteissa",
+          "Kehitti ja integroi kaikki sovelluksen moduulit, mukaan lukien näytöt, logiikka ja taustajärjestelmäyhteydet",
+          "Suoritti tarkkoja UI-parannuksia käyttökokemuksen optimoimiseksi",
+          "Toteutti NSL:n myynti-osaamisen ohjelmat ja jakelujärjestelmän integraation"
+        ]
+      },
+      "mcrcApp": {
+        "title": "MCRC-sovellus",
+        "description": "Kehitä parannettuja viljelylajeja, korkealaatuisia istutusmateriaaleja ja kestävää tuotantokäytäntöjä viljelijöille.",
+        "role": "Pääkehittäjä",
+        "highlights": [
+          "Johti kehitystiimiä ja hallinnoi projektin toimittamista maatalousratkaisuille",
+          "Varmisti saumattoman toiminnallisuuden ja UI:n reagoinnin erilaisissa mobiililaitteissa ja tableteissa",
+          "Suoritti tarkkoja UI-parannuksia käyttökokemuksen optimoimiseksi ja varmistaakseen johdonmukaisen käytettävyyden",
+          "Kehitti viljelijäystävällisen käyttöliittymän ja mentoroi tiimin jäseniä parhaisiin käytäntöihin"
+        ]
+      },
+      "cortevaDaksh": {
+        "title": "Corteva Daksh",
+        "description": "Aja Corteva-tuotteiden kysynnän luomista Corteva-kenttähenkilöstön toteuttamien toimintojen kautta standardoiduilla raporteilla.",
+        "role": "Kehittäjä",
+        "highlights": [
+          "Suunnitteli ja kehitti erityisiä sovellusmoduuleja React Nativella",
+          "Toteutti ominaisuuksia, jotka helpottavat toimintojen standardointia Corteva-kenttähenkilöstölle",
+          "Loi työkaluja toimintaraporttien hallintaan ja tiimin tuottavuuden parantamiseen",
+          "Rakensi kysynnän luomisominaisuuksia Corteva-tuotteille standardoiduilla raporteilla"
+        ]
+      },
+      "meetHourApp": {
+        "title": "MeetHour-sovellus",
+        "description": "Täysin salattu, 100% ilmainen videoneuvotteluratkaisu aikataulutuksen, uudelleenaikataulutuksen ja valkotaulun ominaisuuksilla.",
+        "role": "Kehittäjä",
+        "highlights": [
+          "Paransi UI:ta MeetHour-sovelluksen versio 2.0:lle käyttäjäystävällisellä käyttöliittymällä",
+          "Integroi uusia ominaisuuksia kuten valkotaulu sovellukseen",
+          "Työskenteli natiivi Java-moduulien yhdistämisessä React-Nativeen parannetun toiminnallisuuden saamiseksi",
+          "Toteutti aikataulutus- ja uudelleenaikataulutusominaisuuksia videoneuvotteluratkaisulle"
+        ]
+      }
+    },
+    "other": {
+      "mtrackerApp": "MTracker-sovellus",
+      "cortevaFarmerConnect": "Corteva Farmer Connect",
+      "cortevaRoots": "Corteva Roots",
+      "piqyu": "PIQYU",
+      "nslKissanVikas": "NSL Kissan Vikas",
+      "nslRetailAudit": "NSL Retail Audit",
+      "theatreMart": "TheatreMart",
+      "wakukPartner": "Wakuk - Partner",
+      "wakukPassenger": "Wakuk-Passenger",
+      "cortevaVts": "Corteva VTS",
+      "cortevaCdUpload": "Corteva CD Upload -työkalu",
+      "mpConnect": "mpConnect"
+    }
+  },
+  "testimonials": {
+    "title": "Mitä Kollegat Sanovat",
+    "subtitle": "Suosituksia tiimin jäseniltä ja sidosryhmiltä"
+  },
+  "cta": {
+    "title": "Valmis Työskentelemään Yhdessä?",
+    "description": "Olen aina kiinnostunut uusista mahdollisuuksista ja jännittävistä projekteista. Keskustellaan siitä, kuinka voimme tuoda mobiilisovellusideasi eloon.",
+    "getInTouch": "Ota Yhteyttä",
+    "downloadResume": "Lataa CV"
+  },
+  "contact": {
+    "title": "Ota Yhteyttä",
+    "subtitle": "Onko kysymyksiä vai haluatko työskennellä yhdessä? Ota rohkeasti yhteyttä.",
+    "contactInfo": "Yhteystiedot",
+    "description": "Olen aina avoin keskustelemaan uusista projekteista, luovista ideoista tai mahdollisuuksista olla osa visioitasi.",
+    "sendMessage": "Lähetä minulle viesti",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "subject": "Aihe",
+    "message": "Viesti",
+    "send": "Lähetä Viesti",
+    "sending": "Lähetetään...",
+    "success": "Kiitos! Viestisi lähetettiin onnistuneesti. Vastaamme sinulle pian.",
+    "error": "Anteeksi, viestin lähettämisessä tapahtui virhe. Yritä uudelleen tai ota yhteyttä suoraan.",
+    "followMe": "Seuraa Minua"
+  },
+  "footer": {
+    "tagline": "React Native & Android -kehittäjä",
+    "description": "Intohimoisena luomaan innovatiivisia mobiiliratkaisuja, jotka tarjoavat poikkeuksellisia käyttökokemuksia. Yli 10 vuoden ammattimainen kokemus mobiilisovelluskehityksessä.",
+    "quickLinks": "Pikalinkit",
+    "technologies": "Teknologiat",
+    "connect": "Yhdistä",
+    "copyright": "Kaikki oikeudet pidätetään.",
+    "builtWith": "Rakennettu ❤️:llä React & Vite:lla"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "fi": "Suomi"
+  }
+}

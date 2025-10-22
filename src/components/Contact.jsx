@@ -1,8 +1,10 @@
 import './Contact.css'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,25 +16,25 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: '📧',
-      title: 'Email',
+      title: t('contact.email'),
       value: 'sainathp.acharya@gmail.com',
       link: 'mailto:sainathp.acharya@gmail.com'
     },
     {
       icon: '📱',
-      title: 'Phone',
+      title: t('contact.phone'),
       value: '+91 9494947630',
       link: 'tel:+919494947630'
     },
     {
       icon: '📍',
-      title: 'Location',
+      title: t('contact.location'),
       value: 'Hyderabad, India',
       link: '#'
     },
     {
       icon: '💼',
-      title: 'LinkedIn',
+      title: t('contact.linkedin'),
       value: 'linkedin.com/in/naga-sainath-reddy-palle-32935a166',
       link: 'https://www.linkedin.com/in/naga-sainath-reddy-palle-32935a166/'
     }
@@ -82,16 +84,15 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Get In Touch</h2>
-          <p className="section-subtitle">Let's discuss your next project or just say hello</p>
+          <h2 className="section-title">{t('contact.title')}</h2>
+          <p className="section-subtitle">{t('contact.subtitle')}</p>
         </div>
 
         <div className="contact-content">
           <div className="contact-info">
-            <h3 className="contact-info-title">Let's Connect</h3>
+            <h3 className="contact-info-title">{t('contact.contactInfo')}</h3>
             <p className="contact-info-description">
-              I'm always interested in new opportunities and exciting projects. 
-              Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              {t('contact.description')}
             </p>
             
             <div className="contact-details">
@@ -113,7 +114,7 @@ const Contact = () => {
             </div>
 
             <div className="social-links">
-              <h4>Follow Me</h4>
+              <h4>{t('contact.followMe')}</h4>
               <div className="social-icons">
                 <a href="https://github.com/sainathpacharya" target="_blank" rel="noopener noreferrer" className="social-link">
                   <span className="social-icon">🐙</span>
@@ -129,22 +130,22 @@ const Contact = () => {
 
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
-              <h3 className="form-title">Send me a message</h3>
+              <h3 className="form-title">{t('contact.sendMessage')}</h3>
               
               {submitStatus === 'success' && (
                 <div className="status-message success">
-                  ✅ Thank you! Your message has been sent successfully. I'll get back to you soon.
+                  ✅ {t('contact.success')}
                 </div>
               )}
               
               {submitStatus === 'error' && (
                 <div className="status-message error">
-                  ❌ Sorry, there was an error sending your message. Please try again or contact me directly.
+                  ❌ {t('contact.error')}
                 </div>
               )}
               
               <div className="form-group">
-                <label htmlFor="name" className="form-label">Name</label>
+                <label htmlFor="name" className="form-label">{t('contact.name')}</label>
                 <input 
                   type="text" 
                   id="name" 
@@ -157,7 +158,7 @@ const Contact = () => {
               </div>
               
               <div className="form-group">
-                <label htmlFor="email" className="form-label">Email</label>
+                <label htmlFor="email" className="form-label">{t('contact.email')}</label>
                 <input 
                   type="email" 
                   id="email" 
@@ -170,7 +171,7 @@ const Contact = () => {
               </div>
               
               <div className="form-group">
-                <label htmlFor="subject" className="form-label">Subject</label>
+                <label htmlFor="subject" className="form-label">{t('contact.subject')}</label>
                 <input 
                   type="text" 
                   id="subject" 
@@ -183,7 +184,7 @@ const Contact = () => {
               </div>
               
               <div className="form-group">
-                <label htmlFor="message" className="form-label">Message</label>
+                <label htmlFor="message" className="form-label">{t('contact.message')}</label>
                 <textarea 
                   id="message" 
                   name="message" 
@@ -200,7 +201,7 @@ const Contact = () => {
                 className="submit-btn"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? t('contact.sending') : t('contact.send')}
               </button>
             </form>
           </div>

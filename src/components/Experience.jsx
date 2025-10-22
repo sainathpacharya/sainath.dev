@@ -1,13 +1,29 @@
 import './Experience.css'
+import { useTranslation } from 'react-i18next'
 
 const Experience = () => {
+  const { t } = useTranslation()
+  
   const experiences = [
+    {
+      company: 'Ratna Global Technologies Private Limited',
+      position: 'Lead Engineer',
+      duration: 'December 2025 - Present',
+      location: 'Hyderabad',
+      description: 'Leading engineering teams and mobile application development using React Native and Android technologies. Working on enterprise-level applications and delivering high-quality solutions.',
+      highlights: [
+        'Leading engineering teams and technical architecture decisions',
+        'Developing cutting-edge mobile applications for enterprise clients',
+        'Mentoring development teams and conducting code reviews',
+        'Implementing best practices for mobile app development and team processes'
+      ]
+    },
     {
       company: 'Empover I-Tech Pvt. Ltd',
       position: 'Android/React-Native Developer',
-      duration: 'May 2022 - Present',
+      duration: 'May 2022 - December 2025',
       location: 'Hyderabad',
-      description: 'Leading mobile application development using React Native and Android technologies. Working on enterprise-level applications and delivering high-quality solutions.',
+      description: 'Led mobile application development using React Native and Android technologies. Worked on enterprise-level applications and delivered high-quality solutions.',
       highlights: [
         'Developed multiple React Native applications for enterprise clients',
         'Led technical architecture decisions for mobile projects',
@@ -86,8 +102,8 @@ const Experience = () => {
     <section id="experience" className="experience">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Work Experience</h2>
-          <p className="section-subtitle">My professional journey in mobile development</p>
+          <h2 className="section-title">{t('experience.title')}</h2>
+          <p className="section-subtitle">{t('experience.subtitle')}</p>
         </div>
 
         <div className="timeline">
