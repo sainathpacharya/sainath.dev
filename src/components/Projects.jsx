@@ -15,11 +15,6 @@ const Projects = () => {
       downloads: '50K+',
       rating: '4.4★',
       image: '🏥',
-      screenshots: [
-        '/images/apps/featured/collective-health-1.png',
-        '/images/apps/featured/collective-health-2.png',
-        '/images/apps/featured/collective-health-3.png'
-      ],
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.collectivehealth.member&hl=en_IN',
       year: '2025',
       show: true
@@ -31,11 +26,6 @@ const Projects = () => {
       tech: ['React Native', 'JavaScript'],
       highlights: t('projects.featured.nslSubeejKisan.highlights', { returnObjects: true }),
       image: '/images/subbeej-logo.png',
-      screenshots: [
-        '/images/apps/featured/subbeej-kisan-1.png',
-        '/images/apps/featured/subbeej-kisan-2.png',
-        '/images/apps/featured/subbeej-kisan-3.png'
-      ],
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.nsl.subeejkisan&hl=en_IN',
       downloads: '10K+',
       rating: '4.2★',
@@ -58,11 +48,6 @@ const Projects = () => {
       tech: ['React Native', 'JavaScript'],
       highlights: t('projects.featured.mcrcApp.highlights', { returnObjects: true }),
       image: '/images/mcrc-logo.png',
-      screenshots: [
-        '/images/apps/featured/mcrc-app-1.png',
-        '/images/apps/featured/mcrc-app-2.png',
-        '/images/apps/featured/mcrc-app-3.png'
-      ],
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.cortevaindia.mcrc&hl=en_IN',
       downloads: '5K+',
       rating: '4.0★',
@@ -76,11 +61,6 @@ const Projects = () => {
       tech: ['React Native', 'JavaScript'],
       highlights: t('projects.featured.cortevaDaksh.highlights', { returnObjects: true }),
       image: '📊',
-      screenshots: [
-        '/images/apps/featured/corteva-daksh-1.png',
-        '/images/apps/featured/corteva-daksh-2.png',
-        '/images/apps/featured/corteva-daksh-3.png'
-      ],
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.cortevaindia.amr&hl=en_IN',
       downloads: '1K+',
       rating: '3.8★',
@@ -94,11 +74,6 @@ const Projects = () => {
       tech: ['React Native', 'JavaScript'],
       highlights: t('projects.featured.meetHourApp.highlights', { returnObjects: true }),
       image: '🎥',
-      screenshots: [
-        '/images/apps/featured/meethour-app-1.png',
-        '/images/apps/featured/meethour-app-2.png',
-        '/images/apps/featured/meethour-app-3.png'
-      ],
       playStoreLink: 'https://play.google.com/store/apps/details?id=go.meethour.io',
       downloads: '100K+',
       rating: '4.1★',
@@ -174,25 +149,6 @@ const Projects = () => {
                 ))}
               </ul>
               
-              {project.screenshots && project.screenshots.length > 0 && (
-                <div className="project-screenshots">
-                  <h4 className="screenshots-title">App Screenshots</h4>
-                  <div className="screenshots-gallery">
-                    {project.screenshots.map((screenshot, idx) => (
-                      <div key={idx} className="screenshot-item">
-                        <img 
-                          src={screenshot} 
-                          alt={`${project.title} screenshot ${idx + 1}`}
-                          className="screenshot-image"
-                          onError={(e) => {
-                            e.target.style.display = 'none'
-                          }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
               
                   <div className="project-actions">
                     {project.playStoreLink && (
