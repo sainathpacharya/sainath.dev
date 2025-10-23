@@ -40,10 +40,10 @@ describe('Projects', () => {
   it('renders project highlights', () => {
     render(<Projects />)
     // Check for mock highlights that are returned by our translation mock
-    expect(screen.getAllByText('Mock highlight 1')).toHaveLength(5)
-    expect(screen.getAllByText('Mock highlight 2')).toHaveLength(5)
-    expect(screen.getAllByText('Mock highlight 3')).toHaveLength(5)
-    expect(screen.getAllByText('Mock highlight 4')).toHaveLength(5)
+    expect(screen.getAllByText('Mock highlight 1')).toHaveLength(6)
+    expect(screen.getAllByText('Mock highlight 2')).toHaveLength(6)
+    expect(screen.getAllByText('Mock highlight 3')).toHaveLength(6)
+    expect(screen.getAllByText('Mock highlight 4')).toHaveLength(6)
   })
 
   it('renders other projects section', () => {
@@ -66,7 +66,7 @@ describe('Projects', () => {
 
   it('renders project stats for play store projects', () => {
     render(<Projects />)
-    expect(screen.getByText('50K+')).toBeInTheDocument()
+    expect(screen.getAllByText('50K+')).toHaveLength(2) // Collective Health and Gold Club both have 50K+
     expect(screen.getByText('4.4★')).toBeInTheDocument()
   })
 

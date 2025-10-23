@@ -103,6 +103,7 @@
     "subtitle": "Alguns dos meus trabalhos e conquistas notáveis",
     "otherProjects": "Outros Projetos",
     "viewOnPlayStore": "Ver na Play Store",
+    "viewOnAppStore": "Ver na App Store",
     "mobileApp": "Aplicativo Móvel",
     "featured": {
       "collectiveHealth": {
@@ -114,6 +115,17 @@
           "Implementando gerenciamento seguro de dados de saúde e recursos de conformidade HIPAA para proteção de dados de pacientes",
           "Contribuindo para funcionalidade de localizador de provedores e ferramentas de estimativa de custos para melhor experiência do usuário",
           "Desenvolvendo soluções móveis multiplataforma usando React Native para provedores de saúde e pacientes"
+        ]
+      },
+      "goldClub": {
+        "title": "Gold Club",
+        "description": "Aplicativo de produtividade do Grupo NSL projetado para apoiar varejistas e distribuidores com serviços de valor agregado, atualizações mais recentes e experiência perfeita com soluções agrícolas.",
+        "role": "Desenvolvedor React Native",
+        "highlights": [
+          "Desenvolveu aplicativo de produtividade para varejistas e distribuidores do Grupo NSL com 50K+ downloads",
+          "Implementou serviços de valor agregado e funcionalidade de atualizações mais recentes para soluções agrícolas",
+          "Criou interface amigável com recursos de suporte dedicados para engajamento da comunidade",
+          "Construiu experiência perfeita para varejistas e distribuidores no setor agrícola"
         ]
       },
       "nslSubeejKisan": {
@@ -174,6 +186,7 @@
       }
     },
     "other": {
+      "rootsEmployeeApp": "Aplicativo ROOTS Employee",
       "mtrackerApp": "Aplicativo MTracker",
       "cortevaFarmerConnect": "Corteva Farmer Connect",
       "cortevaRoots": "Corteva Roots",

@@ -16,7 +16,21 @@ const Projects = () => {
       rating: '4.4★',
       image: '/images/apps/featured/collective-health-logo.png',
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.collectivehealth.member&hl=en_IN',
+      appStoreLink: 'https://apps.apple.com/us/developer/collective-health/id1032100064',
       year: '2025',
+      show: true
+    },
+    {
+      title: t('projects.featured.goldClub.title'),
+      description: t('projects.featured.goldClub.description'),
+      role: t('projects.featured.goldClub.role'),
+      tech: ['React Native', 'JavaScript'],
+      highlights: t('projects.featured.goldClub.highlights', { returnObjects: true }),
+      image: '/images/apps/featured/nsl-gold-club-logo.png',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.nuziveeduseeds.nslchannel&hl=en_IN',
+      downloads: '50K+',
+      rating: '4.0★',
+      year: '2024',
       show: true
     },
     {
@@ -62,8 +76,9 @@ const Projects = () => {
       highlights: t('projects.featured.cortevaDaksh.highlights', { returnObjects: true }),
       image: '/images/apps/featured/corteva-daksh-logo.png',
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.cortevaindia.amr&hl=en_IN',
+      appStoreLink: 'https://apps.apple.com/in/app/corteva-daksh/id1599473068',
       downloads: '1K+',
-      rating: '3.8★',
+      rating: '4.1★',
       year: '2022',
       show: true
     },
@@ -75,8 +90,9 @@ const Projects = () => {
       highlights: t('projects.featured.meetHourApp.highlights', { returnObjects: true }),
       image: '/images/apps/featured/meethour-logo.png',
       playStoreLink: 'https://play.google.com/store/apps/details?id=go.meethour.io',
+      appStoreLink: 'https://apps.apple.com/in/app/meet-hour/id1527001689',
       downloads: '100K+',
-      rating: '4.1★',
+      rating: '4.6★',
       year: '2020',
       show: true
     },
@@ -84,20 +100,21 @@ const Projects = () => {
 
   const otherProjects = [
     // Projects with Play Store links (Priority) - Ordered by year
-    { name: t('projects.other.mtrackerApp'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.sivashakthi&hl=en_IN', year: '2019', logo: '📱', downloads: '10K+', rating: '4.2★' },
-    { name: t('projects.other.cortevaFarmerConnect'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.pioneer.india.directsales&hl=en_IN', year: '2021', logo: '🛒', downloads: '100K+', rating: '4.3★' },
-    { name: t('projects.other.cortevaRoots'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.corteva.rootsapplication&hl=en_IN', year: '2021', logo: '🌱', downloads: '10K+', rating: '4.0★' },
-    { name: t('projects.other.piqyu'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.ssr.piqyu&hl=en_IN', year: '2021', logo: '🚚', downloads: '1K+', rating: '3.9★' },
-    { name: t('projects.other.nslKissanVikas'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.KisanVikas.farmmanagement&hl=en_IN', year: '2022', logo: '🌾', downloads: '1K+', rating: '4.1★' },
-    { name: t('projects.other.nslRetailAudit'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.retailAuditSurvey.retailaudits&hl=en_IN', year: '2024', logo: '📊', downloads: '500+', rating: '4.0★' },
+    { name: t('projects.other.rootsEmployeeApp'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.roots.rootsemployee&hl=en_IN', year: '2025', logo: '/images/apps/other/corteva-roots-employee-logo.png', downloads: '1K+', rating: '4.0★', show: true },
+    { name: t('projects.other.mtrackerApp'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.sivashakthi&hl=en_IN', year: '2019', logo: '/images/apps/other/m-tracker-logo.png', downloads: '10K+', rating: '4.2★', show: true },
+    { name: t('projects.other.cortevaFarmerConnect'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.pioneer.india.directsales&hl=en_IN', year: '2021', logo: '/images/apps/other/farmer-connect-logo.png', downloads: '100K+', rating: '4.3★', show: true },
+    { name: t('projects.other.cortevaRoots'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.corteva.rootsapplication&hl=en_IN', year: '2021', logo: '/images/apps/other/corteva-roots-logo.png', downloads: '10K+', rating: '4.0★', show: true },
+    { name: t('projects.other.piqyu'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.ssr.piqyu&hl=en_IN', year: '2021', logo: '/images/apps/other/piqyu-parner-logo.png', downloads: '1K+', rating: '3.9★', show: true },
+    { name: t('projects.other.nslKissanVikas'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.KisanVikas.farmmanagement&hl=en_IN', year: '2022', logo: '/images/apps/other/nsl-kisan-vikas-logo.png', downloads: '1K+', rating: '4.1★', show: true },
+    { name: t('projects.other.nslRetailAudit'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.retailAuditSurvey.retailaudits&hl=en_IN', year: '2024', logo: '/images/apps/other/nsl-retail-audit-logo.png', downloads: '500+', rating: '4.0★', show: true },
     
     // Projects without Play Store links - Ordered by year
-    { name: t('projects.other.theatreMart'), logo: '🎭' }, // 2019
-    { name: t('projects.other.wakukPartner'), logo: '🚗' }, // 2020
-    { name: t('projects.other.wakukPassenger'), logo: '🚗' }, // 2020
-    { name: t('projects.other.cortevaVts'), logo: '📈' }, // 2020
-    { name: t('projects.other.cortevaCdUpload'), logo: '📤' }, // 2020
-    { name: t('projects.other.mpConnect'), logo: '🔗' } // 2021
+    { name: t('projects.other.theatreMart'), year: '2019', logo: '/images/apps/other/theatre-mart-logo.png', show: false },
+    { name: t('projects.other.wakukPartner'), year: '2020', logo: '/images/apps/other/wakuk-partner-logo.png', show: false },
+    { name: t('projects.other.wakukPassenger'), year: '2020', logo: '/images/apps/other/wakuk-passenger-logo.png', show: false },
+    { name: t('projects.other.cortevaVts'), logo: '📈', show: false }, // 2020 - Hidden
+    { name: t('projects.other.cortevaCdUpload'), logo: '📤', show: false }, // 2020 - Hidden
+    { name: t('projects.other.mpConnect'), logo: '🔗', show: false } // 2021 - Hidden
   ]
 
   return (
@@ -158,7 +175,17 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="btn-primary"
                       >
-{t('projects.viewOnPlayStore')}
+                        {t('projects.viewOnPlayStore')}
+                      </a>
+                    )}
+                    {project.appStoreLink && (
+                      <a 
+                        href={project.appStoreLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="btn-secondary"
+                      >
+                        {t('projects.viewOnAppStore')}
                       </a>
                     )}
                   </div>
@@ -169,10 +196,25 @@ const Projects = () => {
         <div className="other-projects">
           <h3 className="other-projects-title">{t('projects.otherProjects')}</h3>
         <div className="other-projects-grid">
-          {otherProjects.map((project, index) => (
+          {otherProjects.filter(project => project.show !== false).map((project, index) => (
             <div key={index} className="other-project-item">
               <div className="project-logo">
-                {project.logo}
+                {project.logo.startsWith('/') ? (
+                  <img 
+                    src={project.logo} 
+                    alt={`${project.name} logo`}
+                    className="project-logo-image"
+                    onError={(e) => {
+                      e.target.style.display = 'none'
+                      e.target.nextSibling.style.display = 'flex'
+                    }}
+                  />
+                ) : (
+                  <span className="project-emoji">{project.logo}</span>
+                )}
+                <div className="project-logo-placeholder" style={{display: 'none'}}>
+                  <span>📱</span>
+                </div>
               </div>
               <span className="project-name">
                 {typeof project === 'string' ? project : project.name}
