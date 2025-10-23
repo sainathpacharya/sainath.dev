@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/sainath.dev/',
+  // base: '/sainath.dev/', // Commented out for local development
   test: {
     globals: true,
     environment: 'jsdom',

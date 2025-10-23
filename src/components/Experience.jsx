@@ -10,7 +10,7 @@ const Experience = () => {
       position: 'Lead Engineer',
       duration: 'December 2025 - Present',
       location: 'Hyderabad',
-      logo: '/images/ratna-global-logo.svg',
+      logo: '/images/ratna-global-logo.png',
       description: 'Leading engineering teams and mobile application development using React Native and Android technologies. Working on enterprise-level applications and delivering high-quality solutions.',
       highlights: [
         'Leading engineering teams and technical architecture decisions',
@@ -24,7 +24,7 @@ const Experience = () => {
       position: 'Android/React-Native Developer',
       duration: 'May 2022 - December 2025',
       location: 'Hyderabad',
-      logo: '/images/empover-logo.svg',
+      logo: '/images/empover-logo.png',
       description: 'Led mobile application development using React Native and Android technologies. Worked on enterprise-level applications and delivered high-quality solutions.',
       highlights: [
         'Developed multiple React Native applications for enterprise clients',
@@ -38,7 +38,7 @@ const Experience = () => {
       position: 'Android/React-Native Developer',
       duration: 'April 2019 - May 2022',
       location: 'Hyderabad',
-      logo: '/images/v-empower-logo.svg',
+      logo: '/images/v-empower-logo.png',
       description: 'Specialized in cross-platform mobile development using React Native and native Android development. Worked on various client projects across different industries.',
       highlights: [
         'Built cross-platform mobile applications using React Native',
@@ -52,7 +52,7 @@ const Experience = () => {
       position: 'Android Developer',
       duration: 'July 2018 - April 2019',
       location: 'Hyderabad',
-      logo: '/images/eminosoft-logo.svg',
+      logo: '/images/eminosoft-logo.png',
       description: 'Focused on native Android development using Java and Kotlin. Developed custom Android applications with complex business logic.',
       highlights: [
         'Developed native Android applications using Java and Kotlin',
@@ -66,7 +66,7 @@ const Experience = () => {
       position: 'Android Developer',
       duration: 'July 2017 - May 2018',
       location: 'Bangalore',
-      logo: '/images/savithru-logo.svg',
+      logo: '/images/savithru-logo.png',
       description: 'Worked on Android application development with focus on user interface design and backend integration.',
       highlights: [
         'Developed Android applications from concept to deployment',
@@ -80,7 +80,7 @@ const Experience = () => {
       position: 'Android Developer',
       duration: 'Oct 2016 - July 2017',
       location: 'Hyderabad',
-      logo: '/images/aven-app-logo.svg',
+      logo: '/images/aven-app-logo.png',
       description: 'Started professional Android development career, working on various client projects and learning industry best practices.',
       highlights: [
         'Built Android applications using Java',
@@ -94,7 +94,7 @@ const Experience = () => {
       position: 'Android Developer',
       duration: 'May 2015 - Sep 2016',
       location: 'Hyderabad',
-      logo: '/images/new-mek-logo.svg',
+      logo: '/images/new-mek-logo.png',
       description: 'Began professional career in mobile development, working on Android applications and learning the fundamentals of mobile app development.',
       highlights: [
         'Started Android development career',
@@ -124,8 +124,12 @@ const Experience = () => {
                         src={exp.logo} 
                         alt={`${exp.company} logo`}
                         onError={(e) => {
+                          console.log('Logo failed to load:', exp.logo, 'Error:', e.target.src)
                           e.target.style.display = 'none'
                           e.target.nextSibling.style.display = 'flex'
+                        }}
+                        onLoad={() => {
+                          console.log('Logo loaded successfully:', exp.logo)
                         }}
                       />
                       <div className="logo-placeholder" style={{display: 'none'}}>
