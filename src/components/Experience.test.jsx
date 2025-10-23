@@ -72,4 +72,21 @@ describe('Experience', () => {
     const highlights = screen.getAllByText(/Leading development|Developed multiple|Built cross-platform|Developed native/)
     expect(highlights.length).toBeGreaterThan(0)
   })
+
+  it('renders company logos', () => {
+    render(<Experience />)
+    expect(screen.getByAltText('Ratna Global Technologies Private Limited logo')).toBeInTheDocument()
+    expect(screen.getByAltText('Empover I-Tech Pvt. Ltd logo')).toBeInTheDocument()
+    expect(screen.getByAltText('V-Empower Solutions Pvt. Ltd logo')).toBeInTheDocument()
+    expect(screen.getByAltText('Eminosoft India Pvt Ltd logo')).toBeInTheDocument()
+    expect(screen.getByAltText('Savithru Technologies logo')).toBeInTheDocument()
+    expect(screen.getByAltText('Aven App Solutions Pvt. Ltd. logo')).toBeInTheDocument()
+    expect(screen.getByAltText('New MEK Solutions Pvt. Ltd logo')).toBeInTheDocument()
+  })
+
+  it('shows logo placeholders when images fail to load', () => {
+    render(<Experience />)
+    const images = screen.getAllByRole('img')
+    expect(images).toHaveLength(7) // One for each company
+  })
 })
