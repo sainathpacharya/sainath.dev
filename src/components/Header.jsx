@@ -20,28 +20,34 @@ const Header = () => {
   }
 
   return (
-    <header className="header">
-      <nav className="nav">
+    <header className="header" role="banner">
+      <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="nav-brand">
           <span className="brand-text">NagaSainath</span>
         </div>
         
-        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#about" onClick={() => scrollToSection('about')} className="nav-link">{t('nav.about')}</a>
-          <a href="#skills" onClick={() => scrollToSection('skills')} className="nav-link">{t('nav.skills')}</a>
-          <a href="#experience" onClick={() => scrollToSection('experience')} className="nav-link">{t('nav.experience')}</a>
-          <a href="#projects" onClick={() => scrollToSection('projects')} className="nav-link">{t('nav.projects')}</a>
-          <a href="#contact" onClick={() => scrollToSection('contact')} className="nav-link">{t('nav.contact')}</a>
+        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`} role="menubar">
+          <a href="#about" onClick={() => scrollToSection('about')} className="nav-link" role="menuitem">{t('nav.about')}</a>
+          <a href="#skills" onClick={() => scrollToSection('skills')} className="nav-link" role="menuitem">{t('nav.skills')}</a>
+          <a href="#experience" onClick={() => scrollToSection('experience')} className="nav-link" role="menuitem">{t('nav.experience')}</a>
+          <a href="#projects" onClick={() => scrollToSection('projects')} className="nav-link" role="menuitem">{t('nav.projects')}</a>
+          <a href="#contact" onClick={() => scrollToSection('contact')} className="nav-link" role="menuitem">{t('nav.contact')}</a>
           <div className="nav-language">
             <LanguageSwitcher />
           </div>
         </div>
         
-        <div className="nav-toggle" onClick={toggleMenu}>
+        <button 
+          className="nav-toggle" 
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+          aria-controls="nav-menu"
+        >
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
-        </div>
+        </button>
       </nav>
     </header>
   )

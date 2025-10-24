@@ -37,13 +37,13 @@
 
 .brand-tagline {
   font-size: 1.1rem;
-  color: #9ca3af;
+  color: #d1d5db;
   margin: 0;
   font-weight: 500;
 }
 
 .brand-description {
-  color: #9ca3af;
+  color: #d1d5db;
   line-height: 1.6;
   margin: 0;
   max-width: 400px;
@@ -78,7 +78,7 @@
 }
 
 .footer-list li {
-  color: #9ca3af;
+  color: #d1d5db;
   transition: color 0.3s ease;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .footer-list a {
-  color: #9ca3af;
+  color: #d1d5db;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -106,7 +106,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #9ca3af;
+  color: #d1d5db;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.95rem;
@@ -132,7 +132,7 @@
 
 .footer-copyright,
 .footer-credits {
-  color: #9ca3af;
+  color: #d1d5db;
   font-size: 0.9rem;
   margin: 0;
 }

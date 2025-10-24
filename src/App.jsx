@@ -14,14 +14,16 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Testimonials />
-      <CTA />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Testimonials />
+        <CTA />
+        <Contact />
+      </main>
       <Footer />
     </div>
   )

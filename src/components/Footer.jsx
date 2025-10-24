@@ -1,6 +1,5 @@
 import './Footer.css'
 import { useTranslation } from 'react-i18next'
-import { getFormattedYears } from '../data/stats'
 
 const Footer = () => {
   const { t } = useTranslation()

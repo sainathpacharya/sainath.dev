@@ -1,6 +1,5 @@
 import './Projects.css'
 import { useTranslation } from 'react-i18next'
-import { portfolioStats } from '../data/stats'
 
 const Projects = () => {
   const { t } = useTranslation()
@@ -118,16 +117,16 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="projects">
+    <section id="projects" className="projects" aria-labelledby="projects-title">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title fade-in">{t('projects.title')}</h2>
+          <h2 id="projects-title" className="section-title fade-in">{t('projects.title')}</h2>
           <p className="section-subtitle fade-in fade-in-delay-1">{t('projects.subtitle')}</p>
         </div>
 
-        <div className="projects-grid">
+        <div className="projects-grid" role="grid" aria-label="Featured projects">
           {featuredProjects.filter(project => project.show).map((project, index) => (
-            <div key={index} className={`project-card fade-in`} style={{animationDelay: `${index * 0.2}s`}}>
+            <article key={index} className={`project-card fade-in`} style={{animationDelay: `${index * 0.2}s`}} role="gridcell">
               <div className="project-header">
                 <div className="project-icon">
                   {project.image.startsWith('/') ? (
@@ -135,6 +134,8 @@ const Projects = () => {
                       src={project.image} 
                       alt={`${project.title} logo`}
                       className="project-logo"
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <span className="project-emoji">{project.image}</span>
@@ -174,6 +175,7 @@ const Projects = () => {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="btn-primary"
+                        aria-label={`View ${project.title} on Google Play Store`}
                       >
                         {t('projects.viewOnPlayStore')}
                       </a>
@@ -184,26 +186,29 @@ const Projects = () => {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="btn-secondary"
+                        aria-label={`View ${project.title} on Apple App Store`}
                       >
                         {t('projects.viewOnAppStore')}
                       </a>
                     )}
                   </div>
-            </div>
+            </article>
           ))}
         </div>
 
         <div className="other-projects">
           <h3 className="other-projects-title">{t('projects.otherProjects')}</h3>
-        <div className="other-projects-grid">
+        <div className="other-projects-grid" role="list" aria-label="Other projects">
           {otherProjects.filter(project => project.show !== false).map((project, index) => (
-            <div key={index} className="other-project-item">
+            <div key={index} className="other-project-item" role="listitem">
               <div className="project-logo">
                 {project.logo.startsWith('/') ? (
                   <img 
                     src={project.logo} 
                     alt={`${project.name} logo`}
                     className="project-logo-image"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none'
                       e.target.nextSibling.style.display = 'flex'
@@ -232,6 +237,7 @@ const Projects = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="project-link"
+                  aria-label={`View ${project.name} on Google Play Store`}
                 >
 {t('projects.viewOnPlayStore')}
                 </a>

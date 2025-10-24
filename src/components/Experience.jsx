@@ -123,6 +123,8 @@ const Experience = () => {
                       <img 
                         src={exp.logo} 
                         alt={`${exp.company} logo`}
+                        loading="lazy"
+                        decoding="async"
                         onError={(e) => {
                           console.log('Logo failed to load:', exp.logo, 'Error:', e.target.src)
                           e.target.style.display = 'none'

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sainathpacharya.github.io/sainath.dev/sitemap.xml

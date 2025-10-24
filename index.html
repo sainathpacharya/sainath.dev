@@ -5,29 +5,90 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="NagaSainath Reddy - Lead Engineer specializing in React Native and Android development with 10+ years of experience. Expert in mobile app development, team leadership, and delivering innovative solutions." />
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <meta name="keywords" content="React Native, Android Developer, Mobile App Development, Lead Engineer, JavaScript, Kotlin, Mobile Solutions" />
     <meta name="author" content="NagaSainath Reddy" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sainathpacharya.github.io/sainath.dev/" />
+    <link rel="manifest" href="/sainath.dev/manifest.json" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"></noscript>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sainath.dev/" />
+    <meta property="og:url" content="https://sainathpacharya.github.io/sainath.dev/" />
     <meta property="og:title" content="NagaSainath Reddy - Lead Engineer | React Native & Android Developer" />
     <meta property="og:description" content="10+ years of experience in mobile app development. Currently Lead Engineer at Ratna Global Technologies. Expert in React Native, Android, and team leadership." />
-    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image" content="https://sainathpacharya.github.io/sainath.dev/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Sainath.dev" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://sainath.dev/" />
-    <meta property="twitter:title" content="NagaSainath Reddy - Lead Engineer | React Native & Android Developer" />
-    <meta property="twitter:description" content="10+ years of experience in mobile app development. Currently Lead Engineer at Ratna Global Technologies." />
-    <meta property="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://sainathpacharya.github.io/sainath.dev/" />
+    <meta name="twitter:title" content="NagaSainath Reddy - Lead Engineer | React Native & Android Developer" />
+    <meta name="twitter:description" content="10+ years of experience in mobile app development. Currently Lead Engineer at Ratna Global Technologies." />
+    <meta name="twitter:image" content="https://sainathpacharya.github.io/sainath.dev/og-image.jpg" />
+    <meta name="twitter:creator" content="@sainathpacharya" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "NagaSainath Reddy",
+      "jobTitle": "Lead Engineer",
+      "description": "Lead Engineer specializing in React Native and Android development with 10+ years of experience",
+      "url": "https://sainathpacharya.github.io/sainath.dev/",
+      "sameAs": [
+        "https://github.com/sainathpacharya",
+        "https://linkedin.com/in/sainathpacharya"
+      ],
+      "knowsAbout": [
+        "React Native",
+        "Android Development",
+        "JavaScript",
+        "Kotlin",
+        "Mobile App Development",
+        "Team Leadership"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ratna Global Technologies"
+      }
+    }
+    </script>
 
     <title>NagaSainath Reddy - Lead Engineer | React Native & Android Developer</title>
+    
+    <!-- Critical CSS inline for above-the-fold content -->
+    <style>
+      /* Critical above-the-fold styles */
+      *{margin:0;padding:0;box-sizing:border-box}
+      html{scroll-behavior:smooth;font-size:16px}
+      body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:1rem;line-height:1.6;color:#0f172a;background:#ffffff;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+      .App{min-height:100vh;display:flex;flex-direction:column}
+      .container{max-width:1200px;margin:0 auto;padding:0 2rem}
+      .hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)}
+      .hero-container{width:100%}
+      .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+      .hero-title{font-size:3rem;font-weight:800;line-height:1.1;margin-bottom:1rem;background:linear-gradient(135deg,#2563eb 0%,#1e40af 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+      .hero-subtitle{font-size:1.5rem;color:#475569;margin-bottom:1.5rem;font-weight:500}
+      .hero-description{font-size:1.1rem;color:#64748b;margin-bottom:2rem;line-height:1.7}
+      .hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}
+      .btn{display:inline-flex;align-items:center;justify-content:center;padding:0.75rem 2rem;border-radius:50px;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:all 0.3s ease;min-width:140px}
+      .btn-primary{background:linear-gradient(135deg,#2563eb,#1e40af);color:white;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1)}
+      .btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 0 20px rgba(37,99,235,0.3)}
+      .btn-secondary{background:transparent;color:#2563eb;border:2px solid #2563eb}
+      .btn-secondary:hover{background:#2563eb;color:white;transform:translateY(-2px)}
+      @media (max-width:768px){.hero-content{grid-template-columns:1fr;gap:2rem;text-align:center}.hero-title{font-size:2.5rem}.container{padding:0 1rem}}
+    </style>
   </head>
   <body>
     <div id="root"></div>

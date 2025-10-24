@@ -6,11 +6,11 @@ const Hero = () => {
   const { t } = useTranslation()
   
   return (
-    <section className="hero">
+    <section className="hero" aria-labelledby="hero-title">
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title fade-in">
+            <h1 id="hero-title" className="hero-title fade-in">
               {t('hero.title')} <span className="highlight">NagaSainath Reddy</span>
             </h1>
             <h2 className="hero-subtitle fade-in fade-in-delay-1">
@@ -20,31 +20,31 @@ const Hero = () => {
                     {t('hero.description')}
                   </p>
             <div className="hero-buttons fade-in fade-in-delay-3">
-              <a href="#projects" className="btn btn-primary">
+              <a href="#projects" className="btn btn-primary" aria-label="View my projects">
                 {t('hero.viewWork')}
               </a>
-              <a href="#contact" className="btn btn-secondary">
+              <a href="#contact" className="btn btn-secondary" aria-label="Get in touch with me">
                 {t('hero.getInTouch')}
               </a>
             </div>
           </div>
           <div className="hero-image">
-            <div className="profile-card fade-in fade-in-delay-4" data-testid="profile-card">
+            <div className="profile-card fade-in fade-in-delay-4" data-testid="profile-card" role="complementary" aria-label="Profile information">
               <div className="profile-avatar">
-                <div className="avatar-placeholder">
+                <div className="avatar-placeholder" aria-hidden="true">
                   <span>NS</span>
                 </div>
               </div>
                 <div className="profile-info">
                   <h3>NagaSainath Reddy</h3>
                   <p>Lead Engineer</p>
-                      <div className="profile-stats" data-testid="profile-stats">
+                      <div className="profile-stats" data-testid="profile-stats" role="region" aria-label="Professional statistics">
                         <div className="stat">
-                          <span className="stat-number">{getFormattedYears()}</span>
+                          <span className="stat-number" aria-label={`${getFormattedYears()} years of experience`}>{getFormattedYears()}</span>
                           <span className="stat-label">{t('hero.yearsExperience')}</span>
                         </div>
                         <div className="stat">
-                          <span className="stat-number">{getFormattedProjects()}</span>
+                          <span className="stat-number" aria-label={`${getFormattedProjects()} projects completed`}>{getFormattedProjects()}</span>
                           <span className="stat-label">{t('hero.projects')}</span>
                         </div>
                       </div>
