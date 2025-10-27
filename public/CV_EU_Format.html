@@ -28,6 +28,10 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         
+        .print-button:active {
+            transform: translateY(0);
+        }
+        
         @media print {
             .print-button {
                 display: none;
@@ -238,15 +242,16 @@
 </head>
 <body>
     <button class="print-button" onclick="window.print()">
-        📄 Download as PDF
+        📄 Print/Save as PDF
     </button>
     
     <div class="print-note">
-        <strong>⚠️ To remove headers & footers:</strong>
+        <strong>📝 Instructions to Save as PDF:</strong>
         <ol>
-            <li>Click "More settings" in print dialog</li>
-            <li>Uncheck "Headers and footers"</li>
-            <li>Click "Save" or "Print"</li>
+            <li>Click the button above</li>
+            <li>In the print dialog, select <strong>"Save as PDF"</strong> as destination</li>
+            <li>Click <strong>"More settings"</strong> → uncheck <strong>"Headers and footers"</strong></li>
+            <li>Click <strong>"Save"</strong> to download as PDF</li>
         </ol>
     </div>
     
