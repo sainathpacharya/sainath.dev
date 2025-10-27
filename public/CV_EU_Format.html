@@ -152,17 +152,19 @@
         }
         
         .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5mm;
+            list-style-position: inside;
+            margin-left: 3mm;
+            line-height: 1.6;
         }
         
         .skill-item {
-            background: #f5f5f5;
-            padding: 1mm 3mm;
-            border-radius: 2mm;
+            display: inline;
             font-size: 9pt;
-            border: 1px solid #ddd;
+            color: #1a1a1a;
+        }
+        
+        .skill-item:not(:last-child)::after {
+            content: ', ';
         }
         
         .project-entry {
@@ -300,55 +302,55 @@
             <div class="skill-category">
                 <h3>Mobile Development</h3>
                 <div class="skills-list">
-                    <div class="skill-item">React Native</div>
-                    <div class="skill-item">Android Development</div>
-                    <div class="skill-item">Kotlin</div>
-                    <div class="skill-item">Java</div>
+                    <span class="skill-item">React Native</span>
+                    <span class="skill-item">Android Development</span>
+                    <span class="skill-item">Kotlin</span>
+                    <span class="skill-item">Java</span>
                 </div>
             </div>
             
             <div class="skill-category">
                 <h3>Programming Languages</h3>
                 <div class="skills-list">
-                    <div class="skill-item">JavaScript</div>
-                    <div class="skill-item">TypeScript</div>
-                    <div class="skill-item">Java</div>
-                    <div class="skill-item">Kotlin</div>
-                    <div class="skill-item">HTML</div>
-                    <div class="skill-item">CSS</div>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">TypeScript</span>
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">Kotlin</span>
+                    <span class="skill-item">HTML</span>
+                    <span class="skill-item">CSS</span>
                 </div>
             </div>
             
             <div class="skill-category">
                 <h3>Frameworks & Libraries</h3>
                 <div class="skills-list">
-                    <div class="skill-item">React.js</div>
-                    <div class="skill-item">NativeBase.io</div>
-                    <div class="skill-item">Material UI</div>
-                    <div class="skill-item">Redux</div>
+                    <span class="skill-item">React.js</span>
+                    <span class="skill-item">NativeBase.io</span>
+                    <span class="skill-item">Material UI</span>
+                    <span class="skill-item">Redux</span>
                 </div>
             </div>
             
             <div class="skill-category">
                 <h3>Backend & API</h3>
                 <div class="skills-list">
-                    <div class="skill-item">REST API Integration</div>
-                    <div class="skill-item">Firebase Integration</div>
-                    <div class="skill-item">Retrofit</div>
-                    <div class="skill-item">Volley</div>
-                    <div class="skill-item">JSON Parsing</div>
+                    <span class="skill-item">REST API Integration</span>
+                    <span class="skill-item">Firebase Integration</span>
+                    <span class="skill-item">Retrofit</span>
+                    <span class="skill-item">Volley</span>
+                    <span class="skill-item">JSON Parsing</span>
                 </div>
             </div>
             
             <div class="skill-category">
                 <h3>Data Storage & Tools</h3>
                 <div class="skills-list">
-                    <div class="skill-item">AsyncStorage</div>
-                    <div class="skill-item">SQLite</div>
-                    <div class="skill-item">Android Studio</div>
-                    <div class="skill-item">VS Code</div>
-                    <div class="skill-item">Git</div>
-                    <div class="skill-item">Jira</div>
+                    <span class="skill-item">AsyncStorage</span>
+                    <span class="skill-item">SQLite</span>
+                    <span class="skill-item">Android Studio</span>
+                    <span class="skill-item">VS Code</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Jira</span>
                 </div>
             </div>
         </div>
@@ -381,9 +383,7 @@
         <h2>Languages</h2>
         <div class="section">
             <ul>
-                <li><strong>Telugu</strong> - Native</li>
-                <li><strong>English</strong> - Fluent</li>
-                <li><strong>Hindi</strong> - Conversational</li>
+                <li><strong>English</strong> - Fluent (Professional proficiency)</li>
             </ul>
         </div>
     </div>
