@@ -238,6 +238,16 @@
             body {
                 background: white;
             }
+            
+            .container {
+                padding-top: 15mm;
+                padding-bottom: 15mm;
+            }
+            
+            @page {
+                margin: 15mm 10mm;
+                size: A4;
+            }
         }
     </style>
 </head>
@@ -512,11 +522,12 @@
         function downloadPDF() {
             const element = document.querySelector('.container');
             const options = {
-                margin: 0,
+                margin: [10, 10, 15, 10], // [top, left, bottom, right] in mm
                 filename: 'NagaSainath-Reddy-Palle-CV.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'], avoid: '.job-entry, .project-entry, .section' }
             };
             
             html2pdf().set(options).from(element).save();
