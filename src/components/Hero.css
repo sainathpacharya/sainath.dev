@@ -2,35 +2,13 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: #ffffff;
   color: var(--text-primary);
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(30, 64, 175, 0.05) 0%, transparent 50%);
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(37,99,235,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-  background-size: 40px 40px;
-  opacity: 0.5;
-}
+/* Removed decorative background elements for cleaner look */
 
 .hero-container {
   max-width: 1400px;
@@ -41,119 +19,46 @@
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: var(--space-16);
-  align-items: center;
-  min-height: 80vh;
-}
-
-.hero-text {
-  max-width: 700px;
-}
-
-.hero-title {
-  font-size: var(--text-6xl);
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: var(--space-6);
-  color: var(--text-primary);
-  position: relative;
-}
-
-.highlight {
-  color: var(--primary);
-  position: relative;
-  display: inline-block;
-}
-
-.highlight::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--primary);
-  border-radius: var(--radius-full);
-}
-
-.hero-subtitle {
-  font-size: var(--text-xl);
-  font-weight: 600;
-  color: var(--text-secondary);
-  margin-bottom: var(--space-6);
-  font-family: var(--font-primary);
-  letter-spacing: 0.02em;
-}
-
-.hero-description {
-  font-size: var(--text-lg);
-  line-height: 1.7;
-  color: var(--text-secondary);
-  margin-bottom: var(--space-10);
-  max-width: 600px;
-}
-
-.hero-buttons {
   display: flex;
-  gap: var(--space-6);
-  flex-wrap: wrap;
-}
-
-.hero-image {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-}
-
-.profile-card {
-  background: var(--bg-card);
-  border-radius: var(--radius-2xl);
-  padding: var(--space-10);
   text-align: center;
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-xl);
-  max-width: 400px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  padding: var(--space-20) 0;
+  gap: var(--space-12);
 }
 
-.profile-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--primary);
+.hero-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
 }
+
+.hero-intro {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Removed hero-title, hero-subtitle styles as we're using profile-info now */
 
 .profile-avatar {
-  margin-bottom: var(--space-8);
-  position: relative;
-}
-
-.avatar-placeholder {
-  width: 120px;
-  height: 120px;
-  background: var(--primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  font-size: var(--text-3xl);
-  font-weight: 700;
-  color: white;
-  box-shadow: var(--shadow-lg);
-  position: relative;
+  margin-bottom: var(--space-4);
 }
 
 .profile-info h3 {
-  font-size: var(--text-xl);
+  font-size: var(--text-3xl);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: var(--space-2);
@@ -162,38 +67,63 @@
 
 .profile-info p {
   color: var(--text-secondary);
-  margin-bottom: var(--space-8);
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
   font-weight: 500;
 }
 
-.profile-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-4);
+.hero-description {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Removed hero-image and profile-card styles as we're not using them anymore */
+
+.avatar-placeholder {
+  width: 150px;
+  height: 150px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats styles */
 .stat {
   text-align: center;
-  padding: var(--space-5);
+  padding: var(--space-6);
   background: var(--bg-secondary);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
   transition: var(--transition-normal);
 }
 
 .stat:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .stat-number {
-  display: block;
-  font-size: var(--text-2xl);
+  font-size: var(--text-4xl);
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: var(--space-2);
 }
 
 .stat-label {
@@ -228,22 +158,8 @@
 }
 
 @media (max-width: 1024px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-12);
-    text-align: center;
-  }
-  
-  .hero-title {
-    font-size: var(--text-6xl);
-  }
-  
-  .hero-subtitle {
-    font-size: var(--text-xl);
-  }
-  
-  .hero-description {
-    font-size: var(--text-lg);
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -252,47 +168,33 @@
     padding: var(--space-16) 0;
   }
   
-  .hero-title {
-    font-size: var(--text-5xl);
-  }
-  
-  .hero-subtitle {
-    font-size: var(--text-lg);
-  }
-  
   .hero-buttons {
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     gap: var(--space-4);
   }
   
-  .profile-card {
-    padding: var(--space-8);
+  .avatar-placeholder {
+    width: 150px;
+    height: 150px;
+    font-size: var(--text-4xl);
   }
   
-  .avatar-placeholder {
-    width: 120px;
-    height: 120px;
-    font-size: var(--text-3xl);
+  .profile-info h3 {
+    font-size: var(--text-2xl);
+  }
+  
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: var(--text-4xl);
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
+  .hero-stats {
+    grid-template-columns: 1fr;
   }
   
   .btn {
     width: 100%;
-    max-width: 280px;
-  }
-  
-  .profile-stats {
-    grid-template-columns: 1fr;
-    gap: var(--space-3);
   }
 }

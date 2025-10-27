@@ -9,18 +9,24 @@ const Hero = () => {
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-text">
-            <h1 id="hero-title" className="hero-title fade-in">
-              {t('hero.title')} <span className="highlight">NagaSainath Reddy</span>
-            </h1>
-            <h2 className="hero-subtitle fade-in fade-in-delay-1">
-              {t('hero.subtitle')}
-            </h2>
-                  <p className="hero-description fade-in fade-in-delay-2">
-                    {t('hero.description')}
-                  </p>
-            <div className="hero-buttons fade-in fade-in-delay-3">
-              <a href="#projects" className="btn btn-primary" aria-label="View my projects">
+          <div className="hero-profile">
+            <div className="profile-avatar">
+              <div className="avatar-placeholder" aria-hidden="true">
+                <span>NS</span>
+              </div>
+            </div>
+            <div className="profile-info">
+              <h3>NagaSainath Reddy</h3>
+              <p>Lead Engineer - Mobile (iOS & Android)</p>
+            </div>
+          </div>
+          
+          <div className="hero-intro">
+            <p className="hero-description fade-in">
+              {t('hero.description')}
+            </p>
+            <div className="hero-buttons fade-in">
+              <a href="#about" className="btn btn-primary" aria-label="View my profile">
                 {t('hero.viewWork')}
               </a>
               <a href="#contact" className="btn btn-secondary" aria-label="Get in touch with me">
@@ -28,27 +34,23 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="hero-image">
-            <div className="profile-card fade-in fade-in-delay-4" data-testid="profile-card" role="complementary" aria-label="Profile information">
-              <div className="profile-avatar">
-                <div className="avatar-placeholder" aria-hidden="true">
-                  <span>NS</span>
-                </div>
-              </div>
-                <div className="profile-info">
-                  <h3>NagaSainath Reddy</h3>
-                  <p>Lead Engineer</p>
-                      <div className="profile-stats" data-testid="profile-stats" role="region" aria-label="Professional statistics">
-                        <div className="stat">
-                          <span className="stat-number" aria-label={`${getFormattedYears()} years of experience`}>{getFormattedYears()}</span>
-                          <span className="stat-label">{t('hero.yearsExperience')}</span>
-                        </div>
-                        <div className="stat">
-                          <span className="stat-number" aria-label={`${getFormattedProjects()} projects completed`}>{getFormattedProjects()}</span>
-                          <span className="stat-label">{t('hero.projects')}</span>
-                        </div>
-                      </div>
-              </div>
+          
+          <div className="hero-stats">
+            <div className="stat">
+              <span className="stat-number">{getFormattedYears()}</span>
+              <span className="stat-label">{t('hero.yearsExperience')}</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">{getFormattedProjects()}</span>
+              <span className="stat-label">{t('hero.projects')}</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">7</span>
+              <span className="stat-label">Companies</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">3</span>
+              <span className="stat-label">Awards</span>
             </div>
           </div>
         </div>

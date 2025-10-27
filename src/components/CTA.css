@@ -1,20 +1,7 @@
 .cta {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,0 1000,1000"/></svg>');
-  background-size: cover;
+  background: #fafafa;
+  color: #1a1a1a;
 }
 
 .container {
@@ -41,13 +28,13 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: white;
+  color: #1a1a1a;
 }
 
 .cta-description {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: #666;
   margin: 0;
 }
 
@@ -61,7 +48,7 @@
 .btn {
   display: inline-block;
   padding: 0.875rem 2rem;
-  border-radius: 50px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -70,29 +57,29 @@
 }
 
 .btn-primary {
-  background: white;
-  color: #2563eb;
-  border: 2px solid white;
+  background: #1a1a1a;
+  color: white;
+  border: 2px solid #1a1a1a;
 }
 
 .btn-primary:hover {
-  background: transparent;
+  background: #0a0a0a;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
 
 .btn-secondary {
   background: transparent;
-  color: white;
-  border: 2px solid white;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
 }
 
 .btn-secondary:hover {
-  background: white;
-  color: #2563eb;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+  background: #fafafa;
+  color: #1a1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 768px) {

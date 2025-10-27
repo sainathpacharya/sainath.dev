@@ -1,6 +1,6 @@
 .experience {
   padding: 5rem 0;
-  background: #f8fafc;
+  background: #fafafa;
 }
 
 .container {
@@ -17,7 +17,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   position: relative;
 }
@@ -28,15 +28,15 @@
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  width: 40px;
+  height: 2px;
+  background: var(--primary);
   border-radius: 2px;
 }
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #6b7280;
+  color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -53,8 +53,8 @@
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 4px;
-  background: linear-gradient(180deg, #2563eb, #7c3aed);
+  width: 2px;
+  background: var(--border);
   transform: translateX(-50%);
   border-radius: 2px;
 }
@@ -79,16 +79,16 @@
 .timeline-content {
   background: white;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .timeline-content::before {
@@ -156,7 +156,7 @@
 .logo-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: #1a1a1a;
   color: white;
   display: flex;
   align-items: center;
@@ -169,30 +169,31 @@
 .company-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary);
   margin: 0;
   line-height: 1.3;
 }
 
 .duration {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
-  color: white;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 0.25rem 0.75rem;
-  border-radius: 12px;
+  border-radius: 6px;
   font-size: 0.85rem;
   font-weight: 600;
   white-space: nowrap;
+  border: 1px solid var(--border);
 }
 
 .position {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2563eb;
+  color: var(--text-primary);
   margin: 0 0 0.5rem 0;
 }
 
 .location {
-  color: #6b7280;
+  color: var(--text-secondary);
   font-size: 0.9rem;
   margin: 0 0 1rem 0;
   display: flex;
@@ -201,7 +202,7 @@
 }
 
 .description {
-  color: #4b5563;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -216,7 +217,7 @@
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #6b7280;
+  color: var(--text-secondary);
   line-height: 1.5;
 }
 
@@ -224,17 +225,17 @@
   content: '▶';
   position: absolute;
   left: 0;
-  color: #2563eb;
+  color: var(--primary);
   font-size: 0.8rem;
 }
 
 .timeline-marker {
   position: absolute;
   top: 2rem;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background: white;
-  border: 4px solid #2563eb;
+  border: 3px solid var(--primary);
   border-radius: 50%;
   z-index: 1;
 }
@@ -250,9 +251,8 @@
 .marker-dot {
   width: 100%;
   height: 100%;
-  background: #2563eb;
+  background: var(--primary);
   border-radius: 50%;
-  animation: pulse 2s infinite;
 }
 
 @keyframes fadeInUp {

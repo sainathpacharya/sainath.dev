@@ -1,5 +1,5 @@
 .footer {
-  background: #1f2937;
+  background: #1a1a1a;
   color: #d1d5db;
   padding: 3rem 0 1rem;
 }
@@ -31,7 +31,7 @@
 .brand-name {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #fbbf24;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .footer-list li:hover {
-  color: #fbbf24;
+  color: #ffffff;
 }
 
 .footer-list a {
@@ -93,7 +93,7 @@
 }
 
 .footer-list a:hover {
-  color: #fbbf24;
+  color: #ffffff;
 }
 
 .social-links {
@@ -113,7 +113,7 @@
 }
 
 .social-link:hover {
-  color: #fbbf24;
+  color: #ffffff;
 }
 
 .social-icon {
