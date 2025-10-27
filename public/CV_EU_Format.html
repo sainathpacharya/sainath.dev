@@ -22,134 +22,146 @@
         .container {
             max-width: 210mm;
             margin: 0 auto;
-            padding: 20mm;
+            padding: 12mm;
+            font-size: 10pt;
         }
         
         h1 {
-            font-size: 24pt;
+            font-size: 20pt;
             font-weight: bold;
-            margin-bottom: 5mm;
+            margin-bottom: 3mm;
             color: #1a1a1a;
         }
         
         h2 {
-            font-size: 14pt;
+            font-size: 12pt;
             font-weight: bold;
-            margin-top: 8mm;
-            margin-bottom: 4mm;
-            border-bottom: 2px solid #1a1a1a;
-            padding-bottom: 2mm;
+            margin-top: 5mm;
+            margin-bottom: 3mm;
+            border-bottom: 1.5px solid #1a1a1a;
+            padding-bottom: 1mm;
             color: #1a1a1a;
         }
         
         .personal-info {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 8mm;
+            margin-bottom: 4mm;
         }
         
         .contact-info {
-            font-size: 10pt;
-            line-height: 1.6;
+            font-size: 9pt;
+            line-height: 1.5;
         }
         
         .contact-info div {
-            margin-bottom: 2mm;
+            margin-bottom: 0.5mm;
+        }
+        
+        .summary-box {
+            margin-top: 3mm;
+            color: #666;
+            font-size: 9pt;
+            line-height: 1.4;
         }
         
         .section {
-            margin-bottom: 8mm;
+            margin-bottom: 4mm;
         }
         
         .job-entry {
-            margin-bottom: 6mm;
+            margin-bottom: 3mm;
             page-break-inside: avoid;
         }
         
         .job-header {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 2mm;
+            margin-bottom: 1mm;
         }
         
         .job-title {
             font-weight: bold;
-            font-size: 12pt;
+            font-size: 11pt;
         }
         
         .job-company {
             font-weight: bold;
             color: #1a1a1a;
+            font-size: 10pt;
         }
         
         .job-period {
             font-style: italic;
             color: #666;
+            font-size: 9pt;
         }
         
         .job-location {
             color: #666;
-            font-size: 10pt;
+            font-size: 9pt;
         }
         
         .job-duties {
-            margin-top: 2mm;
-            padding-left: 4mm;
+            margin-top: 1mm;
+            padding-left: 3mm;
         }
         
         .job-duties li {
-            margin-bottom: 1mm;
+            margin-bottom: 0.5mm;
+            font-size: 9pt;
         }
         
         .skill-category {
-            margin-bottom: 4mm;
+            margin-bottom: 2mm;
         }
         
         .skill-category h3 {
-            font-size: 12pt;
+            font-size: 10pt;
             font-weight: bold;
-            margin-bottom: 2mm;
+            margin-bottom: 1mm;
             color: #1a1a1a;
         }
         
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 2mm;
+            gap: 1.5mm;
         }
         
         .skill-item {
             background: #f5f5f5;
-            padding: 2mm 4mm;
-            border-radius: 3mm;
-            font-size: 10pt;
+            padding: 1mm 3mm;
+            border-radius: 2mm;
+            font-size: 9pt;
             border: 1px solid #ddd;
         }
         
         .project-entry {
-            margin-bottom: 4mm;
-            padding-bottom: 4mm;
+            margin-bottom: 2mm;
+            padding-bottom: 2mm;
             border-bottom: 1px solid #e0e0e0;
+            page-break-inside: avoid;
         }
         
         .project-title {
             font-weight: bold;
-            font-size: 11pt;
+            font-size: 10pt;
         }
         
         .project-description {
             color: #666;
-            font-size: 10pt;
-            margin-top: 1mm;
+            font-size: 9pt;
+            margin-top: 0.5mm;
         }
         
         ul {
             list-style-position: outside;
-            margin-left: 6mm;
+            margin-left: 5mm;
         }
         
         li {
-            margin-bottom: 1mm;
+            margin-bottom: 0.5mm;
         }
         
         @media print {
@@ -173,8 +185,8 @@
             </div>
         </div>
         
-        <div style="margin-top: 8mm; color: #666; font-size: 10pt;">
-            <strong>Professional Summary:</strong> 10+ years of experience in React Native and Android mobile application development. Proven track record of leading engineering teams, developing enterprise-level applications, and delivering high-quality mobile solutions. Expertise in cross-platform development, technical architecture, and team mentoring.
+        <div class="summary-box">
+            <strong>Professional Summary:</strong> 10+ years of experience in React Native and Android mobile application development. Proven track record of leading engineering teams, developing enterprise-level applications, and delivering high-quality mobile solutions.
         </div>
         
         <!-- Work Experience -->
@@ -331,23 +343,14 @@
             </div>
             
             <div class="skill-category">
-                <h3>Data Storage</h3>
+                <h3>Data Storage & Tools</h3>
                 <div class="skills-list">
                     <div class="skill-item">AsyncStorage</div>
                     <div class="skill-item">SQLite</div>
-                    <div class="skill-item">Core Data</div>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Tools & Technologies</h3>
-                <div class="skills-list">
                     <div class="skill-item">Android Studio</div>
                     <div class="skill-item">VS Code</div>
-                    <div class="skill-item">React Native CLI</div>
                     <div class="skill-item">Git</div>
                     <div class="skill-item">Jira</div>
-                    <div class="skill-item">Postman</div>
                 </div>
             </div>
         </div>
@@ -357,17 +360,12 @@
         <div class="section">
             <div class="project-entry">
                 <div class="project-title">Collective Health</div>
-                <div class="project-description">Health benefits platform with 50K+ downloads and 4.4★ rating. Implemented secure health data management, HIPAA compliance features, provider finder, and cost estimation tools.</div>
+                <div class="project-description">Health benefits platform - 50K+ downloads, 4.4★ rating. HIPAA compliance, secure data management.</div>
             </div>
             
             <div class="project-entry">
                 <div class="project-title">Gold Club</div>
-                <div class="project-description">Productivity app for NSL Group retailers and distributors with 50K+ downloads. Implemented value-added services and agricultural solutions features.</div>
-            </div>
-            
-            <div class="project-entry">
-                <div class="project-title">NSL Subeej Kisan</div>
-                <div class="project-description">Comprehensive agricultural app empowering farmers with tools, insights, and advisory services. Led development team and architected complete mobile solution.</div>
+                <div class="project-description">Productivity app for NSL Group - 50K+ downloads. Agricultural solutions for retailers/distributors.</div>
             </div>
         </div>
         
@@ -375,11 +373,9 @@
         <h2>Key Achievements</h2>
         <div class="section">
             <ul>
-                <li>Developed 11 mobile applications published on Play Store with 280K+ downloads</li>
-                <li>Achieved average rating of 4.1★ across all published applications</li>
-                <li>Led engineering teams and made critical technical architecture decisions</li>
-                <li>Mentored junior developers and conducted code reviews</li>
-                <li>Implemented best practices for mobile app development across multiple companies</li>
+                <li>11 Play Store apps with 280K+ downloads, 4.1★ average rating</li>
+                <li>Led engineering teams and technical architecture decisions</li>
+                <li>Mentored junior developers and implemented best practices</li>
             </ul>
         </div>
         
