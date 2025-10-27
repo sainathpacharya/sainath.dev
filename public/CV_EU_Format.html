@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NagaSainath Reddy Palle - Curriculum Vitae</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
     <style>
         .print-button {
             position: fixed;
@@ -241,18 +242,12 @@
     </style>
 </head>
 <body>
-    <button class="print-button" onclick="window.print()">
-        📄 Print/Save as PDF
+    <button class="print-button" onclick="downloadPDF()">
+        📄 Download as PDF
     </button>
     
     <div class="print-note">
-        <strong>📝 Instructions to Save as PDF:</strong>
-        <ol>
-            <li>Click the button above</li>
-            <li>In the print dialog, select <strong>"Save as PDF"</strong> as destination</li>
-            <li>Click <strong>"More settings"</strong> → uncheck <strong>"Headers and footers"</strong></li>
-            <li>Click <strong>"Save"</strong> to download as PDF</li>
-        </ol>
+        <strong>💡 Quick Download:</strong> Click the button above to instantly download your CV as PDF (no popups, no headers/footers).
     </div>
     
     <div class="container">
@@ -514,12 +509,18 @@
     </div>
     
     <script>
-        // Auto-trigger print dialog on page load (optional)
-        // window.addEventListener('load', function() {
-        //     setTimeout(() => {
-        //         window.print();
-        //     }, 500);
-        // });
+        function downloadPDF() {
+            const element = document.querySelector('.container');
+            const options = {
+                margin: 0,
+                filename: 'NagaSainath-Reddy-Palle-CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            html2pdf().set(options).from(element).save();
+        }
     </script>
 </body>
 </html>
