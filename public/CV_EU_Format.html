@@ -164,14 +164,64 @@
             margin-bottom: 0.5mm;
         }
         
+        .print-instructions {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 12px 16px;
+            font-size: 11px;
+            border-radius: 6px;
+            z-index: 1000;
+            max-width: 300px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .print-instructions strong {
+            color: #1a1a1a;
+        }
+        
         @media print {
+            .print-instructions {
+                display: none;
+            }
+            
+            @page {
+                margin: 0;
+                size: A4;
+            }
+            
             body {
                 background: white;
+                margin: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
+            
+            html, body {
+                height: 100%;
+                overflow: visible;
+            }
+            
+            /* Remove headers and footers */
+            @page {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        
+        /* Prevent browser from adding headers/footers */
+        @page {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+    <div class="print-instructions">
+        <strong>💡 Print Tip:</strong> Before printing, go to <strong>More settings</strong> → uncheck <strong>Headers and footers</strong> to remove page numbers and file paths.
+    </div>
+    
     <div class="container">
         <!-- Personal Information -->
         <h1>NagaSainath Reddy Palle</h1>
