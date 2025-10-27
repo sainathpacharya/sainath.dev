@@ -253,39 +253,24 @@
   z-index: 1;
 }
 
-.project-actions .btn-primary {
-  min-width: 180px;
-  max-width: 220px;
+.project-actions .btn-primary,
+.project-actions .btn-secondary {
+  min-width: 160px;
   text-align: center;
   font-weight: 600;
-  font-size: var(--text-sm);
-  padding: var(--space-3) var(--space-6);
-  transition: var(--transition-normal);
+  font-size: 0.9375rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 44px;
-  border-radius: var(--radius-lg);
+  border-radius: 8px;
+  gap: 0.5rem;
 }
 
 .project-actions .btn-secondary {
-  min-width: 180px;
-  max-width: 220px;
-  text-align: center;
-  font-weight: 600;
-  font-size: var(--text-sm);
-  padding: var(--space-3) var(--space-6);
-  transition: var(--transition-normal);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 44px;
-  background: var(--bg-secondary);
-  color: var(--text-primary);
-  border: 1px solid var(--border);
-  text-decoration: none;
-  border-radius: var(--radius-lg);
-  margin-left: var(--space-3);
+  margin-left: 1rem;
 }
 
 .project-actions .btn-outline:hover,
@@ -479,10 +464,16 @@
     font-size: var(--text-4xl);
   }
   
-  .project-actions .btn-primary {
+  .project-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .project-actions .btn-primary,
+  .project-actions .btn-secondary {
     width: 100%;
-    max-width: none;
     min-width: auto;
+    margin-left: 0;
   }
   
   .other-projects-grid {
