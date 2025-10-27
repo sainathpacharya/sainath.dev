@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NagaSainath Reddy Palle - Curriculum Vitae</title>
     <style>
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        
+        .print-button:hover {
+            background: #0a0a0a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
         * {
             margin: 0;
             padding: 0;
@@ -160,6 +188,10 @@
     </style>
 </head>
 <body>
+    <button class="print-button" onclick="window.print()">
+        📄 Download as PDF
+    </button>
+    
     <div class="container">
         <!-- Personal Information -->
         <h1>NagaSainath Reddy Palle</h1>
@@ -393,6 +425,15 @@
             </ul>
         </div>
     </div>
+    
+    <script>
+        // Auto-trigger print dialog on page load (optional)
+        // window.addEventListener('load', function() {
+        //     setTimeout(() => {
+        //         window.print();
+        //     }, 500);
+        // });
+    </script>
 </body>
 </html>
 
