@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NagaSainath Reddy Palle - Curriculum Vitae</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+    <style>
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        
+        .print-button:hover {
+            background: #0a0a0a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .print-button:active {
+            transform: translateY(0);
+        }
+        
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #1a1a1a;
+            background: white;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 12mm;
+            font-size: 10pt;
+        }
+        
+        h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 3mm;
+            color: #1a1a1a;
+        }
+        
+        h2 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 5mm;
+            margin-bottom: 3mm;
+            border-bottom: 1.5px solid #1a1a1a;
+            padding-bottom: 1mm;
+            color: #1a1a1a;
+        }
+        
+        .personal-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4mm;
+        }
+        
+        .contact-info {
+            font-size: 9pt;
+            line-height: 1.5;
+        }
+        
+        .contact-info div {
+            margin-bottom: 0.5mm;
+        }
+        
+        .summary-box {
+            margin-top: 3mm;
+            color: #666;
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+        
+        .section {
+            margin-bottom: 4mm;
+        }
+        
+        .job-entry {
+            margin-bottom: 3mm;
+            page-break-inside: avoid;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1mm;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .job-company {
+            font-weight: bold;
+            color: #1a1a1a;
+            font-size: 10pt;
+        }
+        
+        .job-period {
+            font-style: italic;
+            color: #666;
+            font-size: 9pt;
+        }
+        
+        .job-location {
+            color: #666;
+            font-size: 9pt;
+        }
+        
+        .job-duties {
+            margin-top: 1mm;
+            padding-left: 3mm;
+        }
+        
+        .job-duties li {
+            margin-bottom: 0.5mm;
+            font-size: 9pt;
+        }
+        
+        .skill-category {
+            margin-bottom: 2mm;
+        }
+        
+        .skill-category h3 {
+            font-size: 10pt;
+            font-weight: bold;
+            margin-bottom: 1mm;
+            color: #1a1a1a;
+        }
+        
+        .skills-list {
+            list-style-position: inside;
+            margin-left: 3mm;
+            line-height: 1.6;
+        }
+        
+        .skill-item {
+            display: inline;
+            font-size: 9pt;
+            color: #1a1a1a;
+        }
+        
+        .skill-item:not(:last-child)::after {
+            content: ', ';
+        }
+        
+        .project-entry {
+            margin-bottom: 2mm;
+            padding-bottom: 2mm;
+            border-bottom: 1px solid #e0e0e0;
+            page-break-inside: avoid;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        
+        .project-description {
+            color: #666;
+            font-size: 9pt;
+            margin-top: 0.5mm;
+        }
+        
+        ul {
+            list-style-position: outside;
+            margin-left: 5mm;
+        }
+        
+        li {
+            margin-bottom: 0.5mm;
+        }
+        
+        .print-note {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 16px;
+            font-size: 12px;
+            border-radius: 8px;
+            z-index: 1000;
+            max-width: 280px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .print-note strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .print-note ol {
+            margin-left: 18px;
+            margin-top: 8px;
+        }
+        
+        .print-note li {
+            margin-bottom: 4px;
+            font-size: 11px;
+            color: #856404;
+        }
+        
+        @media print {
+            .print-note {
+                display: none;
+            }
+            
+            body {
+                background: white;
+            }
+            
+            .container {
+                padding-top: 15mm;
+                padding-bottom: 15mm;
+            }
+            
+            @page {
+                margin: 15mm 10mm;
+                size: A4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="downloadPDF()">
+        📄 Download as PDF
+    </button>
+    
+    <div class="print-note">
+        <strong>💡 Quick Download:</strong> Click the button above to instantly download your CV as PDF (no popups, no headers/footers).
+    </div>
+    
+    <div class="container">
+        <!-- Personal Information -->
+        <h1>NagaSainath Reddy Palle</h1>
+        <div class="personal-info">
+            <div class="contact-info">
+                <div><strong>Lead Engineer - Mobile Development</strong></div>
+                <div>📧 sainathp.acharya@gmail.com</div>
+                <div>📱 +91 9494947630</div>
+                <div>📍 Hyderabad, India</div>
+                <div>💼 linkedin.com/in/naga-sainath-reddy-palle-32935a166</div>
+            </div>
+        </div>
+        
+        <div class="summary-box">
+            <strong>Professional Summary:</strong> 10+ years of experience in React Native and Android mobile application development. Proven track record of leading engineering teams, developing enterprise-level applications, and delivering high-quality mobile solutions.
+        </div>
+        
+        <!-- Work Experience -->
+        <h2>Professional Experience</h2>
+        
+        <div class="section">
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Lead Engineer</div>
+                        <div class="job-company">Ratna Global Technologies Private Limited</div>
+                        <div class="job-location">Hyderabad, India</div>
+                    </div>
+                    <div class="job-period">December 2025 - Present</div>
+                </div>
+                <ul class="job-duties">
+                    <li>Leading engineering teams and technical architecture decisions</li>
+                    <li>Developing cutting-edge mobile applications for enterprise clients</li>
+                    <li>Mentoring development teams and conducting code reviews</li>
+                    <li>Implementing best practices for mobile app development and team processes</li>
+                </ul>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Android/React-Native Developer</div>
+                        <div class="job-company">Empover I-Tech Pvt. Ltd</div>
+                        <div class="job-location">Hyderabad, India</div>
+                    </div>
+                    <div class="job-period">May 2022 - December 2025</div>
+                </div>
+                <ul class="job-duties">
+                    <li>Developed multiple React Native applications for enterprise clients</li>
+                    <li>Led technical architecture decisions for mobile projects</li>
+                    <li>Mentored junior developers and conducted code reviews</li>
+                    <li>Implemented best practices for mobile app development</li>
+                </ul>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Android/React-Native Developer</div>
+                        <div class="job-company">V-Empower Solutions Pvt. Ltd</div>
+                        <div class="job-location">Hyderabad, India</div>
+                    </div>
+                    <div class="job-period">April 2019 - May 2022</div>
+                </div>
+                <ul class="job-duties">
+                    <li>Built cross-platform mobile applications using React Native</li>
+                    <li>Integrated third-party libraries and APIs</li>
+                    <li>Optimized app performance and user experience</li>
+                    <li>Collaborated with cross-functional teams</li>
+                </ul>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Android Developer</div>
+                        <div class="job-company">Eminosoft India Pvt Ltd</div>
+                        <div class="job-location">Hyderabad, India</div>
+                    </div>
+                    <div class="job-period">July 2018 - April 2019</div>
+                </div>
+                <ul class="job-duties">
+                    <li>Developed native Android applications using Java and Kotlin</li>
+                    <li>Implemented RESTful API integration</li>
+                    <li>Worked with SQLite databases and data persistence</li>
+                    <li>Created custom UI components and animations</li>
+                </ul>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Android Developer</div>
+                        <div class="job-company">Savithru Technologies</div>
+                        <div class="job-location">Bangalore, India</div>
+                    </div>
+                    <div class="job-period">July 2017 - May 2018</div>
+                </div>
+                <ul class="job-duties">
+                    <li>Developed Android applications from concept to deployment</li>
+                    <li>Implemented modern Android development practices</li>
+                    <li>Worked with Firebase and cloud services</li>
+                    <li>Collaborated with UI/UX designers</li>
+                </ul>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Android Developer</div>
+                        <div class="job-company">Aven App Solutions Pvt. Ltd.</div>
+                        <div class="job-location">Hyderabad, India</div>
+                    </div>
+                    <div class="job-period">October 2016 - July 2017</div>
+                </div>
+                <ul class="job-duties">
+                    <li>Built Android applications using Java</li>
+                    <li>Learned Android SDK and development tools</li>
+                    <li>Worked with JSON parsing and API integration</li>
+                    <li>Gained experience in mobile app testing</li>
+                </ul>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Android Developer</div>
+                        <div class="job-company">New MEK Solutions Pvt. Ltd</div>
+                        <div class="job-location">Hyderabad, India</div>
+                    </div>
+                    <div class="job-period">May 2015 - September 2016</div>
+                </div>
+                <ul class="job-duties">
+                    <li>Started Android development career</li>
+                    <li>Learned core Android concepts and architecture</li>
+                    <li>Worked on small to medium scale projects</li>
+                    <li>Gained foundational knowledge in mobile development</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Skills -->
+        <h2>Technical Skills</h2>
+        <div class="section">
+            <div class="skill-category">
+                <h3>Mobile Development</h3>
+                <div class="skills-list">
+                    <span class="skill-item">React Native</span>
+                    <span class="skill-item">Android Development</span>
+                    <span class="skill-item">Kotlin</span>
+                    <span class="skill-item">Java</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-list">
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">TypeScript</span>
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">Kotlin</span>
+                    <span class="skill-item">HTML</span>
+                    <span class="skill-item">CSS</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skills-list">
+                    <span class="skill-item">React.js</span>
+                    <span class="skill-item">NativeBase.io</span>
+                    <span class="skill-item">Material UI</span>
+                    <span class="skill-item">Redux</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Backend & API</h3>
+                <div class="skills-list">
+                    <span class="skill-item">REST API Integration</span>
+                    <span class="skill-item">Firebase Integration</span>
+                    <span class="skill-item">Retrofit</span>
+                    <span class="skill-item">Volley</span>
+                    <span class="skill-item">JSON Parsing</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Data Storage & Tools</h3>
+                <div class="skills-list">
+                    <span class="skill-item">AsyncStorage</span>
+                    <span class="skill-item">SQLite</span>
+                    <span class="skill-item">Android Studio</span>
+                    <span class="skill-item">VS Code</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Jira</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Notable Projects -->
+        <h2>Notable Projects</h2>
+        <div class="section">
+            <div class="project-entry">
+                <div class="project-title">Collective Health</div>
+                <div class="project-description">Health benefits platform - 50K+ downloads, 4.4★ rating. HIPAA compliance, secure data management, provider finder, cost estimation tools.</div>
+            </div>
+            
+            <div class="project-entry">
+                <div class="project-title">Gold Club (NSL Group)</div>
+                <div class="project-description">Productivity app for retailers and distributors - 50K+ downloads, 4.0★ rating. Value-added services, latest updates, agricultural solutions.</div>
+            </div>
+            
+            <div class="project-entry">
+                <div class="project-title">NSL Subeej Kisan</div>
+                <div class="project-description">Comprehensive agricultural app empowering Nuziveedu farmers - weather updates, market prices, multi-language support, farming calculators, knowledge center.</div>
+            </div>
+            
+            <div class="project-entry">
+                <div class="project-title">NSL VyaparaMitra</div>
+                <div class="project-description">Distribution system and sales excellence program - seamless functionality across devices, integrated modules, UI enhancements for retailers.</div>
+            </div>
+            
+            <div class="project-entry">
+                <div class="project-title">MCRC App</div>
+                <div class="project-description">Agricultural solutions for crop varieties - improved planting materials, sustainable production practices, farmer-friendly interface.</div>
+            </div>
+            
+            <div class="project-entry">
+                <div class="project-title">Corteva Daksh</div>
+                <div class="project-description">Demand generation platform for Corteva products - 1K+ downloads, 4.1★ rating. Standardized reporting, activity management for field staff.</div>
+            </div>
+            
+            <div class="project-entry">
+                <div class="project-title">MeetHour App</div>
+                <div class="project-description">Encrypted video conferencing solution - 100K+ downloads, 4.6★ rating. Scheduling, rescheduling, whiteboard features, enhanced v2.0 UI.</div>
+            </div>
+        </div>
+        
+        <!-- Key Achievements -->
+        <h2>Key Achievements</h2>
+        <div class="section">
+            <ul>
+                <li>11 Play Store apps with 280K+ downloads, 4.1★ average rating</li>
+                <li>Led engineering teams and technical architecture decisions</li>
+                <li>Mentored junior developers and implemented best practices</li>
+            </ul>
+        </div>
+        
+        <!-- Languages -->
+        <h2>Languages</h2>
+        <div class="section">
+            <ul>
+                <li><strong>English</strong> - Fluent (Professional proficiency)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function downloadPDF() {
+            const element = document.querySelector('.container');
+            const options = {
+                margin: [10, 10, 15, 10], // [top, left, bottom, right] in mm
+                filename: 'NagaSainath-Reddy-Palle-CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'], avoid: '.job-entry, .project-entry, .section' }
+            };
+            
+            html2pdf().set(options).from(element).save();
+        }
+    </script>
+</body>
+</html>
+
