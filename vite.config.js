@@ -70,19 +70,43 @@ export default defineConfig({
     terserOptions: {
       compress: {
         drop_console: true,
-        drop_debugger: true
+        drop_debugger: true,
+        passes: 2
+      },
+      format: {
+        comments: false
       }
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          i18n: ['react-i18next', 'i18next', 'i18next-browser-languagedetector']
-        }
+        manualChunks: (id) => {
+          // Separate vendor chunks for better caching
+          if (id.includes('node_modules')) {
+            if (id.includes('react')) {
+              return 'vendor-react';
+            }
+            if (id.includes('i18next') || id.includes('react-i18next')) {
+              return 'vendor-i18n';
+            }
+            return 'vendor';
+          }
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]'
       }
     },
     cssCodeSplit: true,
-    sourcemap: false
+    sourcemap: false,
+    chunkSizeWarningLimit: 1000,
+    // Optimize assets
+    assetsInlineLimit: 4096,
+    // Reduce bundle size
+    reportCompressedSize: false,
+    target: 'esnext',
+    modulePreload: {
+      polyfill: true
+    }
   },
   test: {
     globals: true,

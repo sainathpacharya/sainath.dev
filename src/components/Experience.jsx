@@ -122,16 +122,15 @@ const Experience = () => {
                     <div className="company-logo">
                       <img 
                         src={exp.logo} 
-                        alt={`${exp.company} logo`}
+                        alt={`${exp.company} company logo`}
                         loading="lazy"
                         decoding="async"
+                        width="48"
+                        height="48"
+                        fetchpriority="low"
                         onError={(e) => {
-                          console.log('Logo failed to load:', exp.logo, 'Error:', e.target.src)
                           e.target.style.display = 'none'
                           e.target.nextSibling.style.display = 'flex'
-                        }}
-                        onLoad={() => {
-                          console.log('Logo loaded successfully:', exp.logo)
                         }}
                       />
                       <div className="logo-placeholder" style={{display: 'none'}}>

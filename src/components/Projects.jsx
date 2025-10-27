@@ -132,10 +132,13 @@ const Projects = () => {
                   {project.image.startsWith('/') ? (
                     <img 
                       src={project.image} 
-                      alt={`${project.title} logo`}
+                      alt={`${project.title} - Mobile application logo`}
                       className="project-logo"
                       loading="lazy"
                       decoding="async"
+                      width="60"
+                      height="60"
+                      fetchpriority="low"
                     />
                   ) : (
                     <span className="project-emoji">{project.image}</span>
@@ -205,10 +208,13 @@ const Projects = () => {
                 {project.logo.startsWith('/') ? (
                   <img 
                     src={project.logo} 
-                    alt={`${project.name} logo`}
+                    alt={`${project.name} mobile application logo`}
                     className="project-logo-image"
                     loading="lazy"
                     decoding="async"
+                    width="40"
+                    height="40"
+                    fetchpriority="low"
                     onError={(e) => {
                       e.target.style.display = 'none'
                       e.target.nextSibling.style.display = 'flex'
