@@ -108,16 +108,45 @@
   gap: 0.5rem;
   color: #d1d5db;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 0.95rem;
+  padding: 0.5rem;
+  border-radius: 6px;
 }
 
 .social-link:hover {
   color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .social-icon {
-  font-size: 1.1rem;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.social-icon-linkedin {
+  fill: #0a66c2;
+}
+
+.social-icon-github {
+  fill: #181717;
+}
+
+.social-icon-email {
+  fill: #ea4335;
+}
+
+.social-link:hover .social-icon-linkedin {
+  fill: #0d7bd7;
+}
+
+.social-link:hover .social-icon-github {
+  fill: #333333;
+}
+
+.social-link:hover .social-icon-email {
+  fill: #ff5743;
 }
 
 .footer-bottom {
@@ -177,5 +206,24 @@
   .social-links {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
+  .social-link {
+    flex: 1;
+    min-width: calc(33.333% - 0.5rem);
+    justify-content: center;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .social-link:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .social-icon {
+    width: 18px;
+    height: 18px;
   }
 }

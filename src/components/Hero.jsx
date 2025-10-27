@@ -11,7 +11,16 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-profile">
             <div className="profile-avatar">
-              <div className="avatar-placeholder" aria-hidden="true">
+              <img 
+                src={`${import.meta.env.BASE_URL}images/hero-avatar.jpeg`}
+                alt="NagaSainath Reddy - Lead Engineer"
+                className="avatar-image"
+                onError={(e) => {
+                  e.target.style.display = 'none'
+                  e.target.nextSibling.style.display = 'flex'
+                }}
+              />
+              <div className="avatar-placeholder" aria-hidden="true" style={{display: 'none'}}>
                 <span>NS</span>
               </div>
             </div>

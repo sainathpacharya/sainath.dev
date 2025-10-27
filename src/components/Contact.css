@@ -157,7 +157,25 @@
 }
 
 .social-icon {
-  font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.social-icon-github {
+  fill: #181717;
+}
+
+.social-icon-linkedin {
+  fill: #0a66c2;
+}
+
+.social-link:hover .social-icon-github {
+  fill: #ffffff;
+}
+
+.social-link:hover .social-icon-linkedin {
+  fill: #ffffff;
 }
 
 .contact-form-container {
