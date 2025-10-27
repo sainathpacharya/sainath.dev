@@ -83,6 +83,8 @@
   gap: var(--space-4);
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Removed hero-image and profile-card styles as we're not using them anymore */
@@ -170,8 +172,14 @@
   
   .hero-buttons {
     flex-direction: column;
+    align-items: center;
     width: 100%;
     gap: var(--space-4);
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
   }
   
   .avatar-placeholder {
