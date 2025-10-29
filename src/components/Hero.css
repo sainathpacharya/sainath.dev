@@ -2,20 +2,21 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #ffffff;
+  justify-content: center;
+  background: var(--bg-primary);
   color: var(--text-primary);
   position: relative;
   overflow: hidden;
+  padding-top: 80px;
 }
-
-/* Removed decorative background elements for cleaner look */
 
 .hero-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-6);
+  padding: 0 var(--space-8);
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .hero-content {
@@ -25,13 +26,16 @@
   text-align: center;
   padding: var(--space-20) 0;
   gap: var(--space-12);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-8);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .hero-intro {
@@ -39,62 +43,77 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-10);
   align-items: center;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 /* Removed hero-title, hero-subtitle styles as we're using profile-info now */
 
 .profile-avatar {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
   position: relative;
+  animation: scaleIn 0.8s ease-out 0.1s both;
 }
 
 .avatar-image {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #1a1a1a;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--border-light);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+}
+
+.avatar-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
 }
 
 .profile-info h3 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-5xl);
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
 .profile-info p {
   color: var(--text-secondary);
-  font-size: var(--text-lg);
-  font-weight: 500;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .hero-description {
-  font-size: var(--text-lg);
-  line-height: 1.7;
+  font-size: var(--text-xl);
+  line-height: 1.8;
   color: var(--text-secondary);
   margin: 0;
+  letter-spacing: -0.01em;
+  font-weight: 400;
 }
 
 .hero-buttons {
   display: flex;
-  gap: var(--space-4);
+  gap: var(--space-6);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: var(--space-4);
 }
 
 /* Removed hero-image and profile-card styles as we're not using them anymore */
@@ -114,34 +133,39 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Stats styles */
+/* Stats styles - Apple Style */
 .stat {
   text-align: center;
-  padding: var(--space-6);
-  background: var(--bg-secondary);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
+  padding: var(--space-8);
+  background: var(--bg-card);
+  border-radius: var(--radius-2xl);
+  border: 0.5px solid var(--border-light);
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
-  transition: var(--transition-normal);
+  gap: var(--space-3);
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-xs);
 }
 
 .stat:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border);
 }
 
 .stat-number {
-  font-size: var(--text-4xl);
+  font-size: var(--text-5xl);
   font-weight: 700;
-  color: var(--primary);
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 .stat-label {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--text-secondary);
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 /* Floating Elements */
@@ -169,15 +193,52 @@
   animation-delay: 4s;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 1024px) {
+  .hero-content {
+    padding: var(--space-16) 0;
+    gap: var(--space-10);
+  }
+  
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+  
+  .profile-info h3 {
+    font-size: var(--text-4xl);
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: var(--space-16) 0;
+    min-height: auto;
+  }
+  
+  .hero-content {
+    padding: var(--space-12) 0;
+    gap: var(--space-8);
   }
   
   .hero-buttons {
@@ -189,7 +250,12 @@
   
   .hero-buttons .btn {
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
+  }
+  
+  .avatar-image {
+    width: 150px;
+    height: 150px;
   }
   
   .avatar-placeholder {
@@ -199,20 +265,60 @@
   }
   
   .profile-info h3 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-3xl);
+  }
+  
+  .profile-info p {
+    font-size: var(--text-lg);
+  }
+  
+  .hero-description {
+    font-size: var(--text-lg);
   }
   
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  
+  .stat {
+    padding: var(--space-6);
+  }
+  
+  .stat-number {
+    font-size: var(--text-4xl);
   }
 }
 
 @media (max-width: 480px) {
-  .hero-stats {
-    grid-template-columns: 1fr;
+  .hero-content {
+    padding: var(--space-12) 0;
+    gap: var(--space-8);
   }
   
-  .btn {
-    width: 100%;
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  .avatar-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-info h3 {
+    font-size: var(--text-2xl);
+  }
+  
+  .hero-description {
+    font-size: var(--text-base);
+  }
+  
+  .stat-number {
+    font-size: var(--text-3xl);
+  }
+  
+  .stat-label {
+    font-size: var(--text-sm);
   }
 }

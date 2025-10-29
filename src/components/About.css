@@ -1,167 +1,175 @@
 .about {
-  padding: 5rem 0;
-  background: #ffffff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 2px;
-  background: var(--primary);
-  border-radius: 2px;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin: 0 auto;
+  padding: var(--space-16) 0;
+  background: var(--bg-primary);
 }
 
 .about-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 4rem;
+  gap: var(--space-16);
   align-items: start;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--space-8);
 }
 
 .about-intro h3 {
-  font-size: 1.8rem;
+  font-size: var(--text-4xl);
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .about-intro p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: var(--text-xl);
+  line-height: 1.8;
   color: var(--text-secondary);
+  letter-spacing: -0.01em;
+  font-weight: 400;
 }
 
 .about-highlights {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--space-6);
 }
 
 .highlight-item {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-6);
   align-items: flex-start;
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-normal);
+}
+
+.highlight-item:hover {
+  background: var(--bg-secondary);
+  transform: translateX(4px);
 }
 
 .highlight-icon {
-  font-size: 2rem;
+  font-size: var(--text-3xl);
   flex-shrink: 0;
-  margin-top: 0.25rem;
+  margin-top: var(--space-1);
 }
 
 .highlight-content h4 {
-  font-size: 1.2rem;
+  font-size: var(--text-2xl);
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.01em;
 }
 
 .highlight-content p {
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: var(--text-base);
+  font-weight: 400;
 }
 
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: var(--space-6);
 }
 
 .stat-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
+  background: var(--bg-card);
+  padding: var(--space-8);
+  border-radius: var(--radius-2xl);
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--border);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-xs);
+  border: 0.5px solid var(--border-light);
+  transition: all var(--transition-normal);
 }
 
 .stat-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border);
 }
 
 .stat-number {
-  font-size: 2.5rem;
+  font-size: var(--text-5xl);
   font-weight: 700;
   color: var(--text-primary);
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: var(--text-base);
   color: var(--text-secondary);
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 1068px) {
+  .about-content {
+    gap: var(--space-12);
+  }
 }
 
 @media (max-width: 768px) {
   .about {
-    padding: 3rem 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
+    padding: var(--space-12) 0;
   }
   
   .about-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--space-12);
+  }
+  
+  .about-intro h3 {
+    font-size: var(--text-3xl);
+  }
+  
+  .about-intro p {
+    font-size: var(--text-lg);
   }
   
   .about-stats {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: var(--space-4);
   }
   
   .stat-card {
-    padding: 1.5rem;
+    padding: var(--space-6);
   }
   
   .stat-number {
-    font-size: 2rem;
+    font-size: var(--text-4xl);
+  }
+  
+  .highlight-item {
+    padding: var(--space-4);
   }
 }
 
 @media (max-width: 480px) {
+  .about {
+    padding: var(--space-12) 0;
+  }
+  
   .about-stats {
     grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .about-intro h3 {
+    font-size: var(--text-2xl);
+  }
+  
+  .stat-number {
+    font-size: var(--text-3xl);
   }
 }

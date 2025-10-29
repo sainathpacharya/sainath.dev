@@ -1,6 +1,6 @@
 .experience {
-  padding: 5rem 0;
-  background: #fafafa;
+  padding: var(--space-16) 0;
+  background: var(--bg-secondary);
 }
 
 .container {

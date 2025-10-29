@@ -41,121 +41,162 @@ body {
   flex-direction: column;
 }
 
-/* Utility Classes */
+/* Utility Classes - Apple Style */
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 var(--space-8);
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: var(--space-12);
+  padding: 0 var(--space-4);
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: var(--text-6xl);
   font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
   position: relative;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
 .section-title::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -var(--space-4);
   left: 50%;
   transform: translateX(-50%);
-  width: 40px;
-  height: 2px;
-  background: #1a1a1a;
-  border-radius: 2px;
+  width: 50px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: var(--radius-full);
+  opacity: 0.6;
 }
 
 .section-subtitle {
-  font-size: 1.1rem;
-  color: #666;
-  max-width: 600px;
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  max-width: 700px;
   margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
 }
 
-/* Unified Button Styles - Shared across all components */
+/* Unified Button Styles - Apple Style */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 2rem;
-  border-radius: 8px;
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-xl);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: var(--text-base);
+  transition: all var(--transition-normal);
   border: none;
   cursor: pointer;
   text-align: center;
   min-width: 140px;
+  height: 44px;
+  letter-spacing: -0.01em;
 }
 
 .btn-primary {
-  background: #1a1a1a;
+  background: var(--accent);
   color: white;
+  box-shadow: 0 2px 8px rgba(0, 113, 227, 0.2);
 }
 
 .btn-primary:hover {
-  background: #0a0a0a;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  background: var(--accent-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 113, 227, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-secondary {
-  background: transparent;
-  color: #1a1a1a;
-  border: 1px solid #1a1a1a;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
 }
 
 .btn-secondary:hover {
-  background: #fafafa;
-  color: #1a1a1a;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--border-dark);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Design - Apple Style Breakpoints */
+@media (max-width: 1068px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 var(--space-6);
   }
-  
+}
+
+@media (max-width: 834px) {
   .section-title {
-    font-size: 2rem;
+    font-size: var(--text-5xl);
   }
   
   .section-header {
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-10);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+  
+  .section-title {
+    font-size: var(--text-4xl);
+  }
+  
+  .section-subtitle {
+    font-size: var(--text-lg);
+  }
+  
+  .section-header {
+    margin-bottom: var(--space-12);
   }
   
   .btn {
-    padding: 0.625rem 1.5rem;
-    font-size: 0.9375rem;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-sm);
     min-width: 120px;
+    height: 40px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 0.75rem;
+    padding: 0 var(--space-4);
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: var(--text-3xl);
+  }
+  
+  .section-subtitle {
+    font-size: var(--text-base);
   }
   
   .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9375rem;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-sm);
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
+    height: 44px;
   }
 }
 

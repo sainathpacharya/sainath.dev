@@ -1,7 +1,7 @@
 .cta {
-  padding: 5rem 0;
-  background: #fafafa;
-  color: #1a1a1a;
+  padding: var(--space-16) 0;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .container {
@@ -46,7 +46,9 @@
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.875rem 2rem;
   border-radius: 8px;
   text-decoration: none;
@@ -54,6 +56,8 @@
   transition: all 0.3s ease;
   text-align: center;
   min-width: 180px;
+  width: 100%;
+  max-width: 180px;
 }
 
 .btn-primary {
@@ -125,5 +129,8 @@
   .btn {
     width: 100%;
     max-width: 250px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }

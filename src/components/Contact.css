@@ -1,6 +1,6 @@
 .contact {
-  padding: 5rem 0;
-  background: #ffffff;
+  padding: var(--space-16) 0;
+  background: var(--bg-primary);
 }
 
 .container {
@@ -245,6 +245,12 @@
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-width: 140px;
 }
 
 .submit-btn:hover {
