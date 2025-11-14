@@ -50,10 +50,12 @@
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
   max-width: 900px;
   width: 100%;
+  margin: 0 auto;
+  justify-items: center;
   animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
@@ -80,6 +82,10 @@
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
 }
 
+.profile-info {
+  text-align: center;
+}
+
 .profile-info h3 {
   font-size: var(--text-5xl);
   font-weight: 700;
@@ -88,6 +94,7 @@
   font-family: var(--font-heading);
   letter-spacing: -0.03em;
   line-height: 1.1;
+  text-align: center;
 }
 
 .profile-info p {
@@ -95,6 +102,7 @@
   font-size: var(--text-xl);
   font-weight: 400;
   letter-spacing: -0.01em;
+  text-align: center;
 }
 
 .hero-description {
