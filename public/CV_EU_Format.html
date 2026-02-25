@@ -56,14 +56,27 @@
             max-width: 210mm;
             margin: 0 auto;
             padding: 12mm;
+            padding-top: 8mm;
             font-size: 10pt;
+        }
+        
+        .cv-content {
+            margin: 0;
+            padding: 0;
+            position: relative;
         }
         
         h1 {
             font-size: 20pt;
             font-weight: bold;
+            margin-top: 0;
             margin-bottom: 3mm;
             color: #1a1a1a;
+        }
+        
+        .cv-content > h1:first-child {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
         }
         
         h2 {
@@ -237,17 +250,25 @@
             
             body {
                 background: white;
+                margin: 0;
+                padding: 0;
             }
             
             .container {
-                padding-top: 15mm;
-                padding-bottom: 15mm;
+                padding-top: 0;
+                padding-bottom: 10mm;
+                margin-top: 0;
             }
             
             @page {
-                margin: 15mm 10mm;
+                margin: 0;
                 size: A4;
             }
+        }
+        
+        .pdf-container {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
         }
     </style>
 </head>
@@ -284,11 +305,11 @@
             <div class="job-entry">
                 <div class="job-header">
                     <div>
-                        <div class="job-title">Lead Engineer</div>
+                        <div class="job-title">Team Lead</div>
                         <div class="job-company">Ratna Global Technologies Private Limited</div>
                         <div class="job-location">Hyderabad, India</div>
                     </div>
-                    <div class="job-period">December 2025 - Present</div>
+                    <div class="job-period">December 2024 - Present</div>
                 </div>
                 <ul class="job-duties">
                     <li>Leading engineering teams and technical architecture decisions</li>
@@ -305,7 +326,7 @@
                         <div class="job-company">Empover I-Tech Pvt. Ltd</div>
                         <div class="job-location">Hyderabad, India</div>
                     </div>
-                    <div class="job-period">May 2022 - December 2025</div>
+                    <div class="job-period">May 2022 - December 2024</div>
                 </div>
                 <ul class="job-duties">
                     <li>Developed multiple React Native applications for enterprise clients</li>
@@ -520,17 +541,56 @@
     
     <script>
         function downloadPDF() {
-            const element = document.querySelector('.container');
-            const options = {
-                margin: [10, 10, 15, 10], // [top, left, bottom, right] in mm
-                filename: 'NagaSainath-Reddy-Palle-CV.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak: { mode: ['avoid-all', 'css', 'legacy'], avoid: '.job-entry, .project-entry, .section' }
-            };
+            // Scroll to top first
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
             
-            html2pdf().set(options).from(element).save();
+            // Use cv-content div which has no padding
+            const element = document.querySelector('.cv-content') || document.querySelector('.container');
+            
+            // Get the actual position of the content
+            const rect = element.getBoundingClientRect();
+            const bodyRect = document.body.getBoundingClientRect();
+            
+            // Wait a moment for scroll and render
+            setTimeout(() => {
+                const options = {
+                    margin: [0, 10, 10, 10], // [top, left, bottom, right] in mm - top set to 0
+                    filename: 'NagaSainath-Reddy-Palle-CV.pdf',
+                    image: { 
+                        type: 'jpeg', 
+                        quality: 0.98 
+                    },
+                    html2canvas: { 
+                        scale: 2, 
+                        useCORS: true,
+                        logging: false,
+                        letterRendering: true,
+                        removeContainer: true,
+                        backgroundColor: '#ffffff',
+                        x: rect.left - bodyRect.left,
+                        y: rect.top - bodyRect.top,
+                        width: rect.width,
+                        height: rect.height,
+                        scrollX: 0,
+                        scrollY: 0
+                    },
+                    jsPDF: { 
+                        unit: 'mm', 
+                        format: 'a4', 
+                        orientation: 'portrait',
+                        compress: true
+                    },
+                    pagebreak: { 
+                        mode: ['avoid-all', 'css'], 
+                        avoid: '.job-entry, .project-entry, .section' 
+                    },
+                    enableLinks: false
+                };
+                
+                html2pdf().set(options).from(element).save();
+            }, 200);
         }
     </script>
 </body>

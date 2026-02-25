@@ -8,7 +8,7 @@ const Experience = () => {
     {
       company: 'Ratna Global Technologies Private Limited',
       position: 'Lead Engineer',
-      duration: 'December 2025 - Present',
+      duration: 'December 2024 - Present',
       location: 'Hyderabad',
       logo: `${import.meta.env.BASE_URL}images/ratna-global-logo.png`,
       description: 'Leading engineering teams and mobile application development using React Native and Android technologies. Working on enterprise-level applications and delivering high-quality solutions.',
@@ -22,7 +22,7 @@ const Experience = () => {
     {
       company: 'Empover I-Tech Pvt. Ltd',
       position: 'Android/React-Native Developer',
-      duration: 'May 2022 - December 2025',
+      duration: 'May 2022 - December 2024',
       location: 'Hyderabad',
       logo: `${import.meta.env.BASE_URL}images/empover-logo.png`,
       description: 'Led mobile application development using React Native and Android technologies. Worked on enterprise-level applications and delivered high-quality solutions.',
