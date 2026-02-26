@@ -53,11 +53,24 @@ const Contact = () => {
     setIsSubmitting(true)
     setSubmitStatus('')
 
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+    if (!serviceId || !templateId || !publicKey) {
+      // Fallback: open mailto so the form still works without EmailJS
+      const mailto = `mailto:sainathp.acharya@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`
+      window.location.href = mailto
+      setIsSubmitting(false)
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+      return
+    }
+
     try {
-      // Replace with your EmailJS service details
       const result = await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -65,12 +78,14 @@ const Contact = () => {
           message: formData.message,
           to_email: 'sainathp.acharya@gmail.com'
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        publicKey
       )
 
       if (result.status === 200) {
         setSubmitStatus('success')
         setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setSubmitStatus('error')
       }
     } catch (error) {
       console.error('Error sending email:', error)

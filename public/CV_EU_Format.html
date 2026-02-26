@@ -117,7 +117,6 @@
         
         .job-entry {
             margin-bottom: 3mm;
-            page-break-inside: avoid;
         }
         
         .job-header {
@@ -189,7 +188,7 @@
             margin-bottom: 2mm;
             padding-bottom: 2mm;
             border-bottom: 1px solid #e0e0e0;
-            page-break-inside: avoid;
+            break-inside: avoid;
         }
         
         .project-title {
@@ -252,9 +251,13 @@
                 background: white;
                 margin: 0;
                 padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
             
             .container {
+                max-width: 100%;
+                padding: 10mm;
                 padding-top: 0;
                 padding-bottom: 10mm;
                 margin-top: 0;
@@ -282,6 +285,7 @@
     </div>
     
     <div class="container">
+        <div class="cv-content">
         <!-- Personal Information -->
         <h1>NagaSainath Reddy Palle</h1>
         <div class="personal-info">
@@ -537,60 +541,33 @@
                 <li><strong>English</strong> - Fluent (Professional proficiency)</li>
             </ul>
         </div>
+        </div>
     </div>
     
     <script>
         function downloadPDF() {
-            // Scroll to top first
             window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-            
-            // Use cv-content div which has no padding
-            const element = document.querySelector('.cv-content') || document.querySelector('.container');
-            
-            // Get the actual position of the content
-            const rect = element.getBoundingClientRect();
-            const bodyRect = document.body.getBoundingClientRect();
-            
-            // Wait a moment for scroll and render
-            setTimeout(() => {
-                const options = {
-                    margin: [0, 10, 10, 10], // [top, left, bottom, right] in mm - top set to 0
-                    filename: 'NagaSainath-Reddy-Palle-CV.pdf',
-                    image: { 
-                        type: 'jpeg', 
-                        quality: 0.98 
-                    },
-                    html2canvas: { 
-                        scale: 2, 
-                        useCORS: true,
-                        logging: false,
-                        letterRendering: true,
-                        removeContainer: true,
-                        backgroundColor: '#ffffff',
-                        x: rect.left - bodyRect.left,
-                        y: rect.top - bodyRect.top,
-                        width: rect.width,
-                        height: rect.height,
-                        scrollX: 0,
-                        scrollY: 0
-                    },
-                    jsPDF: { 
-                        unit: 'mm', 
-                        format: 'a4', 
-                        orientation: 'portrait',
-                        compress: true
-                    },
-                    pagebreak: { 
-                        mode: ['avoid-all', 'css'], 
-                        avoid: '.job-entry, .project-entry, .section' 
-                    },
-                    enableLinks: false
-                };
-                
-                html2pdf().set(options).from(element).save();
-            }, 200);
+            var element = document.querySelector('.cv-content');
+            var options = {
+                margin: [10, 10, 10, 10],
+                filename: 'NagaSainath-Reddy-Palle-CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: {
+                    scale: 2,
+                    useCORS: true,
+                    logging: false,
+                    letterRendering: true
+                },
+                jsPDF: {
+                    unit: 'mm',
+                    format: 'a4',
+                    orientation: 'portrait'
+                },
+                pagebreak: {
+                    mode: ['css', 'legacy']
+                }
+            };
+            html2pdf().set(options).from(element).save();
         }
     </script>
 </body>
