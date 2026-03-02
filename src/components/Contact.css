@@ -43,9 +43,13 @@
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   align-items: start;
+}
+
+.contact-form-container {
+  display: none;
 }
 
 .contact-info {
@@ -68,8 +72,9 @@
 }
 
 .contact-details {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 1.5rem;
 }
 
@@ -293,14 +298,18 @@
   .contact {
     padding: 3rem 0;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .contact-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .contact-details {
+    grid-template-columns: 1fr;
   }
   
   .contact-form-container {
