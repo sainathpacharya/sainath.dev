@@ -23,8 +23,8 @@ const Contact = () => {
     {
       icon: '📱',
       title: t('contact.phone'),
-      value: '+91 9494947630',
-      link: 'tel:+919494947630'
+      value: '+91 7013134330',
+      link: 'tel:+917013134330'
     },
     {
       icon: '📍',

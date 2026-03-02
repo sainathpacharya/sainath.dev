@@ -29,7 +29,7 @@ describe('Contact', () => {
   it('renders contact information', () => {
     render(<Contact />)
     expect(screen.getByText('contact.contactInfo')).toBeInTheDocument()
-    expect(screen.getByText('+91 9494947630')).toBeInTheDocument()
+    expect(screen.getByText('+91 7013134330')).toBeInTheDocument()
     expect(screen.getByText('sainathp.acharya@gmail.com')).toBeInTheDocument()
     expect(screen.getByText('Hyderabad, India')).toBeInTheDocument()
   })
