@@ -186,24 +186,24 @@
       },
       "dmsBoothApp": {
         "title": "DMS Booth App",
-        "description": "Delhi Milk Scheme booth app for creating and managing demands, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Delhin maitohankkeen kojesovellus tilausten, maksujen, päiväkirjojen ja reklamaatioiden luontiin ja hallintaan.",
+        "role": "Pääinsinööri",
         "highlights": [
-          "Built booth app for Delhi Milk Scheme using Flutter for cross-platform delivery",
-          "Implemented demand creation and management workflows for booth users",
-          "Developed payment tracking, ledgers, and grievance handling features",
-          "Delivered Business-grade app with 1K+ downloads on Play Store"
+          "Rakensi kojesovelluksen Delhin maitohankkeelle Flutterilla alustariippumattomaksi",
+          "Toteutti tilaus- ja hallintaprosessit kojekäyttäjille",
+          "Kehitti maksujen seurannan, päiväkirjat ja reklamaatioiden käsittelyn",
+          "Toimitti yritystason sovelluksen yli 1K latauksella Play Storessa"
         ]
       },
       "dmsDistributor": {
         "title": "DMS Distributor",
-        "description": "Delhi Milk Scheme distributor app for managing demands, team demand, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Delhin maitohankkeen jakelijasovellus tilausten, tiimitilausten, maksujen, päiväkirjojen ja reklamaatioiden hallintaan.",
+        "role": "Pääinsinööri",
         "highlights": [
-          "Developed distributor app for Delhi Milk Scheme using Flutter",
-          "Implemented demand creation and team demand management for distributors",
-          "Built payment tracking, ledgers, and grievance handling modules",
-          "Shipped Business app with 100+ downloads on Play Store"
+          "Kehitti jakelijasovelluksen Delhin maitohankkeelle Flutterilla",
+          "Toteutti tilausluonnin ja tiimitilausten hallinnan jakelijoille",
+          "Rakensi maksujen seuranta-, päiväkirja- ja reklamaatiomoduulit",
+          "Toimitti yrityssovelluksen yli 100 latauksella Play Storessa"
         ]
       }
     },

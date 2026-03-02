@@ -186,24 +186,24 @@
       },
       "dmsBoothApp": {
         "title": "DMS Booth App",
-        "description": "Delhi Milk Scheme booth app for creating and managing demands, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Aplicativo do Programa de Leite de Delhi para criar e gerir pedidos, pagamentos, livros-razão e reclamações.",
+        "role": "Engenheiro Líder",
         "highlights": [
-          "Built booth app for Delhi Milk Scheme using Flutter for cross-platform delivery",
-          "Implemented demand creation and management workflows for booth users",
-          "Developed payment tracking, ledgers, and grievance handling features",
-          "Delivered Business-grade app with 1K+ downloads on Play Store"
+          "Desenvolveu aplicativo de posto para o Programa de Leite de Delhi com Flutter para entrega multiplataforma",
+          "Implementou fluxos de criação e gestão de pedidos para utilizadores de postos",
+          "Desenvolveu funcionalidades de pagamentos, livros-razão e tratamento de reclamações",
+          "Entregou aplicativo de nível empresarial com mais de 1K downloads na Play Store"
         ]
       },
       "dmsDistributor": {
         "title": "DMS Distributor",
-        "description": "Delhi Milk Scheme distributor app for managing demands, team demand, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Aplicativo de distribuidor do Programa de Leite de Delhi para gerir pedidos, pedidos de equipa, pagamentos, livros-razão e reclamações.",
+        "role": "Engenheiro Líder",
         "highlights": [
-          "Developed distributor app for Delhi Milk Scheme using Flutter",
-          "Implemented demand creation and team demand management for distributors",
-          "Built payment tracking, ledgers, and grievance handling modules",
-          "Shipped Business app with 100+ downloads on Play Store"
+          "Desenvolveu aplicativo de distribuidor para o Programa de Leite de Delhi com Flutter",
+          "Implementou criação de pedidos e gestão de pedidos de equipa para distribuidores",
+          "Desenvolveu módulos de pagamentos, livros-razão e tratamento de reclamações",
+          "Lançou aplicativo empresarial com mais de 100 downloads na Play Store"
         ]
       }
     },

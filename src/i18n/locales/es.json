@@ -186,24 +186,24 @@
       },
       "dmsBoothApp": {
         "title": "DMS Booth App",
-        "description": "Delhi Milk Scheme booth app for creating and managing demands, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Aplicación de puesto del Esquema de Leche de Delhi para crear y gestionar demandas, pagos, libros de contabilidad y reclamaciones.",
+        "role": "Ingeniero Líder",
         "highlights": [
-          "Built booth app for Delhi Milk Scheme using Flutter for cross-platform delivery",
-          "Implemented demand creation and management workflows for booth users",
-          "Developed payment tracking, ledgers, and grievance handling features",
-          "Delivered Business-grade app with 1K+ downloads on Play Store"
+          "Desarrolló la aplicación de puesto para el Esquema de Leche de Delhi con Flutter para entrega multiplataforma",
+          "Implementó flujos de creación y gestión de demandas para usuarios de puestos",
+          "Desarrolló seguimiento de pagos, libros de contabilidad y gestión de reclamaciones",
+          "Entregó aplicación de nivel empresarial con más de 1K descargas en Play Store"
         ]
       },
       "dmsDistributor": {
         "title": "DMS Distributor",
-        "description": "Delhi Milk Scheme distributor app for managing demands, team demand, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Aplicación de distribuidor del Esquema de Leche de Delhi para gestionar demandas, demandas de equipo, pagos, libros de contabilidad y reclamaciones.",
+        "role": "Ingeniero Líder",
         "highlights": [
-          "Developed distributor app for Delhi Milk Scheme using Flutter",
-          "Implemented demand creation and team demand management for distributors",
-          "Built payment tracking, ledgers, and grievance handling modules",
-          "Shipped Business app with 100+ downloads on Play Store"
+          "Desarrolló la aplicación de distribuidor para el Esquema de Leche de Delhi con Flutter",
+          "Implementó creación de demandas y gestión de demandas de equipo para distribuidores",
+          "Desarrolló módulos de seguimiento de pagos, libros de contabilidad y gestión de reclamaciones",
+          "Lanzó aplicación empresarial con más de 100 descargas en Play Store"
         ]
       }
     },

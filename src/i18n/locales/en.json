@@ -121,7 +121,7 @@
       "goldClub": {
         "title": "Gold Club",
         "description": "Productivity app by NSL Group designed to support retailers and distributors with value-added services, latest updates, and seamless agricultural solutions experience.",
-        "role": "React Native Developer",
+        "role": "Lead Developer",
         "highlights": [
           "Developed productivity app for NSL Group retailers and distributors with 50K+ downloads",
           "Implemented value-added services and latest updates functionality for agricultural solutions",
@@ -144,7 +144,7 @@
       "nslVyaparaMitra": {
         "title": "NSL VyaparaMitra",
         "description": "Connect with retailers with the NSL's distribution system and implement NSL's sales excellence Programs.",
-        "role": "Developer",
+        "role": "Lead Developer",
         "highlights": [
           "Ensured seamless functionality and UI responsiveness across diverse mobile devices and tablets",
           "Developed and integrated all app modules, including screens, logic, and backend connections",
@@ -166,7 +166,7 @@
       "cortevaDaksh": {
         "title": "Corteva Daksh",
         "description": "Drive Demand Generation of Corteva products through activities conducted by Corteva field staff with standardized reporting.",
-        "role": "Developer",
+        "role": "Lead Developer",
         "highlights": [
           "Designed and developed specific application modules using React Native",
           "Implemented features facilitating standardization of activities for Corteva field staff",
@@ -177,7 +177,7 @@
       "meetHourApp": {
         "title": "MeetHour App",
         "description": "Fully encrypted, 100% free video conferencing solution with scheduling, rescheduling, and whiteboard features.",
-        "role": "Developer",
+        "role": "React Native Developer",
         "highlights": [
           "Enhanced UI for version 2.0 of the MeetHour app with user-friendly interface",
           "Integrated new features like whiteboard into the application",
@@ -188,7 +188,7 @@
       "dmsBoothApp": {
         "title": "DMS Booth App",
         "description": "Delhi Milk Scheme booth app for creating and managing demands, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "role": "Lead Engineer",
         "highlights": [
           "Built booth app for Delhi Milk Scheme using Flutter for cross-platform delivery",
           "Implemented demand creation and management workflows for booth users",
@@ -199,7 +199,7 @@
       "dmsDistributor": {
         "title": "DMS Distributor",
         "description": "Delhi Milk Scheme distributor app for managing demands, team demand, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "role": "Lead Engineer",
         "highlights": [
           "Developed distributor app for Delhi Milk Scheme using Flutter",
           "Implemented demand creation and team demand management for distributors",

@@ -186,24 +186,24 @@
       },
       "dmsBoothApp": {
         "title": "DMS Booth App",
-        "description": "Delhi Milk Scheme booth app for creating and managing demands, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Application poste du Programme de Lait de Delhi pour créer et gérer les demandes, paiements, registres et réclamations.",
+        "role": "Ingénieur Principal",
         "highlights": [
-          "Built booth app for Delhi Milk Scheme using Flutter for cross-platform delivery",
-          "Implemented demand creation and management workflows for booth users",
-          "Developed payment tracking, ledgers, and grievance handling features",
-          "Delivered Business-grade app with 1K+ downloads on Play Store"
+          "Développé l'application poste pour le Programme de Lait de Delhi avec Flutter pour une livraison multiplateforme",
+          "Mis en œuvre les flux de création et de gestion des demandes pour les utilisateurs de postes",
+          "Développé le suivi des paiements, registres et traitement des réclamations",
+          "Livré une application de niveau entreprise avec plus de 1K téléchargements sur le Play Store"
         ]
       },
       "dmsDistributor": {
         "title": "DMS Distributor",
-        "description": "Delhi Milk Scheme distributor app for managing demands, team demand, payments, ledgers, and grievances.",
-        "role": "Flutter Developer",
+        "description": "Application distributeur du Programme de Lait de Delhi pour gérer les demandes, demandes d'équipe, paiements, registres et réclamations.",
+        "role": "Ingénieur Principal",
         "highlights": [
-          "Developed distributor app for Delhi Milk Scheme using Flutter",
-          "Implemented demand creation and team demand management for distributors",
-          "Built payment tracking, ledgers, and grievance handling modules",
-          "Shipped Business app with 100+ downloads on Play Store"
+          "Développé l'application distributeur pour le Programme de Lait de Delhi avec Flutter",
+          "Mis en œuvre la création de demandes et la gestion des demandes d'équipe pour les distributeurs",
+          "Développé les modules de suivi des paiements, registres et traitement des réclamations",
+          "Livré une application entreprise avec plus de 100 téléchargements sur le Play Store"
         ]
       }
     },

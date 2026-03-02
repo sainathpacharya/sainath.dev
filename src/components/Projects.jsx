@@ -1,5 +1,26 @@
 import './Projects.css'
 import { useTranslation } from 'react-i18next'
+import playStoreStats from '../data/play-store-stats.json'
+
+/** Extract Google Play app id from store URL (e.g. ?id=com.example.app&hl=...) */
+function getAppId (playStoreLink) {
+  if (!playStoreLink || typeof playStoreLink !== 'string') return null
+  const m = playStoreLink.match(/[?&]id=([^&]+)/)
+  return m ? m[1] : null
+}
+
+/** Get display rating and downloads from play-store-stats.json for an app id */
+function getLiveStats (appId) {
+  const raw = playStoreStats[appId]
+  if (!raw || raw.error) return null
+  const scoreText = raw.scoreText
+  const installs = raw.installs
+  const hasRating = scoreText && (raw.score ?? 0) > 0
+  return {
+    rating: hasRating ? `${scoreText}★` : null,
+    downloads: installs || null
+  }
+}
 
 const Projects = () => {
   const { t } = useTranslation()
@@ -25,10 +46,10 @@ const Projects = () => {
       role: t('projects.featured.dmsBoothApp.role'),
       tech: ['Flutter', 'Dart'],
       highlights: t('projects.featured.dmsBoothApp.highlights', { returnObjects: true }),
-      image: '🥛',
+      image: `${import.meta.env.BASE_URL}images/apps/featured/dms-logo.png`,
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.dms.salesport.booth&hl=en_IN',
       downloads: '1K+',
-      rating: 'New',
+      rating: null,
       year: '2026',
       show: true
     },
@@ -38,10 +59,10 @@ const Projects = () => {
       role: t('projects.featured.dmsDistributor.role'),
       tech: ['Flutter', 'Dart'],
       highlights: t('projects.featured.dmsDistributor.highlights', { returnObjects: true }),
-      image: '🥛',
+      image: `${import.meta.env.BASE_URL}images/apps/featured/dms-logo.png`,
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.dms.salesport.distributor&hl=en_IN',
       downloads: '100+',
-      rating: 'New',
+      rating: null,
       year: '2026',
       show: true
     },
@@ -151,7 +172,12 @@ const Projects = () => {
         </div>
 
         <div className="projects-grid" role="grid" aria-label="Featured projects">
-          {featuredProjects.filter(project => project.show).map((project, index) => (
+          {featuredProjects.filter(project => project.show).map((project, index) => {
+            const appId = getAppId(project.playStoreLink)
+            const live = getLiveStats(appId)
+            const downloads = live?.downloads ?? project.downloads
+            const rating = live?.rating ?? project.rating
+            return (
             <article key={index} className={`project-card fade-in`} style={{animationDelay: `${index * 0.2}s`}} role="gridcell">
               <div className="project-header">
                 <div className="project-icon">
@@ -173,10 +199,10 @@ const Projects = () => {
                 <div className="project-info">
                   <h3 className="project-title">{project.title}</h3>
                   <span className="project-role">{project.role}</span>
-                  {project.downloads && project.rating && (
+                  {downloads && rating && (
                     <div className="project-stats">
-                      <span className="downloads">{project.downloads}</span>
-                      <span className="rating">{project.rating}</span>
+                      <span className="downloads">{downloads}</span>
+                      <span className="rating">{rating}</span>
                     </div>
                   )}
                 </div>
@@ -222,13 +248,18 @@ const Projects = () => {
                     )}
                   </div>
             </article>
-          ))}
+          )})}
         </div>
 
         <div className="other-projects">
           <h3 className="other-projects-title">{t('projects.otherProjects')}</h3>
         <div className="other-projects-grid" role="list" aria-label="Other projects">
-          {otherProjects.filter(project => project.show !== false).map((project, index) => (
+          {otherProjects.filter(project => project.show !== false).map((project, index) => {
+            const appId = typeof project === 'object' ? getAppId(project.playStoreLink) : null
+            const live = getLiveStats(appId)
+            const downloads = live?.downloads ?? (typeof project === 'object' ? project.downloads : null)
+            const rating = live?.rating ?? (typeof project === 'object' ? project.rating : null)
+            return (
             <div key={index} className="other-project-item" role="listitem">
               <div className="project-logo">
                 {project.logo.startsWith('/') ? (
@@ -257,10 +288,10 @@ const Projects = () => {
                 {typeof project === 'string' ? project : project.name}
               </span>
               <span className="project-type">{t('projects.mobileApp')}</span>
-              {typeof project === 'object' && project.downloads && project.rating && (
+              {downloads && rating && (
                 <div className="project-stats">
-                  <span className="downloads">{project.downloads}</span>
-                  <span className="rating">{project.rating}</span>
+                  <span className="downloads">{downloads}</span>
+                  <span className="rating">{rating}</span>
                 </div>
               )}
               {typeof project === 'object' && project.playStoreLink && (
@@ -275,7 +306,7 @@ const Projects = () => {
                 </a>
               )}
             </div>
-          ))}
+          )})}
         </div>
         </div>
       </div>
