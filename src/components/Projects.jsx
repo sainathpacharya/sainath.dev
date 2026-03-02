@@ -20,6 +20,32 @@ const Projects = () => {
       show: true
     },
     {
+      title: t('projects.featured.dmsBoothApp.title'),
+      description: t('projects.featured.dmsBoothApp.description'),
+      role: t('projects.featured.dmsBoothApp.role'),
+      tech: ['Flutter', 'Dart'],
+      highlights: t('projects.featured.dmsBoothApp.highlights', { returnObjects: true }),
+      image: '🥛',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.dms.salesport.booth&hl=en_IN',
+      downloads: '1K+',
+      rating: 'New',
+      year: '2026',
+      show: true
+    },
+    {
+      title: t('projects.featured.dmsDistributor.title'),
+      description: t('projects.featured.dmsDistributor.description'),
+      role: t('projects.featured.dmsDistributor.role'),
+      tech: ['Flutter', 'Dart'],
+      highlights: t('projects.featured.dmsDistributor.highlights', { returnObjects: true }),
+      image: '🥛',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.dms.salesport.distributor&hl=en_IN',
+      downloads: '100+',
+      rating: 'New',
+      year: '2026',
+      show: true
+    },
+    {
       title: t('projects.featured.goldClub.title'),
       description: t('projects.featured.goldClub.description'),
       role: t('projects.featured.goldClub.role'),
