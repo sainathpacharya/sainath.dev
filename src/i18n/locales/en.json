@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Hi, I'm",
-    "subtitle": "Lead Engineer - React Native & Android",
-    "description": "10+ years of professional experience in Android application development with expertise in React Native, NativeBase.io, and Redux frameworks. Currently working at Ratna Global Technologies, passionate about creating innovative mobile solutions and delivering client-focused results.",
+    "subtitle": "Lead / Senior React Native Engineer",
+    "description": "Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering, including 6+ years specialising in React Native. Shipped 15+ production apps across healthcare, agri-tech, ride-hailing, and productivity. Available immediately — open to global relocation and visa sponsorship.",
     "viewWork": "View My Work",
     "getInTouch": "Get In Touch",
     "yearsExperience": "Years Experience",
@@ -19,20 +19,20 @@
   "about": {
     "title": "About Me",
     "subtitle": "Get to know me better",
-    "passionateTitle": "Passionate Mobile Developer",
-    "description": "I'm a dedicated React Native and Android Developer with over 10+ years of professional experience in mobile application development. Currently working at Ratna Global Technologies Private Limited, I specialize in creating innovative mobile solutions that deliver exceptional user experiences.",
+    "passionateTitle": "Lead / Senior React Native Engineer",
+    "description": "I'm a Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering — including 6+ years specialising in React Native — building cross-platform apps at scale across healthcare, agri-tech, ride-hailing, and productivity. I recently completed my role as Lead React Native Engineer at Ratna Global Technologies (March 2026) and am available immediately for remote, hybrid, or on-site roles worldwide.",
     "highlights": {
       "quickLearner": {
-        "title": "Quick Learner",
-        "description": "Enthusiastic about adopting new technologies and implementing them in real-time applications"
+        "title": "Technical Leadership",
+        "description": "End-to-end greenfield delivery, sprint-driven execution, mentoring, and code review with product, design, and QA"
       },
       "teamPlayer": {
-        "title": "Team Player",
-        "description": "Proven ability to work effectively both as a team member and individual contributor"
+        "title": "Mobile Architecture",
+        "description": "Expert in React Native CLI, TypeScript, Swift/Java native bridging, Flutter, JSI / New Architecture (Fabric), and Clean Architecture"
       },
       "problemSolver": {
-        "title": "Problem Solver",
-        "description": "Strong ability to understand business logic and deliver client-focused solutions"
+        "title": "Problem Solving at Scale",
+        "description": "Practitioner of SOLID and TDD with 85%+ coverage on contributed modules, GitHub Actions, and BrowserStack CI"
       }
     },
     "stats": {
@@ -45,6 +45,7 @@
   "skills": {
     "title": "Skills & Expertise",
     "subtitle": "Technical skills and technologies I work with",
+    "technicalSkillsTitle": "Technical Skills",
     "toolsTechnologies": "Tools & Technologies",
     "languages": "Languages",
     "categories": {
@@ -61,38 +62,44 @@
     },
     "technicalSkills": {
       "reactNative": "React Native",
-      "javaScript": "JavaScript",
+      "javaScript": "JavaScript (ES2024)",
       "typeScript": "TypeScript",
-      "androidDevelopment": "Android Development",
+      "flutter": "Flutter",
+      "dart": "Dart",
+      "swift": "Swift",
       "kotlin": "Kotlin",
       "java": "Java",
-      "restApiIntegration": "REST API Integration",
       "redux": "Redux",
-      "firebaseIntegration": "Firebase Integration",
-      "html": "HTML",
-      "css": "CSS",
-      "reactJs": "React.js",
-      "nativeBaseIo": "NativeBase.io",
-      "materialUi": "Material UI",
-      "retrofit": "Retrofit",
-      "volley": "Volley",
-      "jsonParsing": "JSON Parsing",
-      "asyncStorage": "AsyncStorage",
-      "butterknife": "Butterknife"
+      "zustand": "Zustand",
+      "restApiIntegration": "REST APIs",
+      "graphql": "GraphQL",
+      "firebaseIntegration": "Firebase",
+      "jestRntl": "Jest / RNTL",
+      "jsiFabric": "JSI / New Architecture",
+      "hermes": "Hermes Engine",
+      "githubActions": "GitHub Actions",
+      "webrtc": "WebRTC",
+      "cleanArchitecture": "Clean Architecture",
+      "oauthJwt": "OAuth 2.0 / JWT"
     },
     "tools": {
       "androidStudio": "Android Studio",
       "vsCode": "VS Code",
       "reactNativeCli": "React Native CLI",
-      "git": "Git"
+      "git": "Git",
+      "jira": "Jira",
+      "figma": "Figma",
+      "githubActions": "GitHub Actions",
+      "browserStack": "BrowserStack"
     },
     "spokenLanguages": {
       "english": "English",
       "telugu": "Telugu",
       "hindi": "Hindi",
       "fluent": "Fluent",
+      "c1Professional": "C1 Professional",
       "native": "Native",
-      "conversational": "Conversational"
+      "conversational": "B1 Conversational"
     }
   },
   "experience": {
@@ -109,36 +116,35 @@
     "featured": {
       "collectiveHealth": {
         "title": "Collective Health",
-        "description": "Current project - Health benefits platform that simplifies healthcare experience with clear coverage explanations, provider finder, and cost estimation tools.",
+        "description": "HIPAA-aligned US employee health benefits platform. Team lead plus module contributions at Ratna Global — 50K+ downloads, 4.4★ App Store.",
         "role": "Lead Engineer",
         "highlights": [
-          "Leading development of health benefits platform with 50K+ downloads and 4.4★ rating",
-          "Implementing secure health data management and HIPAA compliance features for patient data protection",
-          "Contributing to provider finder functionality and cost estimation tools for better user experience",
-          "Developing cross-platform mobile solutions using React Native for healthcare providers and patients"
+          "Led team contributing feature modules on a HIPAA-aligned US health benefits platform",
+          "Wrote Jest + RNTL tests, achieving 85% code coverage on contributed modules",
+          "Distributed QA builds via GitHub Actions → BrowserStack on a 2-week sprint cadence",
+          "Shipped React Native / TypeScript modules with CI-backed device testing"
         ]
       },
       "goldClub": {
         "title": "Gold Club",
-        "description": "Productivity app by NSL Group designed to support retailers and distributors with value-added services, latest updates, and seamless agricultural solutions experience.",
-        "role": "Lead Developer",
+        "description": "B2B productivity and distribution platform for NSL Group's 25,000+ retailer network — 50K+ downloads, 4.0★. End-to-end development at Empover.",
+        "role": "End-to-end development",
         "highlights": [
-          "Developed productivity app for NSL Group retailers and distributors with 50K+ downloads",
-          "Implemented value-added services and latest updates functionality for agricultural solutions",
-          "Created user-friendly interface with dedicated support features for community engagement",
-          "Built seamless experience for retailers and distributors in agricultural sector"
+          "Architected and shipped a complete B2B platform for NSL Group retailers and distributors",
+          "Built value-added services, community features, and seamless OTA update delivery at scale",
+          "Integrated REST APIs, Firebase Analytics, and FCM push notifications",
+          "Owned technical design through Play Store release — 50K+ downloads, 4.0★"
         ]
       },
       "nslSubeejKisan": {
         "title": "NSL Subeej Kisan",
-        "description": "Comprehensive agricultural app empowering Nuziveedu farmers with tools, insights, and advisory services to improve farming practices.",
-        "role": "Lead Developer",
+        "description": "Agri-tech farmer assistant for the Nuziveedu Seeds network — live APMC prices, weather, calculators, barcode scan, and multi-language support. 50K+ downloads, 4.2★.",
+        "role": "End-to-end development",
         "highlights": [
-          "Led development team and architected the complete mobile application solution",
-          "Developed weather updates and market price tracking features for farmers",
-          "Implemented multi-language support for diverse farming communities",
-          "Created farming calculators and product scan functionality for agricultural guidance",
-          "Built knowledge centre and nearby retailers locator for comprehensive farmer support"
+          "Architected a complete agri-tech app for the Nuziveedu Seeds farmer network",
+          "Delivered live APMC market prices, weather forecasting, and farming calculators",
+          "Implemented barcode product scan, nearby retailer locator, and Telugu / Hindi / English support",
+          "Owned technical design through Play Store release — 50K+ downloads, 4.2★"
         ]
       },
       "nslVyaparaMitra": {
@@ -154,57 +160,57 @@
       },
       "mcrcApp": {
         "title": "MCRC App",
-        "description": "Develop improved crop varieties, high-quality planting materials, and sustainable production practices for farmers.",
-        "role": "Lead Developer",
+        "description": "Crop variety management platform for farmers — improved varieties, planting materials, and sustainable practices. End-to-end development at Empover, 4.0★, phone and tablet UI.",
+        "role": "End-to-end development",
         "highlights": [
-          "Led development team and managed project delivery for agricultural solutions",
-          "Ensured seamless functionality and UI responsiveness across diverse mobile devices and tablets",
-          "Conducted precise UI enhancements to optimize user experience and ensure consistent usability",
-          "Developed farmer-friendly interface and mentored team members on best practices"
+          "Led development and delivery of the crop variety management platform",
+          "Optimised UI for both phones and tablets",
+          "Supported improved crop varieties, planting materials, and sustainable farming practices",
+          "Shipped to Play Store with a 4.0★ rating"
         ]
       },
       "cortevaDaksh": {
         "title": "Corteva Daksh",
-        "description": "Drive Demand Generation of Corteva products through activities conducted by Corteva field staff with standardized reporting.",
-        "role": "Lead Developer",
+        "description": "Module-level contributions for Corteva field staff demand generation with standardised reporting — 10K+ downloads.",
+        "role": "Module contributions",
         "highlights": [
-          "Designed and developed specific application modules using React Native",
-          "Implemented features facilitating standardization of activities for Corteva field staff",
-          "Created tools to manage activity reporting and enhance team productivity",
-          "Built demand generation features for Corteva products with standardized reporting"
+          "Delivered feature modules in React Native per sprint requirements",
+          "Supported standardised field activities and activity reporting",
+          "Contributed alongside Corteva Farmer Connect (1M+) and Corteva Roots (100K+)",
+          "Shipped module updates used by Corteva field staff"
         ]
       },
       "meetHourApp": {
         "title": "MeetHour App",
-        "description": "Fully encrypted, 100% free video conferencing solution with scheduling, rescheduling, and whiteboard features.",
-        "role": "React Native Developer",
+        "description": "End-to-end encrypted video conferencing platform built from scratch in React Native — 100K+ downloads, 4.2★ on App Store and Play Store.",
+        "role": "Built from scratch",
         "highlights": [
-          "Enhanced UI for version 2.0 of the MeetHour app with user-friendly interface",
-          "Integrated new features like whiteboard into the application",
-          "Worked on bridging native Java Modules to React-Native for improved functionality",
-          "Implemented scheduling and rescheduling features for video conferencing solution"
+          "Owned architecture, UI, feature development, and App Store & Play Store releases",
+          "Designed a WebRTC native module bridge (Java → React Native) with a fully typed JS API",
+          "Implemented scheduling, rescheduling, digital whiteboard, and in-meeting controls",
+          "Shipped 100K+ downloads with a 4.2★ rating across both stores"
         ]
       },
       "dmsBoothApp": {
         "title": "DMS Booth App",
-        "description": "Delhi Milk Scheme booth app for creating and managing demands, payments, ledgers, and grievances.",
-        "role": "Lead Engineer",
+        "description": "Delhi Milk Scheme booth app. Led Flutter SDK upgrade and module updates at Ratna Global — 1K+ downloads on Play Store.",
+        "role": "Flutter SDK upgrade & modules",
         "highlights": [
-          "Built booth app for Delhi Milk Scheme using Flutter for cross-platform delivery",
-          "Implemented demand creation and management workflows for booth users",
-          "Developed payment tracking, ledgers, and grievance handling features",
-          "Delivered Business-grade app with 1K+ downloads on Play Store"
+          "Led Flutter SDK upgrade for Delhi Milk Scheme booth operations",
+          "Delivered module updates per client requirements across release cycles",
+          "Maintained GitHub Actions CI with Google Play Console releases",
+          "Shipped booth workflows for demands, payments, ledgers, and grievances"
         ]
       },
       "dmsDistributor": {
         "title": "DMS Distributor",
-        "description": "Delhi Milk Scheme distributor app for managing demands, team demand, payments, ledgers, and grievances.",
-        "role": "Lead Engineer",
+        "description": "Delhi Milk Scheme distributor app. Led Flutter SDK upgrade and module updates at Ratna Global.",
+        "role": "Flutter SDK upgrade & modules",
         "highlights": [
-          "Developed distributor app for Delhi Milk Scheme using Flutter",
-          "Implemented demand creation and team demand management for distributors",
-          "Built payment tracking, ledgers, and grievance handling modules",
-          "Shipped Business app with 100+ downloads on Play Store"
+          "Led Flutter SDK migration for distributor operations",
+          "Delivered feature enhancements across multiple release cycles",
+          "Supported team demand, payments, ledgers, and grievance workflows",
+          "Released via GitHub Actions and Google Play Console"
         ]
       }
     },
@@ -248,7 +254,7 @@
   },
   "cta": {
     "title": "Ready to Work Together?",
-    "description": "I'm always interested in new opportunities and exciting projects. Let's discuss how we can bring your mobile app ideas to life.",
+    "description": "I'm available immediately for Lead / Senior React Native roles worldwide — remote, hybrid, or on-site. Let's discuss how we can bring your mobile app ideas to life.",
     "getInTouch": "Get In Touch",
     "downloadResume": "Download Resume"
   },
@@ -256,7 +262,7 @@
     "title": "Get In Touch",
     "subtitle": "Let's discuss your next project or just say hello",
     "contactInfo": "Let's Connect",
-    "description": "I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "description": "I'm available immediately for Lead / Senior React Native roles worldwide — remote, hybrid, or on-site. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     "sendMessage": "Send me a message",
     "name": "Name",
     "email": "Email",
@@ -272,8 +278,8 @@
     "followMe": "Follow Me"
   },
   "footer": {
-    "tagline": "React Native & Android Developer",
-    "description": "Passionate about creating innovative mobile solutions that deliver exceptional user experiences. 10+ years of professional experience in mobile application development.",
+    "tagline": "Lead / Senior React Native Engineer",
+    "description": "Building cross-platform mobile apps at scale. 10+ years in mobile engineering, 6+ years specialising in React Native. Available immediately — open to global relocation.",
     "quickLinks": "Quick Links",
     "technologies": "Technologies",
     "connect": "Connect",

@@ -1,6 +1,6 @@
 import './Hero.css'
 import { useTranslation } from 'react-i18next'
-import { getFormattedYears, getFormattedProjects } from '../data/stats'
+import { getFormattedYears, getFormattedProjects, getFormattedCompanies } from '../data/stats'
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="profile-avatar">
               <img 
                 src={`${import.meta.env.BASE_URL}images/hero-avatar.jpeg`}
-                alt="NagaSainath Reddy - Lead Engineer"
+                alt="NagaSainath Reddy - Lead React Native Engineer"
                 className="avatar-image"
                 onError={(e) => {
                   e.target.style.display = 'none'
@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
             <div className="profile-info">
               <h3>NagaSainath Reddy</h3>
-              <p>Lead Engineer - Mobile (iOS & Android)</p>
+              <p>{t('hero.subtitle')}</p>
             </div>
           </div>
           
@@ -54,8 +54,8 @@ const Hero = () => {
               <span className="stat-label">{t('hero.projects')}</span>
             </div>
             <div className="stat">
-              <span className="stat-number">7</span>
-              <span className="stat-label">Companies</span>
+              <span className="stat-number">{getFormattedCompanies()}</span>
+              <span className="stat-label">{t('about.stats.companiesWorked')}</span>
             </div>
             <div className="stat" style={{ display: 'none' }}>
               <span className="stat-number">3</span>

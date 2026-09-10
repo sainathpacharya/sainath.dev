@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Olá, eu sou",
-    "subtitle": "Engenheiro Líder - React Native & Android",
-    "description": "Mais de 10 anos de experiência profissional em desenvolvimento de aplicações Android com expertise em React Native, NativeBase.io e frameworks Redux. Atualmente trabalhando na Ratna Global Technologies, apaixonado por criar soluções móveis inovadoras e entregar resultados focados no cliente.",
+    "subtitle": "Engenheiro Lead / Senior React Native",
+    "description": "Engenheiro Lead / Senior React Native e arquiteto mobile com mais de 10 anos em engenharia mobile, incluindo mais de 6 anos especializados em React Native. Entreguei mais de 15 apps de produção em saúde, agri-tech, ride-hailing e produtividade. Disponível imediatamente — aberto a relocação global e sponsorship de visto.",
     "viewWork": "Ver Meu Trabalho",
     "getInTouch": "Entrar em Contato",
     "yearsExperience": "Anos de Experiência",
@@ -19,19 +19,20 @@
   "about": {
     "title": "Sobre Mim",
     "subtitle": "Conheça-me melhor",
-    "description": "Sou um desenvolvedor dedicado de React Native e Android com mais de 10+ anos de experiência profissional em desenvolvimento de aplicações móveis. Atualmente trabalhando na Ratna Global Technologies Private Limited, especializo-me em criar soluções móveis inovadoras que oferecem experiências de usuário excepcionais.",
+    "passionateTitle": "Engenheiro Lead / Senior React Native",
+    "description": "Sou um Engenheiro Lead / Senior React Native e arquiteto mobile com mais de 10 anos em engenharia mobile — incluindo mais de 6 anos especializados em React Native — construindo apps multiplataforma em escala nas áreas de saúde, agri-tech, ride-hailing e produtividade. Concluí recentemente o cargo de Lead React Native Engineer na Ratna Global Technologies (março de 2026) e estou disponível imediatamente para funções remotas, híbridas ou presenciais em todo o mundo.",
     "highlights": {
       "quickLearner": {
-        "title": "Aprendiz Rápido",
-        "description": "Entusiasta em adotar novas tecnologias e implementá-las em aplicações em tempo real"
+        "title": "Liderança técnica",
+        "description": "Entrega greenfield ponta a ponta, sprints, mentoring e code review com produto, design e QA"
       },
       "teamPlayer": {
-        "title": "Trabalhador em Equipe",
-        "description": "Capacidade comprovada de trabalhar efetivamente tanto como membro da equipe quanto como contribuidor individual"
+        "title": "Arquitetura mobile",
+        "description": "Especialista em React Native CLI, TypeScript, bridging nativo Swift/Java, Flutter, JSI / New Architecture (Fabric) e Clean Architecture"
       },
       "problemSolver": {
-        "title": "Solucionador de Problemas",
-        "description": "Forte capacidade de entender a lógica de negócios e entregar soluções focadas no cliente"
+        "title": "Resolução de problemas em escala",
+        "description": "Praticante de SOLID e TDD com mais de 85% de cobertura nos módulos entregues, GitHub Actions e BrowserStack CI"
       }
     },
     "stats": {
@@ -60,30 +61,35 @@
     },
     "technicalSkills": {
       "reactNative": "React Native",
-      "javaScript": "JavaScript",
+      "javaScript": "JavaScript (ES2024)",
       "typeScript": "TypeScript",
-      "androidDevelopment": "Desenvolvimento Android",
+      "flutter": "Flutter",
+      "dart": "Dart",
+      "swift": "Swift",
       "kotlin": "Kotlin",
       "java": "Java",
-      "restApiIntegration": "Integração REST API",
       "redux": "Redux",
-      "firebaseIntegration": "Integração Firebase",
-      "html": "HTML",
-      "css": "CSS",
-      "reactJs": "React.js",
-      "nativeBaseIo": "NativeBase.io",
-      "materialUi": "Material UI",
-      "retrofit": "Retrofit",
-      "volley": "Volley",
-      "jsonParsing": "Análise JSON",
-      "asyncStorage": "AsyncStorage",
-      "butterknife": "Butterknife"
+      "zustand": "Zustand",
+      "restApiIntegration": "REST APIs",
+      "graphql": "GraphQL",
+      "firebaseIntegration": "Firebase",
+      "jestRntl": "Jest / RNTL",
+      "jsiFabric": "JSI / New Architecture",
+      "hermes": "Hermes Engine",
+      "githubActions": "GitHub Actions",
+      "webrtc": "WebRTC",
+      "cleanArchitecture": "Clean Architecture",
+      "oauthJwt": "OAuth 2.0 / JWT"
     },
     "tools": {
       "androidStudio": "Android Studio",
       "vsCode": "VS Code",
       "reactNativeCli": "React Native CLI",
-      "git": "Git"
+      "git": "Git",
+      "jira": "Jira",
+      "figma": "Figma",
+      "githubActions": "GitHub Actions",
+      "browserStack": "BrowserStack"
     },
     "spokenLanguages": {
       "english": "Inglês",
@@ -91,8 +97,10 @@
       "hindi": "Hindi",
       "fluent": "Fluente",
       "native": "Nativo",
-      "conversational": "Conversacional"
-    }
+      "conversational": "B1 Conversação",
+      "c1Professional": "C1 Profissional"
+    },
+    "technicalSkillsTitle": "Competências técnicas"
   },
   "experience": {
     "title": "Experiência Profissional",
@@ -229,7 +237,7 @@
   },
   "cta": {
     "title": "Pronto para Trabalhar Juntos?",
-    "description": "Estou sempre interessado em novas oportunidades e projetos emocionantes. Vamos discutir como podemos dar vida às suas ideias de aplicativos móveis.",
+    "description": "Estou disponível imediatamente para funções Lead / Senior React Native em todo o mundo — remoto, híbrido ou presencial. Vamos conversar sobre como dar vida às suas ideias de apps móveis.",
     "getInTouch": "Entrar em Contato",
     "downloadResume": "Baixar Currículo"
   },
@@ -250,8 +258,8 @@
     "followMe": "Siga-me"
   },
   "footer": {
-    "tagline": "Desenvolvedor React Native & Android",
-    "description": "Apaixonado por criar soluções móveis inovadoras que oferecem experiências de usuário excepcionais. Mais de 10 anos de experiência profissional em desenvolvimento de aplicações móveis.",
+    "tagline": "Engenheiro Lead / Senior React Native",
+    "description": "Construo apps móveis multiplataforma em escala. Mais de 10 anos em engenharia mobile, mais de 6 anos especializados em React Native. Disponível imediatamente — aberto a relocação global.",
     "quickLinks": "Links Rápidos",
     "technologies": "Tecnologias",
     "connect": "Conectar",

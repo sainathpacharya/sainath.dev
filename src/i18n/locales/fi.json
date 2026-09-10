@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Hei, olen",
-    "subtitle": "Pääinsinööri - React Native & Android",
-    "description": "Yli 10 vuoden ammattimainen kokemus Android-sovelluskehityksessä React Native, NativeBase.io ja Redux-frameworkien asiantuntemuksella. Tällä hetkellä työskentelemässä Ratna Global Technologiesissa, intohimoisena luomaan innovatiivisia mobiiliratkaisuja ja toimittamaan asiakaskeskeisiä tuloksia.",
+    "subtitle": "Lead / Senior React Native -insinööri",
+    "description": "Lead / Senior React Native -insinööri ja mobiiliarkkitehti, jolla on yli 10 vuoden kokemus mobiilikehityksestä, mukaan lukien yli 6 vuotta React Nativeen erikoistuneena. Yli 15 tuotantosovellusta terveydenhuollossa, agroteknologiassa, kyytipalveluissa ja tuottavuudessa. Saatavilla heti — avoin kansainväliselle muutolle ja visatukelle.",
     "viewWork": "Katso Työni",
     "getInTouch": "Ota Yhteyttä",
     "yearsExperience": "Vuoden Kokemus",
@@ -19,19 +19,20 @@
   "about": {
     "title": "Tietoa Minusta",
     "subtitle": "Tutustu minuun paremmin",
-    "description": "Olen omistautunut React Native ja Android -kehittäjä, jolla on yli 10+ vuoden ammattimainen kokemus mobiilisovelluskehityksessä. Tällä hetkellä työskentelemässä Ratna Global Technologies Private Limitedissä, erikoistun luomaan innovatiivisia mobiiliratkaisuja, jotka tarjoavat poikkeuksellisia käyttökokemuksia.",
+    "passionateTitle": "Lead / Senior React Native -insinööri",
+    "description": "Olen Lead / Senior React Native -insinööri ja mobiiliarkkitehti, jolla on yli 10 vuoden kokemus mobiilikehityksestä — mukaan lukien yli 6 vuotta React Nativeen erikoistuneena — rakentamassa skaalautuvia cross-platform-sovelluksia terveydenhuollossa, agroteknologiassa, kyytipalveluissa ja tuottavuudessa. Ratna Global Technologiesin Lead React Native Engineer -roolini päättyi maaliskuussa 2026, ja olen heti käytettävissä etä-, hybridi- tai paikan päällä -tehtäviin maailmanlaajuisesti.",
     "highlights": {
       "quickLearner": {
-        "title": "Nopea Oppija",
-        "description": "Innokas omaksumaan uusia teknologioita ja toteuttamaan niitä reaaliaikaisissa sovelluksissa"
+        "title": "Tekninen johtaminen",
+        "description": "Greenfield-toimitus, sprintit, mentorointi ja koodikatselmoinnit tuotteen, suunnittelun ja QA:n kanssa"
       },
       "teamPlayer": {
-        "title": "Tiimipelaaja",
-        "description": "Todettu kyky työskennellä tehokkaasti sekä tiimin jäsenenä että yksilöllisenä osallistujana"
+        "title": "Mobiiliarkkitehtuuri",
+        "description": "Asiantuntija: React Native CLI, TypeScript, Swift/Java-natiivisillat, Flutter, JSI / New Architecture (Fabric) ja Clean Architecture"
       },
       "problemSolver": {
-        "title": "Ongelmaratkaisija",
-        "description": "Vahva kyky ymmärtää liiketoimintalogiikkaa ja toimittaa asiakaskeskeisiä ratkaisuja"
+        "title": "Ongelmanratkaisu skaalassa",
+        "description": "SOLID ja TDD, yli 85 % kattavuus toimitetuissa moduuleissa, GitHub Actions ja BrowserStack CI"
       }
     },
     "stats": {
@@ -60,30 +61,35 @@
     },
     "technicalSkills": {
       "reactNative": "React Native",
-      "javaScript": "JavaScript",
+      "javaScript": "JavaScript (ES2024)",
       "typeScript": "TypeScript",
-      "androidDevelopment": "Android-kehitys",
+      "flutter": "Flutter",
+      "dart": "Dart",
+      "swift": "Swift",
       "kotlin": "Kotlin",
       "java": "Java",
-      "restApiIntegration": "REST API-integraatio",
       "redux": "Redux",
-      "firebaseIntegration": "Firebase-integraatio",
-      "html": "HTML",
-      "css": "CSS",
-      "reactJs": "React.js",
-      "nativeBaseIo": "NativeBase.io",
-      "materialUi": "Material UI",
-      "retrofit": "Retrofit",
-      "volley": "Volley",
-      "jsonParsing": "JSON-jäsennys",
-      "asyncStorage": "AsyncStorage",
-      "butterknife": "Butterknife"
+      "zustand": "Zustand",
+      "restApiIntegration": "REST APIs",
+      "graphql": "GraphQL",
+      "firebaseIntegration": "Firebase",
+      "jestRntl": "Jest / RNTL",
+      "jsiFabric": "JSI / New Architecture",
+      "hermes": "Hermes Engine",
+      "githubActions": "GitHub Actions",
+      "webrtc": "WebRTC",
+      "cleanArchitecture": "Clean Architecture",
+      "oauthJwt": "OAuth 2.0 / JWT"
     },
     "tools": {
       "androidStudio": "Android Studio",
       "vsCode": "VS Code",
       "reactNativeCli": "React Native CLI",
-      "git": "Git"
+      "git": "Git",
+      "jira": "Jira",
+      "figma": "Figma",
+      "githubActions": "GitHub Actions",
+      "browserStack": "BrowserStack"
     },
     "spokenLanguages": {
       "english": "Englanti",
@@ -91,8 +97,10 @@
       "hindi": "Hindi",
       "fluent": "Sujuva",
       "native": "Äidinkieli",
-      "conversational": "Keskustelu"
-    }
+      "conversational": "B1 Keskustelu",
+      "c1Professional": "C1 Ammatillinen"
+    },
+    "technicalSkillsTitle": "Tekniset taidot"
   },
   "experience": {
     "title": "Työkokemus",
@@ -229,7 +237,7 @@
   },
   "cta": {
     "title": "Valmis Työskentelemään Yhdessä?",
-    "description": "Olen aina kiinnostunut uusista mahdollisuuksista ja jännittävistä projekteista. Keskustellaan siitä, kuinka voimme tuoda mobiilisovellusideasi eloon.",
+    "description": "Olen heti käytettävissä Lead / Senior React Native -tehtäviin maailmanlaajuisesti — etänä, hybridinä tai paikan päällä. Keskustellaan, miten toteutamme mobiilisovellusideasi.",
     "getInTouch": "Ota Yhteyttä",
     "downloadResume": "Lataa CV"
   },
@@ -250,8 +258,8 @@
     "followMe": "Seuraa Minua"
   },
   "footer": {
-    "tagline": "React Native & Android -kehittäjä",
-    "description": "Intohimoisena luomaan innovatiivisia mobiiliratkaisuja, jotka tarjoavat poikkeuksellisia käyttökokemuksia. Yli 10 vuoden ammattimainen kokemus mobiilisovelluskehityksessä.",
+    "tagline": "Lead / Senior React Native -insinööri",
+    "description": "Rakennan skaalautuvia cross-platform-mobiilisovelluksia. Yli 10 vuotta mobiilikehitystä, yli 6 vuotta React Nativeen erikoistuneena. Saatavilla heti — avoin kansainväliselle muutolle.",
     "quickLinks": "Pikalinkit",
     "technologies": "Teknologiat",
     "connect": "Yhdistä",

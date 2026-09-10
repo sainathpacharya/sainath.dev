@@ -2,34 +2,34 @@
 export const portfolioStats = {
   // Experience stats
   yearsExperience: 10,
-  totalProjects: 20,
+  totalProjects: 15,
   companiesWorked: 7,
   languagesKnown: 3,
   
   // Project stats
-  totalPlayStoreApps: 11,
-  totalDownloads: '280K+',
-  averageRating: '4.1★',
+  totalPlayStoreApps: 15,
+  totalDownloads: '1M+',
+  averageRating: '4.2★',
   
   // Featured projects count
-  featuredProjects: 5,
+  featuredProjects: 8,
   
   // Other projects count
-  otherProjects: 12,
+  otherProjects: 9,
   
   // Skills count
-  technicalSkills: 19,
-  toolsAndFrameworks: 4,
+  technicalSkills: 20,
+  toolsAndFrameworks: 8,
   
   // Experience timeline
   experienceYears: [
-    { year: 2015, company: 'New MEK Solutions Pvt. Ltd' },
-    { year: 2016, company: 'Aven App Solutions Pvt. Ltd.' },
+    { year: 2015, company: 'New MEK Solutions' },
+    { year: 2016, company: 'Aven App Solutions' },
     { year: 2017, company: 'Savithru Technologies' },
-    { year: 2018, company: 'Eminosoft India Pvt Ltd' },
-    { year: 2019, company: 'V-Empower Solutions Pvt. Ltd' },
-    { year: 2022, company: 'Empover I-Tech Pvt. Ltd' },
-    { year: 2025, company: 'Ratna Global Technologies Private Limited' }
+    { year: 2018, company: 'Eminosoft India Pvt. Ltd.' },
+    { year: 2019, company: 'V-Empower Solutions Pvt. Ltd.' },
+    { year: 2022, company: 'Empover I-Tech Pvt. Ltd.' },
+    { year: 2024, company: 'Ratna Global Technologies Pvt. Ltd.' }
   ]
 }
 

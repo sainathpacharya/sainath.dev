@@ -4,38 +4,45 @@ import { useTranslation } from 'react-i18next'
 const Skills = () => {
   const { t } = useTranslation()
   
-  const skills = [
-    'React Native',
-    'JavaScript',
-    'TypeScript',
-    'Android Development',
-    'iOS Development',
-    'Kotlin',
-    'Java',
-    'REST API Integration',
-    'Redux',
-    'Firebase Integration',
-    'HTML',
-    'CSS',
-    'React.js',
-    'Material UI',
-    'Retrofit',
-    'Volley',
-    'JSON Parsing',
-    'AsyncStorage',
-    'SQLite',
-    'Git'
+  const skillKeys = [
+    'reactNative',
+    'typeScript',
+    'javaScript',
+    'flutter',
+    'dart',
+    'swift',
+    'kotlin',
+    'java',
+    'redux',
+    'zustand',
+    'restApiIntegration',
+    'graphql',
+    'firebaseIntegration',
+    'jestRntl',
+    'jsiFabric',
+    'hermes',
+    'githubActions',
+    'webrtc',
+    'cleanArchitecture',
+    'oauthJwt'
   ]
 
   const tools = [
-    { name: 'Android Studio', icon: '📱' },
-    { name: 'VS Code', icon: '💻' },
-    { name: 'React Native CLI', icon: '⚛️' },
-    { name: 'Git', icon: '🔧' },
-    { name: 'Jira', icon: '📋' },
-    { name: 'Figma', icon: '🎨' }
+    { key: 'androidStudio', icon: '📱' },
+    { key: 'vsCode', icon: '💻' },
+    { key: 'reactNativeCli', icon: '⚛️' },
+    { key: 'git', icon: '🔧' },
+    { key: 'jira', icon: '📋' },
+    { key: 'figma', icon: '🎨' },
+    { key: 'githubActions', icon: '🚀' },
+    { key: 'browserStack', icon: '🧪' }
   ]
 
+  const spokenLanguages = [
+    { nameKey: 'english', levelKey: 'c1Professional' },
+    { nameKey: 'telugu', levelKey: 'native' },
+    { nameKey: 'hindi', levelKey: 'conversational' }
+  ]
 
   return (
     <section id="skills" className="skills">
@@ -47,38 +54,49 @@ const Skills = () => {
 
         <div className="skills-content">
           <div className="skills-main">
-            <h3 className="skills-section-title">Technical Skills</h3>
+            <h3 className="skills-section-title">{t('skills.technicalSkillsTitle')}</h3>
             <div className="skills-grid">
-              {skills.map((skill, index) => {
-                const animationDelay = index * 0.2; // Sequential delay: 0s, 0.2s, 0.4s, etc.
+              {skillKeys.map((skillKey, index) => {
+                const animationDelay = index * 0.12
                 return (
                   <div 
-                    key={index} 
+                    key={skillKey} 
                     className="skill-tag bounce-skill"
                     style={{
                       animationDelay: `${animationDelay}s`
                     }}
                   >
-                    {skill}
+                    {t(`skills.technicalSkills.${skillKey}`)}
                   </div>
-                );
+                )
               })}
             </div>
           </div>
 
           <div className="skills-sidebar">
             <div className="sidebar-section">
-              <h3 className="sidebar-title">Tools & Technologies</h3>
+              <h3 className="sidebar-title">{t('skills.toolsTechnologies')}</h3>
               <div className="tools-grid">
-                {tools.map((tool, index) => (
-                  <div key={index} className="tool-item">
+                {tools.map((tool) => (
+                  <div key={tool.key} className="tool-item">
                     <span className="tool-icon">{tool.icon}</span>
-                    <span className="tool-name">{tool.name}</span>
+                    <span className="tool-name">{t(`skills.tools.${tool.key}`)}</span>
                   </div>
                 ))}
               </div>
             </div>
-            
+
+            <div className="sidebar-section">
+              <h3 className="sidebar-title">{t('skills.languages')}</h3>
+              <div className="languages-list">
+                {spokenLanguages.map((language) => (
+                  <div key={language.nameKey} className="language-item">
+                    <span className="language-name">{t(`skills.spokenLanguages.${language.nameKey}`)}</span>
+                    <span className="language-level">{t(`skills.spokenLanguages.${language.levelKey}`)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

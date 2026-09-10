@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Hallo, ich bin",
-    "subtitle": "Lead Engineer - React Native & Android",
-    "description": "Mehr als 10 Jahre Berufserfahrung in der Android-Anwendungsentwicklung mit Expertise in React Native, NativeBase.io und Redux-Frameworks. Derzeit bei Ratna Global Technologies tätig, leidenschaftlich für die Erstellung innovativer mobiler Lösungen und die Bereitstellung kundenorientierter Ergebnisse.",
+    "subtitle": "Lead / Senior React Native Engineer",
+    "description": "Lead / Senior React Native Engineer und Mobile-Architekt mit über 10 Jahren Mobile Engineering, davon über 6 Jahre spezialisiert auf React Native. Mehr als 15 Produktions-Apps in Healthcare, Agri-Tech, Ride-Hailing und Produktivität. Sofort verfügbar — offen für globale Relocation und Visa-Sponsorship.",
     "viewWork": "Meine Arbeit ansehen",
     "getInTouch": "Kontakt aufnehmen",
     "yearsExperience": "Jahre Erfahrung",
@@ -19,19 +19,20 @@
   "about": {
     "title": "Über mich",
     "subtitle": "Lernen Sie mich besser kennen",
-    "description": "Ich bin ein engagierter React Native und Android Entwickler mit über 10+ Jahren Berufserfahrung in der mobilen Anwendungsentwicklung. Derzeit bei Ratna Global Technologies Private Limited tätig, spezialisiere ich mich auf die Erstellung innovativer mobiler Lösungen, die außergewöhnliche Benutzererfahrungen bieten.",
+    "passionateTitle": "Lead / Senior React Native Engineer",
+    "description": "Ich bin Lead / Senior React Native Engineer und Mobile-Architekt mit über 10 Jahren Mobile Engineering — darunter über 6 Jahre spezialisiert auf React Native — und baue Cross-Platform-Apps in Healthcare, Agri-Tech, Ride-Hailing und Produktivität. Meine Rolle als Lead React Native Engineer bei Ratna Global Technologies endete im März 2026; ich bin sofort verfügbar für Remote-, Hybrid- oder Vor-Ort-Rollen weltweit.",
     "highlights": {
       "quickLearner": {
-        "title": "Schneller Lerner",
-        "description": "Begeistert von der Übernahme neuer Technologien und deren Implementierung in Echtzeitanwendungen"
+        "title": "Technische Führung",
+        "description": "Greenfield-Delivery, Sprint-Ausführung, Mentoring und Code Reviews mit Product, Design und QA"
       },
       "teamPlayer": {
-        "title": "Teamplayer",
-        "description": "Bewiesene Fähigkeit, sowohl als Teammitglied als auch als Einzelbeitragender effektiv zu arbeiten"
+        "title": "Mobile Architektur",
+        "description": "Experte für React Native CLI, TypeScript, Swift/Java Native Bridging, Flutter, JSI / New Architecture (Fabric) und Clean Architecture"
       },
       "problemSolver": {
-        "title": "Problemlöser",
-        "description": "Starke Fähigkeit, Geschäftslogik zu verstehen und kundenorientierte Lösungen zu liefern"
+        "title": "Problemlösung at Scale",
+        "description": "SOLID und TDD mit 85 %+ Coverage auf beigetragenen Modulen, GitHub Actions und BrowserStack CI"
       }
     },
     "stats": {
@@ -60,30 +61,35 @@
     },
     "technicalSkills": {
       "reactNative": "React Native",
-      "javaScript": "JavaScript",
+      "javaScript": "JavaScript (ES2024)",
       "typeScript": "TypeScript",
-      "androidDevelopment": "Android-Entwicklung",
+      "flutter": "Flutter",
+      "dart": "Dart",
+      "swift": "Swift",
       "kotlin": "Kotlin",
       "java": "Java",
-      "restApiIntegration": "REST API-Integration",
       "redux": "Redux",
-      "firebaseIntegration": "Firebase-Integration",
-      "html": "HTML",
-      "css": "CSS",
-      "reactJs": "React.js",
-      "nativeBaseIo": "NativeBase.io",
-      "materialUi": "Material UI",
-      "retrofit": "Retrofit",
-      "volley": "Volley",
-      "jsonParsing": "JSON-Parsing",
-      "asyncStorage": "AsyncStorage",
-      "butterknife": "Butterknife"
+      "zustand": "Zustand",
+      "restApiIntegration": "REST APIs",
+      "graphql": "GraphQL",
+      "firebaseIntegration": "Firebase",
+      "jestRntl": "Jest / RNTL",
+      "jsiFabric": "JSI / New Architecture",
+      "hermes": "Hermes Engine",
+      "githubActions": "GitHub Actions",
+      "webrtc": "WebRTC",
+      "cleanArchitecture": "Clean Architecture",
+      "oauthJwt": "OAuth 2.0 / JWT"
     },
     "tools": {
       "androidStudio": "Android Studio",
       "vsCode": "VS Code",
       "reactNativeCli": "React Native CLI",
-      "git": "Git"
+      "git": "Git",
+      "jira": "Jira",
+      "figma": "Figma",
+      "githubActions": "GitHub Actions",
+      "browserStack": "BrowserStack"
     },
     "spokenLanguages": {
       "english": "Englisch",
@@ -91,8 +97,10 @@
       "hindi": "Hindi",
       "fluent": "Fließend",
       "native": "Muttersprache",
-      "conversational": "Unterhaltung"
-    }
+      "conversational": "B1 Konversation",
+      "c1Professional": "C1 Professionell"
+    },
+    "technicalSkillsTitle": "Technische Fähigkeiten"
   },
   "experience": {
     "title": "Berufserfahrung",
@@ -229,7 +237,7 @@
   },
   "cta": {
     "title": "Bereit, Zusammen zu Arbeiten?",
-    "description": "Ich bin immer an neuen Möglichkeiten und aufregenden Projekten interessiert. Lassen Sie uns besprechen, wie wir Ihre mobilen App-Ideen zum Leben erwecken können.",
+    "description": "Ich bin sofort verfügbar für Lead-/Senior-React-Native-Rollen weltweit — remote, hybrid oder vor Ort. Lassen Sie uns besprechen, wie wir Ihre Mobile-App-Ideen umsetzen.",
     "getInTouch": "Kontakt aufnehmen",
     "downloadResume": "Lebenslauf herunterladen"
   },
@@ -250,8 +258,8 @@
     "followMe": "Folgen Sie mir"
   },
   "footer": {
-    "tagline": "React Native & Android Entwickler",
-    "description": "Leidenschaftlich für die Erstellung innovativer mobiler Lösungen, die außergewöhnliche Benutzererfahrungen bieten. Mehr als 10 Jahre Berufserfahrung in der mobilen Anwendungsentwicklung.",
+    "tagline": "Lead / Senior React Native Engineer",
+    "description": "Cross-Platform-Mobile-Apps at scale. Über 10 Jahre Mobile Engineering, über 6 Jahre React Native. Sofort verfügbar — offen für globale Relocation.",
     "quickLinks": "Schnelle Links",
     "technologies": "Technologien",
     "connect": "Verbinden",
