@@ -21,7 +21,7 @@
     "analyze:bundle": "npx vite-bundle-analyzer dist",
     "update-play-stats": "node scripts/update-play-store-stats.js"
   },
-  "homepage": "https://sainathpacharya.github.io/sainath.dev",
+  "homepage": "https://thepalles.co.in",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "i18next": "^25.6.0",

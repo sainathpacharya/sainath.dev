@@ -64,7 +64,7 @@ export default defineConfig({
       }
     })
   ],
-  base: '/sainath.dev/', // Required for GitHub Pages deployment
+  base: '/', // Custom domain (thepalles.co.in) is served from the site root
   build: {
     minify: 'terser',
     terserOptions: {

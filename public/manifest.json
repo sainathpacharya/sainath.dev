@@ -2,17 +2,17 @@
   "name": "NagaSainath Reddy - Lead Engineer",
   "short_name": "Sainath.dev",
   "description": "Lead Engineer specializing in React Native and Android development with 10+ years of experience",
-  "start_url": "/sainath.dev/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "orientation": "portrait-primary",
-  "scope": "/sainath.dev/",
+  "scope": "/",
   "lang": "en",
   "categories": ["business", "productivity", "developer"],
   "icons": [
     {
-      "src": "/sainath.dev/vite.svg",
+      "src": "/vite.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
