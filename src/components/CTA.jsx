@@ -18,11 +18,7 @@ const CTA = () => {
             <a href="#contact" className="btn btn-primary">
               {t('cta.getInTouch')}
             </a>
-            <a
-              href={`${import.meta.env.BASE_URL}NagaSainath_LeadRN_Resume.pdf`}
-              download="NagaSainath_LeadRN_Resume.pdf"
-              className="btn btn-secondary"
-            >
+            <a href={`${import.meta.env.BASE_URL}CV_EU_Format.html`} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               {t('cta.downloadResume')}
             </a>
           </div>
