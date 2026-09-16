@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagasainath Reddy - Curriculum Vitae</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+    <title>Naga Sainath Reddy Palle - Curriculum Vitae</title>
     <style>
         .print-button {
             position: fixed;
@@ -18,6 +17,8 @@
             font-weight: 600;
             border-radius: 8px;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
             z-index: 1000;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease;
@@ -57,7 +58,7 @@
             text-transform: uppercase;
         }
         .cv-title {
-            font-size: 12pt;
+            font-size: 11pt;
             font-weight: 600;
             margin-bottom: 2mm;
             color: #1a1a1a;
@@ -123,10 +124,32 @@
         .job-duties { margin-top: 0; padding-left: 5mm; }
         .job-duties li { margin-bottom: 1mm; font-size: 9pt; }
 
-        .projects-list li { margin-bottom: 2.5mm; font-size: 9.5pt; line-height: 1.4; }
-        .projects-list li strong { color: #1a1a1a; }
+        .project-entry { margin-bottom: 3mm; break-inside: avoid; }
+        .project-headline {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #1a1a1a;
+            margin-bottom: 0.4mm;
+        }
+        .project-meta {
+            font-size: 8.5pt;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 0.8mm;
+        }
+        .project-stack {
+            font-size: 8.5pt;
+            color: #333;
+            margin-bottom: 0.8mm;
+        }
+        .project-desc {
+            font-size: 9pt;
+            line-height: 1.4;
+            color: #333;
+        }
 
         .additional-info { font-size: 9pt; color: #444; line-height: 1.45; }
+        .edu-line { font-size: 9.5pt; line-height: 1.45; color: #333; margin-bottom: 1.5mm; }
 
         .print-note {
             position: fixed;
@@ -157,22 +180,21 @@
     </style>
 </head>
 <body>
-    <button class="print-button" onclick="downloadPDF()">📄 Download as PDF</button>
+    <a class="print-button" href="NagaSainath_LeadRN_Resume.pdf" download="NagaSainath_LeadRN_Resume.pdf">📄 Download as PDF</a>
     <div class="print-note">
         <strong>💡 Quick Download:</strong> Click the button above to download your CV as PDF.
     </div>
 
     <div class="container">
         <div class="cv-content">
-            <h1 class="cv-name">Nagasainath Reddy</h1>
-            <div class="cv-title">Lead React Native Engineer (Android · iOS)</div>
-            <div class="cv-location-line">Hyderabad, India | Open to opportunities across the European Union — willing to relocate or work remotely with EU-based companies</div>
+            <h1 class="cv-name">Naga Sainath Reddy Palle</h1>
+            <div class="cv-title">Lead / Senior React Native Engineer · iOS &amp; Android · TypeScript · 10+ Yrs Mobile / 6+ Yrs React Native</div>
+            <div class="cv-location-line">Hyderabad, India · Open to Global Relocation · Open to Visa Sponsorship · Available immediately (prior role concluded March 2026)</div>
             <div class="contact-line">
-                Address: Hyderabad, Telangana, India &nbsp;|&nbsp;
                 Email: <a href="mailto:sainathp.acharya@gmail.com">sainathp.acharya@gmail.com</a> &nbsp;|&nbsp;
                 Phone: +91 7013134330
                 <br>
-                LinkedIn: <a href="https://linkedin.com/in/naga-sainath-reddy-palle-32935a166">linkedin.com/in/naga-sainath-reddy-palle-32935a166</a> &nbsp;|&nbsp;
+                LinkedIn: <a href="https://www.linkedin.com/in/naga-sainath-reddy-palle">linkedin.com/in/naga-sainath-reddy-palle</a> &nbsp;|&nbsp;
                 Portfolio: <a href="https://thepalles.co.in">thepalles.co.in</a>
                 <br>
                 GitHub: <a href="https://github.com/sainathpacharya">github.com/sainathpacharya</a>
@@ -180,118 +202,153 @@
 
             <h2 class="section-title">Professional Summary</h2>
             <div class="summary-box section">
-                <p>Lead React Native Engineer with 10+ years building cross-platform mobile architecture and scalable mobile applications for iOS and Android. Ships apps to App Store and Play Store with 50K–100K+ downloads and 4.0+ ratings. Strong in CI/CD pipelines, mobile performance optimization, and type-safe development (TypeScript, Kotlin).</p>
-                <p>Proven technical leadership: defines architecture, mentors teams, and delivers enterprise and consumer solutions in healthcare, agriculture, and productivity. REST API integration, code review, and Agile/Scrum. EU-relocation ready; effective in distributed, remote environments.</p>
+                <p>Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering — including 6+ years specialising in React Native — building cross-platform mobile apps at scale across healthcare, agri-tech, ride-hailing, and productivity domains. Experienced in technical leadership and team coordination: end-to-end greenfield delivery, module-level contributions on large-scale platforms, sprint-driven execution, and cross-functional collaboration with product managers, designers, and QA.</p>
+                <p>Expert in React Native CLI, TypeScript, Swift and Java native module bridging, Flutter, JSI / New Architecture (Fabric), Jest/RNTL, GitHub Actions, and BrowserStack CI workflows. Shipped 15+ production apps across React Native, Flutter, and native Android. Practitioner of Clean Architecture, SOLID principles, and TDD. Strong problem-solving skills at scale. Excellent written and verbal communication skills.</p>
             </div>
 
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-block section">
-                <div class="skill-line"><strong>React Native &amp; Mobile:</strong> React Native | React Hooks | Context API | Android (Java, Kotlin) | iOS | TypeScript | Flutter (Basic)</div>
-                <div class="skill-line"><strong>State &amp; Data:</strong> Redux | REST APIs | JSON | AsyncStorage | SQLite | Firebase Cloud Messaging (FCM) | Push Notifications</div>
-                <div class="skill-line"><strong>UI &amp; Libraries:</strong> React.js | Material UI | NativeBase | Retrofit | Volley | Firebase</div>
-                <div class="skill-line"><strong>Testing &amp; Quality:</strong> Jest | React Native Testing Library | code review</div>
-                <div class="skill-line"><strong>DevOps &amp; Release:</strong> CI/CD pipelines | GitHub Actions | Fastlane | App Store &amp; Play Store release | Git | Jira | Figma</div>
-                <div class="skill-line"><strong>Practices:</strong> Agile/Scrum | technical leadership | mobile performance tuning | HIPAA-aware development</div>
+                <div class="skill-line"><strong>React Native:</strong> React Native CLI · React Navigation v6 · Reanimated 2/3 · Hermes Engine · JSI / New Architecture (Fabric) · Metro Bundler · Expo SDK · EAS Build · CodePush / OTA</div>
+                <div class="skill-line"><strong>Flutter:</strong> Dart · SDK Upgrade &amp; Migration · Cross-platform UI · Play Store Release</div>
+                <div class="skill-line"><strong>iOS Native:</strong> Native Module Bridging (Swift → RN) · XCTest · TestFlight · App Store Connect · Apple HIG · Universal Links · In-app Purchases</div>
+                <div class="skill-line"><strong>Android Native:</strong> Kotlin · Java · Espresso · Google Play Console · Internal Testing Tracks · App Bundle · APK Release</div>
+                <div class="skill-line"><strong>Languages:</strong> TypeScript · JavaScript (ES2024) · Swift · Kotlin · Java · Dart</div>
+                <div class="skill-line"><strong>State &amp; Data:</strong> Redux · Zustand · Context API · REST APIs · GraphQL · WebSockets · Firebase (Auth, FCM, Firestore, Analytics, Crashlytics) · AsyncStorage · MMKV · SQLite · Realm</div>
+                <div class="skill-line"><strong>Testing:</strong> Jest · React Native Testing Library (RNTL) · XCTest · TDD · 85%+ coverage on contributed modules</div>
+                <div class="skill-line"><strong>CI/CD &amp; DevOps:</strong> GitHub Actions · BrowserStack · Fastlane · App Store Connect · TestFlight · Google Play Console · Sentry · Crashlytics · Firebase App Distribution</div>
+                <div class="skill-line"><strong>Cloud &amp; AWS:</strong> AWS IAM · IAM Identity Center · Permission Sets &amp; Policy Configuration · AWS Amplify · AWS Workspaces</div>
+                <div class="skill-line"><strong>Architecture:</strong> Clean Architecture · SOLID Principles · Mobile SDK Design · Scalable Systems · System Performance Optimisation</div>
+                <div class="skill-line"><strong>Auth &amp; Security:</strong> OAuth 2.0 · JWT · HIPAA-aligned Development · Secure Token Storage · Biometric Auth · GDPR Compliance</div>
+                <div class="skill-line"><strong>Analytics:</strong> Firebase Analytics · Mixpanel · Amplitude · Sentry Performance Monitoring · Crashlytics</div>
+                <div class="skill-line"><strong>Leadership:</strong> Technical Leadership · Problem-Solving at Scale · Cross-functional Collaboration · Mentoring · Code Review · Agile / Scrum</div>
+                <div class="skill-line"><strong>Tools:</strong> Git · GitFlow · Jira · Figma · BrowserStack · Deep Linking · Push Notifications (FCM / APNs) · WebRTC · GitHub Copilot · Cursor · ChatGPT · Claude</div>
             </div>
 
             <h2 class="section-title">Work Experience</h2>
             <div class="section">
                 <div class="job-entry">
-                    <div class="job-headline">Lead React Native Engineer | Ratna Global Technologies Private Limited</div>
-                    <div class="job-meta">Dec 2024 – Present | Hyderabad, India</div>
+                    <div class="job-headline">Lead React Native Engineer | Ratna Global Technologies Pvt. Ltd.</div>
+                    <div class="job-meta">Dec 2024 – Mar 2026 · Hyderabad, India</div>
                     <ul class="job-duties">
-                        <li>Drive delivery of scalable mobile solutions for enterprise clients; ensure App Store and Play Store release quality.</li>
-                        <li>Define development standards and CI/CD pipelines using GitHub Actions and Fastlane for automated build and release workflows.</li>
-                        <li>Lead cross-platform mobile architecture and engineering for enterprise React Native and Android applications.</li>
+                        <li>Led mobile engineering team — coordinated module delivery across Collective Health and DMS projects while contributing hands-on in 2-week JIRA-driven sprints.</li>
+                        <li>Collective Health (React Native): HIPAA-aligned US employee health benefits platform — 50K+ downloads, 4.4★ App Store. Delivered feature modules; wrote Jest + RNTL tests, achieving 85% code coverage on contributed modules.</li>
+                        <li>DMS Booth &amp; DMS Distributor (Flutter): Delhi Milk Scheme apps — led Flutter SDK upgrade and implemented module updates per client requirements.</li>
+                        <li>Maintained GitHub Actions CI pipeline integrated with BrowserStack for automated QA build distribution — ensuring every release was device-tested before production deployment.</li>
+                        <li>Led team PR reviews using GitHub Copilot; mentored engineers on code quality; collaborated cross-functionally with product managers, designers, and QA.</li>
+                        <li>Gained hands-on AWS exposure: configured IAM and IAM Identity Center, set up permission sets and policies, and provisioned workspaces to support secure, role-based access for engineering workflows.</li>
                     </ul>
                 </div>
                 <div class="job-entry">
-                    <div class="job-headline">Senior React Native Developer | Empover I-Tech Pvt. Ltd</div>
-                    <div class="job-meta">May 2022 – Dec 2024 | Hyderabad, India</div>
+                    <div class="job-headline">Senior React Native Developer | Empover I-Tech Pvt. Ltd.</div>
+                    <div class="job-meta">May 2022 – Dec 2024 · Hyderabad, India</div>
                     <ul class="job-duties">
-                        <li>Delivered 5+ production React Native applications; performed code reviews and mobile performance tuning.</li>
-                        <li>Mentored junior developers and owned technical architecture; implemented Jest and React Native Testing Library for quality.</li>
-                        <li>Implemented Firebase Cloud Messaging (FCM) push notifications, increasing user engagement and real-time feature adoption.</li>
-                        <li>Led React Native and native Android development for enterprise apps used by 100K+ users.</li>
+                        <li>Owned end-to-end React Native development for enterprise and agri-tech applications serving 100K+ MAU across multiple production apps.</li>
+                        <li>End-to-end ownership — architected, built, and shipped: Gold Club (50K+ downloads, 4.0★), NSL Subeej Kisan (50K+ downloads, 4.2★), and MCRC App (4.0★) — from technical design through Play Store release.</li>
+                        <li>Module-level contributions — delivered feature modules across Corteva Farmer Connect (1M+), Corteva Roots (100K+), Corteva Daksh (10K+), ROOTS Employee, NSL Kissan Vikas, and NSL Retail Audit per sprint requirements.</li>
+                        <li>Built reusable component library and internal SDK-like modules consumed across 5 production React Native apps — reduced duplication, accelerated feature delivery.</li>
+                        <li>Migrated a large-scale codebase from class components to React Hooks + TypeScript — engineer onboarding time reduced 40%.</li>
+                        <li>Integrated FCM with APNs via native Swift modules — real-time feature adoption increased 50% within 30 days of rollout.</li>
+                        <li>Achieved 40% load time improvement via Hermes tuning, FlatList optimisation, and image caching; established Jest + RNTL testing (50%+ critical coverage).</li>
+                        <li>Conducted React Native architecture workshops — production bug rate reduced 20% over two quarters.</li>
                     </ul>
                 </div>
                 <div class="job-entry">
-                    <div class="job-headline">React Native Developer | V-Empower Solutions Pvt. Ltd</div>
-                    <div class="job-meta">Apr 2019 – May 2022 | Hyderabad, India</div>
+                    <div class="job-headline">React Native Developer | V-Empower Solutions Pvt. Ltd.</div>
+                    <div class="job-meta">Apr 2019 – May 2022 · Hyderabad, India</div>
                     <ul class="job-duties">
-                        <li>Collaborated with cross-functional teams; optimized app performance and user experience for production release.</li>
-                        <li>Built cross-platform apps with React Native and Android for multiple industries; integrated third-party libraries and REST APIs.</li>
+                        <li>Developed MeetHour from scratch in React Native — an end-to-end encrypted video conferencing platform, 100K+ downloads, 4.2★; owned architecture, UI, feature development, and App Store &amp; Play Store releases.</li>
+                        <li>Designed WebRTC native module bridge (Java → React Native) with fully typed JS API; implemented scheduling, digital whiteboard, and in-meeting controls.</li>
+                        <li>Contributed to Wakuk Passenger and Wakuk Partner (Native Android) — ride-hailing apps — feature modules in Java/Kotlin for booking, trip tracking, and driver/partner workflows.</li>
+                        <li>Integrated third-party SDKs (analytics, payments, mapping) and REST APIs with caching — load times reduced 25%, offline resilience improved.</li>
                     </ul>
                 </div>
                 <div class="job-entry">
-                    <div class="job-headline">Android Developer | Eminosoft India Pvt Ltd</div>
-                    <div class="job-meta">Jul 2018 – Apr 2019 | Hyderabad, India</div>
+                    <div class="job-headline">Android Developer | Eminosoft India Pvt. Ltd.</div>
+                    <div class="job-meta">Jul 2018 – Apr 2019 · Hyderabad, India</div>
                     <ul class="job-duties">
-                        <li>Implemented RESTful API integration, SQLite, and custom UI components.</li>
-                        <li>Developed native Android applications in Java and Kotlin with complex business logic.</li>
+                        <li>Developed native Android applications in Java and Kotlin with RESTful API integration, SQLite persistence, and Material Design UI.</li>
+                        <li>Third-party library integrations and UX improvements drove measurable gains in app downloads and user satisfaction ratings.</li>
                     </ul>
                 </div>
                 <div class="job-entry">
-                    <div class="job-headline">Android Developer | Savithru Technologies</div>
-                    <div class="job-meta">Jul 2017 – May 2018 | Bangalore, India</div>
+                    <div class="job-headline">Early Career — Android Developer</div>
+                    <div class="job-meta">2015 – 2018</div>
                     <ul class="job-duties">
-                        <li>Worked with Firebase and cloud services; followed modern Android practices.</li>
-                        <li>Developed Android apps with focus on UI/UX and backend integration.</li>
-                    </ul>
-                </div>
-                <div class="job-entry">
-                    <div class="job-headline">Android Developer | Aven App Solutions Pvt. Ltd.</div>
-                    <div class="job-meta">Oct 2016 – Jul 2017 | Hyderabad, India</div>
-                    <ul class="job-duties">
-                        <li>Delivered Android applications with JSON/API integration and mobile testing.</li>
-                    </ul>
-                </div>
-                <div class="job-entry">
-                    <div class="job-headline">Android Developer | New MEK Solutions Pvt. Ltd</div>
-                    <div class="job-meta">May 2015 – Sep 2016 | Hyderabad, India</div>
-                    <ul class="job-duties">
-                        <li>Started professional Android development; worked on small to medium-scale projects.</li>
+                        <li>Savithru Technologies (Jul 2017 – May 2018): Android apps with Firebase, UI design, and backend integration — Bangalore.</li>
+                        <li>Aven App Solutions (Oct 2016 – Jul 2017): Native Android (Java), JSON/API integration, and mobile testing — Hyderabad.</li>
+                        <li>New MEK Solutions (May 2015 – Sep 2016): Foundational Android development across fintech, edtech, and SME client projects — Hyderabad.</li>
                     </ul>
                 </div>
             </div>
 
-            <h2 class="section-title">Key Projects &amp; Achievements</h2>
-            <ul class="projects-list section">
-                <li><strong>Collective Health</strong> (Lead Engineer) – Cross-platform health benefits app, 50K+ downloads, 4.4★; HIPAA-aligned architecture; React Native, performance tuning.</li>
-                <li><strong>DMS Booth App</strong> (Lead Engineer) – Flutter app for Delhi Milk Scheme booth operations; 1K+ downloads, 4.4★; sales and inventory at retail booths.</li>
-                <li><strong>DMS Distributor App</strong> (Lead Engineer) – Flutter app for DMS distributors; order management, delivery tracking, and field operations.</li>
-                <li><strong>NSL Gold Club</strong> (React Native Developer) – NSL Group retailer app, 50K+ downloads, 4.0★; scalable mobile app; value-added services, community features.</li>
-                <li><strong>NSL Subeej Kisan</strong> (Lead Developer) – Agriculture app, 10K+ downloads, 4.2★; multi-language, weather, market prices; led team and architecture.</li>
-                <li><strong>MCRC App</strong> (Lead Developer) – 5K+ downloads, 4.0★; led delivery; mentored team; improved UX and performance.</li>
-                <li><strong>Corteva Daksh</strong> (Developer) – Field force app, 1K+ downloads, 4.1★; React Native; standardized reporting and activity management.</li>
-                <li><strong>MeetHour</strong> – Encrypted video conferencing app, 100K+ downloads, 4.6★; App Store &amp; Play Store; scheduling, whiteboard, native modules.<br><br>
-                <strong>Other projects:</strong> Corteva Farmer Connect (100K+, 4.3★), ROOTS Employee App (1K+, 4.0★), MTracker (10K+, 4.2★), Corteva Roots (10K+, 4.0★), PIQYU (1K+, 3.9★), NSL Kissan Vikas (1K+, 4.1★), NSL Retail Audit (500+, 4.0★). See portfolio for full list.</li>
+            <h2 class="section-title">Key Shipped Applications</h2>
+            <div class="section">
+                <div class="project-entry">
+                    <div class="project-headline">Collective Health — US Employee Benefits Platform (HIPAA-aligned)</div>
+                    <div class="project-meta">50K+ downloads · 4.4★ App Store · Ratna Global · Team lead + module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · TypeScript · Jest · RNTL · GitHub Actions · BrowserStack · JIRA</div>
+                    <div class="project-desc">Led team contributing feature modules on a HIPAA-aligned US health benefits platform. Wrote Jest + RNTL test cases, achieving 85% code coverage on contributed modules. QA build distribution via GitHub Actions → BrowserStack — 2-week sprint delivery.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">DMS Booth &amp; DMS Distributor</div>
+                    <div class="project-meta">1K+ downloads · Play Store · Ratna Global · Flutter SDK upgrade &amp; module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> Flutter · Dart · SDK Migration · GitHub Actions · Google Play Console</div>
+                    <div class="project-desc">Flutter SDK upgrade and module updates for Delhi Milk Scheme government dairy distribution apps (booth and distributor). Led SDK migration and delivered feature enhancements across multiple release cycles.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">Gold Club — NSL Group Agricultural B2B Platform</div>
+                    <div class="project-meta">50K+ downloads · 4.0★ App Store · Empover · End-to-end development</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · REST API · Firebase Analytics · FCM Push Notifications</div>
+                    <div class="project-desc">Architected and shipped a complete B2B productivity and distribution platform for NSL Group (25,000+ retailer network). Built value-added services, community features, and seamless OTA update delivery at scale.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">NSL Subeej Kisan — Farmer Assistant Platform</div>
+                    <div class="project-meta">50K+ downloads · 4.2★ Play Store · Empover · End-to-end development</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · TypeScript · Firebase · Multi-language (Telugu / Hindi / English)</div>
+                    <div class="project-desc">Architected a complete agri-tech app for the Nuziveedu Seeds farmer network: live APMC market prices, weather forecasting, farming calculators, barcode product scan, multi-language support, and nearby retailer locator.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">MCRC App — Agricultural Crop Variety Management</div>
+                    <div class="project-meta">4.0★ Play Store · Empover · End-to-end development</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · Agricultural advisory · Tablet-responsive UI</div>
+                    <div class="project-desc">Led development and delivery of a crop variety management platform for farmers — improved crop varieties, planting materials, and sustainable farming practices. UI optimised for both phones and tablets.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">MeetHour — End-to-End Encrypted Video Conferencing</div>
+                    <div class="project-meta">100K+ downloads · 4.2★ App Store &amp; Play Store · V-Empower · Built from scratch</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · WebRTC · Firebase · Native Module Bridging (Java → RN) · iOS &amp; Android</div>
+                    <div class="project-desc">Developed entirely from scratch in React Native. Designed WebRTC native module bridge (Java → React Native) with fully typed JS API. Features: scheduling, rescheduling, digital whiteboard, and in-meeting controls. Owned all App Store and Play Store releases.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">Wakuk Passenger &amp; Wakuk Partner — Ride-Hailing Apps</div>
+                    <div class="project-meta">Native Android · V-Empower · Module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> Native Android · Java · Kotlin · GPS/Location Services · REST API</div>
+                    <div class="project-desc">Module-level contributions to ride-hailing apps (similar to Rapido/Ola/Uber) — developed feature modules in Java/Kotlin for rider booking, real-time trip tracking, and driver/partner-side workflows per sprint requirements.</div>
+                </div>
+                <p class="additional-info"><strong>Additional module contributions:</strong> Corteva Farmer Connect (1M+) · Corteva Roots (100K+) · Corteva Daksh · ROOTS Employee · NSL Kissan Vikas · NSL Retail Audit · MTracker · PIQYU</p>
+            </div>
+
+            <h2 class="section-title">Education</h2>
+            <div class="section">
+                <div class="edu-line"><strong>Bachelor of Technology (B.Tech)</strong> — Electronics &amp; Communication Engineering, 2010 – 2014</div>
+                <div class="edu-line">Jawaharlal Nehru Technological University Anantapur (JNTU-A), India</div>
+            </div>
+
+            <h2 class="section-title">Professional Development</h2>
+            <ul class="job-duties section">
+                <li>Mobile SDK architecture: versioning, API surface design, backwards compatibility, CocoaPods / npm distribution.</li>
+                <li>Continuous learning: React Native New Architecture (Fabric / JSI), Hermes engine internals, TypeScript advanced patterns, GDPR / HIPAA mobile compliance.</li>
+                <li>AWS: IAM and IAM Identity Center administration, configuring permission sets and policies, AWS Amplify, and workspace provisioning.</li>
+                <li>Certification: The Practical React Native Guide [2024] — Academind / Udemy · 28.5 hours · Verified.</li>
+                <li>Delivered internal React Native architecture workshops: hooks, Redux, offline storage, deep linking, and testing strategies.</li>
             </ul>
 
             <h2 class="section-title">Languages</h2>
             <div class="section">
-                <p style="font-size: 9.5pt;">English – Professional working proficiency</p>
+                <p class="edu-line">English — C1 Professional · Telugu — Native Speaker · Hindi — B1 Conversational</p>
             </div>
-
-            <h2 class="section-title">Additional Information</h2>
-            <p class="additional-info section">Open to relocation within the EU. Requires work permit/visa sponsorship for EU member states. I consent to the processing of my personal data for recruitment purposes in accordance with applicable data protection law.</p>
         </div>
     </div>
 
-    <script>
-        function downloadPDF() {
-            window.scrollTo(0, 0);
-            var element = document.querySelector('.cv-content');
-            var options = {
-                margin: [10, 10, 10, 10],
-                filename: 'Nagasainath-Reddy-CV.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true, logging: false, letterRendering: true },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak: { mode: ['css', 'legacy'] }
-            };
-            html2pdf().set(options).from(element).save();
-        }
-    </script>
 </body>
 </html>
