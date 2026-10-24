@@ -36,8 +36,8 @@ const Footer = () => {
                   <li>React Native</li>
                   <li>TypeScript</li>
                   <li>Flutter</li>
-                  <li>Kotlin</li>
                   <li>Swift</li>
+                  <li>AWS</li>
                 </ul>
               </div>
               

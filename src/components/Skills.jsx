@@ -4,38 +4,38 @@ import { useTranslation } from 'react-i18next'
 const Skills = () => {
   const { t } = useTranslation()
   
-  const skillKeys = [
-    'reactNative',
-    'typeScript',
-    'javaScript',
-    'flutter',
-    'dart',
-    'swift',
-    'kotlin',
-    'java',
-    'redux',
-    'zustand',
-    'restApiIntegration',
-    'graphql',
-    'firebaseIntegration',
-    'jestRntl',
-    'jsiFabric',
-    'hermes',
-    'githubActions',
-    'webrtc',
-    'cleanArchitecture',
-    'oauthJwt'
+  const skillGroups = [
+    {
+      titleKey: 'skills.groups.mobile',
+      skills: ['reactNative', 'reactNativeCli', 'reactNavigation', 'reanimated', 'hermes', 'jsiFabric', 'expoEas', 'codePush', 'flutter', 'dart']
+    },
+    {
+      titleKey: 'skills.groups.languagesNative',
+      skills: ['typeScript', 'javaScript', 'swift', 'kotlin', 'java', 'nativeBridging', 'testFlight', 'xcTest']
+    },
+    {
+      titleKey: 'skills.groups.stateData',
+      skills: ['redux', 'zustand', 'contextApi', 'restApiIntegration', 'graphql', 'webSockets', 'firebaseIntegration', 'mmkv', 'sqlite', 'realm']
+    },
+    {
+      titleKey: 'skills.groups.testingCloud',
+      skills: ['jestRntl', 'tdd', 'githubActions', 'browserStack', 'fastlane', 'sentry', 'crashlytics', 'awsIam', 'awsAmplify']
+    },
+    {
+      titleKey: 'skills.groups.architecture',
+      skills: ['cleanArchitecture', 'solid', 'oauthJwt', 'hipaa', 'biometric', 'gdpr', 'mixpanel', 'amplitude', 'webrtc']
+    }
   ]
 
   const tools = [
     { key: 'androidStudio', icon: '📱' },
     { key: 'vsCode', icon: '💻' },
-    { key: 'reactNativeCli', icon: '⚛️' },
     { key: 'git', icon: '🔧' },
     { key: 'jira', icon: '📋' },
     { key: 'figma', icon: '🎨' },
-    { key: 'githubActions', icon: '🚀' },
-    { key: 'browserStack', icon: '🧪' }
+    { key: 'fastlane', icon: '🚀' },
+    { key: 'sentry', icon: '📡' },
+    { key: 'aws', icon: '☁️' }
   ]
 
   const spokenLanguages = [
@@ -53,24 +53,19 @@ const Skills = () => {
         </div>
 
         <div className="skills-content">
-          <div className="skills-main">
-            <h3 className="skills-section-title">{t('skills.technicalSkillsTitle')}</h3>
-            <div className="skills-grid">
-              {skillKeys.map((skillKey, index) => {
-                const animationDelay = index * 0.12
-                return (
-                  <div 
-                    key={skillKey} 
-                    className="skill-tag bounce-skill"
-                    style={{
-                      animationDelay: `${animationDelay}s`
-                    }}
-                  >
-                    {t(`skills.technicalSkills.${skillKey}`)}
-                  </div>
-                )
-              })}
-            </div>
+          <div className="skills-groups">
+            {skillGroups.map((group) => (
+              <div key={group.titleKey} className="skill-category">
+                <h3 className="category-title">{t(group.titleKey)}</h3>
+                <div className="skills-grid">
+                  {group.skills.map((skillKey) => (
+                    <div key={skillKey} className="skill-tag">
+                      {t(`skills.technicalSkills.${skillKey}`)}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="skills-sidebar">

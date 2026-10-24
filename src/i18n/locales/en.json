@@ -10,7 +10,7 @@
   "hero": {
     "title": "Hi, I'm",
     "subtitle": "Lead / Senior React Native Engineer",
-    "description": "Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering, including 6+ years specialising in React Native. Shipped 15+ production apps across healthcare, agri-tech, ride-hailing, and productivity. Available immediately — open to global relocation and visa sponsorship.",
+    "description": "Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering, including 6+ years specialising in React Native. Shipped 15+ production apps across healthcare, agri-tech, fintech, ride-hailing, and productivity. Available immediately — open to global relocation and visa sponsorship.",
     "viewWork": "View My Work",
     "getInTouch": "Get In Touch",
     "yearsExperience": "Years Experience",
@@ -20,7 +20,7 @@
     "title": "About Me",
     "subtitle": "Get to know me better",
     "passionateTitle": "Lead / Senior React Native Engineer",
-    "description": "I'm a Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering — including 6+ years specialising in React Native — building cross-platform apps at scale across healthcare, agri-tech, ride-hailing, and productivity. I recently completed my role as Lead React Native Engineer at Ratna Global Technologies (March 2026) and am available immediately for remote, hybrid, or on-site roles worldwide.",
+    "description": "I'm a Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering — including 6+ years specialising in React Native — building cross-platform apps at scale across healthcare, agri-tech, fintech, ride-hailing, and productivity. I recently completed my role as Lead React Native Engineer at Ratna Global Technologies (March 2026) and am available immediately for remote, hybrid, or on-site roles worldwide.",
     "highlights": {
       "quickLearner": {
         "title": "Technical Leadership",
@@ -40,6 +40,20 @@
       "projectsCompleted": "Projects Completed",
       "companiesWorked": "Companies Worked",
       "languages": "Languages"
+    },
+    "education": {
+      "title": "Education",
+      "degree": "B.Tech — Electronics & Communication Engineering, 2010 – 2014",
+      "school": "Jawaharlal Nehru Technological University Anantapur (JNTU-A), India"
+    },
+    "learning": {
+      "title": "Professional Development",
+      "items": [
+        "Certification: The Practical React Native Guide [2024] — Academind / Udemy · 28.5 hours, verified",
+        "AWS: IAM, IAM Identity Center, permission sets and policies, Amplify, and WorkSpaces",
+        "Mobile SDK architecture, React Native New Architecture (Fabric / JSI), and HIPAA / GDPR compliance",
+        "Internal workshops on hooks, Redux, offline storage, deep linking, and testing"
+      ]
     }
   },
   "skills": {
@@ -60,37 +74,73 @@
       "dataStorage": "Data Storage",
       "androidTools": "Android Tools"
     },
+    "groups": {
+      "mobile": "React Native & Flutter",
+      "languagesNative": "Languages & Native",
+      "stateData": "State, Data & APIs",
+      "testingCloud": "Testing, CI/CD & AWS",
+      "architecture": "Architecture, Security & Analytics"
+    },
     "technicalSkills": {
       "reactNative": "React Native",
-      "javaScript": "JavaScript (ES2024)",
-      "typeScript": "TypeScript",
+      "reactNativeCli": "React Native CLI",
+      "reactNavigation": "React Navigation",
+      "reanimated": "Reanimated",
+      "hermes": "Hermes",
+      "jsiFabric": "JSI / Fabric",
+      "expoEas": "Expo / EAS",
+      "codePush": "CodePush / OTA",
       "flutter": "Flutter",
       "dart": "Dart",
+      "typeScript": "TypeScript",
+      "javaScript": "JavaScript",
       "swift": "Swift",
       "kotlin": "Kotlin",
       "java": "Java",
+      "nativeBridging": "Native Bridging",
+      "testFlight": "TestFlight",
+      "xcTest": "XCTest",
       "redux": "Redux",
       "zustand": "Zustand",
+      "contextApi": "Context API",
       "restApiIntegration": "REST APIs",
       "graphql": "GraphQL",
+      "webSockets": "WebSockets",
       "firebaseIntegration": "Firebase",
+      "mmkv": "MMKV",
+      "sqlite": "SQLite",
+      "realm": "Realm",
       "jestRntl": "Jest / RNTL",
-      "jsiFabric": "JSI / New Architecture",
-      "hermes": "Hermes Engine",
+      "tdd": "TDD",
       "githubActions": "GitHub Actions",
-      "webrtc": "WebRTC",
+      "browserStack": "BrowserStack",
+      "fastlane": "Fastlane",
+      "sentry": "Sentry",
+      "crashlytics": "Crashlytics",
+      "awsIam": "AWS IAM",
+      "awsAmplify": "AWS Amplify",
       "cleanArchitecture": "Clean Architecture",
-      "oauthJwt": "OAuth 2.0 / JWT"
+      "solid": "SOLID",
+      "oauthJwt": "OAuth 2.0 / JWT",
+      "hipaa": "HIPAA",
+      "biometric": "Biometric Auth",
+      "gdpr": "GDPR",
+      "mixpanel": "Mixpanel",
+      "amplitude": "Amplitude",
+      "webrtc": "WebRTC"
     },
     "tools": {
       "androidStudio": "Android Studio",
       "vsCode": "VS Code",
       "reactNativeCli": "React Native CLI",
-      "git": "Git",
+      "git": "Git / GitFlow",
       "jira": "Jira",
       "figma": "Figma",
       "githubActions": "GitHub Actions",
-      "browserStack": "BrowserStack"
+      "browserStack": "BrowserStack",
+      "fastlane": "Fastlane",
+      "sentry": "Sentry",
+      "aws": "AWS"
     },
     "spokenLanguages": {
       "english": "English",
@@ -133,7 +183,7 @@
           "Architected and shipped a complete B2B platform for NSL Group retailers and distributors",
           "Built value-added services, community features, and seamless OTA update delivery at scale",
           "Integrated REST APIs, Firebase Analytics, and FCM push notifications",
-          "Owned technical design through Play Store release — 50K+ downloads, 4.0★"
+          "Owned technical design through store release — 50K+ downloads, 4.0★"
         ]
       },
       "nslSubeejKisan": {
@@ -185,10 +235,10 @@
         "description": "End-to-end encrypted video conferencing platform built from scratch in React Native — 100K+ downloads, 4.2★ on App Store and Play Store.",
         "role": "Built from scratch",
         "highlights": [
-          "Owned architecture, UI, feature development, and App Store & Play Store releases",
+          "Owned architecture, UI, feature development, and App Store and Play Store releases",
           "Designed a WebRTC native module bridge (Java → React Native) with a fully typed JS API",
-          "Implemented scheduling, rescheduling, digital whiteboard, and in-meeting controls",
-          "Shipped 100K+ downloads with a 4.2★ rating across both stores"
+          "Implemented OAuth 2.0 social login across Facebook, LinkedIn, Microsoft, and Google",
+          "Shipped scheduling, a digital whiteboard, and in-meeting controls — 100K+ downloads, 4.2★"
         ]
       },
       "dmsBoothApp": {
@@ -211,6 +261,28 @@
           "Delivered feature enhancements across multiple release cycles",
           "Supported team demand, payments, ledgers, and grievance workflows",
           "Released via GitHub Actions and Google Play Console"
+        ]
+      },
+      "smiOne": {
+        "title": "SMIOne",
+        "description": "Visa prepaid card app for Systems & Methods, Inc. Module contributions at Empover — 4.7★ App Store. Cardholders manage deposits and spending on the go.",
+        "role": "Module contributions",
+        "highlights": [
+          "Delivered balance checks, recent transactions, and fund transfers for the smiONE Visa Prepaid Card",
+          "Implemented card lock/unlock plus account alerts and security settings",
+          "Shipped React Native finance modules used by cardholders to manage the card from the phone",
+          "4.7★ on the App Store for Systems & Methods, Inc."
+        ]
+      },
+      "kudzu": {
+        "title": "Kudzu",
+        "description": "Low-fee online banking app for Kudzu Money. Module contributions at Empover — 4.8★ App Store. Spending, savings, overdraft protection, and Visa debit controls.",
+        "role": "Module contributions",
+        "highlights": [
+          "Built budgeting and spending tracking on the Spending Account, plus an interest-earning Savings Account",
+          "Implemented Savings Habits transfers and fee-free overdraft protection (Covered by Kudzu)",
+          "Added SpendSense spending alerts and instant Kudzu Visa Debit Card lock/unlock with fraud alerts",
+          "Delivered PayPerks financial-literacy rewards · 4.8★ App Store"
         ]
       }
     },
@@ -279,7 +351,7 @@
   },
   "footer": {
     "tagline": "Lead / Senior React Native Engineer",
-    "description": "Building cross-platform mobile apps at scale. 10+ years in mobile engineering, 6+ years specialising in React Native. Available immediately — open to global relocation.",
+    "description": "Building cross-platform mobile apps at scale across healthcare, agri-tech, fintech, ride-hailing, and productivity. 10+ years in mobile engineering, 6+ years specialising in React Native. Available immediately — open to global relocation.",
     "quickLinks": "Quick Links",
     "technologies": "Technologies",
     "connect": "Connect",

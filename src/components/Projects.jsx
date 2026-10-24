@@ -67,6 +67,36 @@ const Projects = () => {
       show: true
     },
     {
+      title: t('projects.featured.smiOne.title'),
+      description: t('projects.featured.smiOne.description'),
+      role: t('projects.featured.smiOne.role'),
+      tech: ['React Native', 'TypeScript', 'Fintech'],
+      highlights: t('projects.featured.smiOne.highlights', { returnObjects: true }),
+      image: `${import.meta.env.BASE_URL}images/apps/featured/smione-logo.png`,
+      iconFit: 'cover',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.smi.m360.cardholder&hl=en_US',
+      appStoreLink: 'https://apps.apple.com/us/app/platinum-smione-visa-prepaid/id1147476680',
+      downloads: null,
+      rating: '4.7★',
+      year: '2024',
+      show: true
+    },
+    {
+      title: t('projects.featured.kudzu.title'),
+      description: t('projects.featured.kudzu.description'),
+      role: t('projects.featured.kudzu.role'),
+      tech: ['React Native', 'TypeScript', 'Fintech'],
+      highlights: t('projects.featured.kudzu.highlights', { returnObjects: true }),
+      image: `${import.meta.env.BASE_URL}images/apps/featured/kudzu-logo.png`,
+      iconFit: 'cover',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.kudzumoneyllc.kudzu&hl=en_US',
+      appStoreLink: 'https://apps.apple.com/us/app/kudzu-online-banking-app/id6449820905',
+      downloads: null,
+      rating: '4.8★',
+      year: '2024',
+      show: true
+    },
+    {
       title: t('projects.featured.goldClub.title'),
       description: t('projects.featured.goldClub.description'),
       role: t('projects.featured.goldClub.role'),
@@ -185,11 +215,11 @@ const Projects = () => {
                     <img 
                       src={project.image} 
                       alt={`${project.title} - Mobile application logo`}
-                      className="project-logo"
+                      className={`featured-app-icon${project.iconFit === 'cover' ? ' featured-app-icon-cover' : ''}`}
                       loading="lazy"
                       decoding="async"
-                      width="60"
-                      height="60"
+                      width="84"
+                      height="84"
                       fetchpriority="low"
                     />
                   ) : (
@@ -199,10 +229,10 @@ const Projects = () => {
                 <div className="project-info">
                   <h3 className="project-title">{project.title}</h3>
                   <span className="project-role">{project.role}</span>
-                  {downloads && rating && (
+                  {(downloads || rating) && (
                     <div className="project-stats">
-                      <span className="downloads">{downloads}</span>
-                      <span className="rating">{rating}</span>
+                      {downloads && <span className="downloads">{downloads}</span>}
+                      {rating && <span className="rating">{rating}</span>}
                     </div>
                   )}
                 </div>
@@ -217,7 +247,7 @@ const Projects = () => {
               </div>
               
               <ul className="project-highlights">
-                {project.highlights.map((highlight, idx) => (
+                {(Array.isArray(project.highlights) ? project.highlights : []).map((highlight, idx) => (
                   <li key={idx}>{highlight}</li>
                 ))}
               </ul>
@@ -288,10 +318,10 @@ const Projects = () => {
                 {typeof project === 'string' ? project : project.name}
               </span>
               <span className="project-type">{t('projects.mobileApp')}</span>
-              {downloads && rating && (
+              {(downloads || rating) && (
                 <div className="project-stats">
-                  <span className="downloads">{downloads}</span>
-                  <span className="rating">{rating}</span>
+                  {downloads && <span className="downloads">{downloads}</span>}
+                  {rating && <span className="rating">{rating}</span>}
                 </div>
               )}
               {typeof project === 'object' && project.playStoreLink && (

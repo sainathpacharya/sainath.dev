@@ -12,7 +12,7 @@ export const portfolioStats = {
   averageRating: '4.2★',
   
   // Featured projects count
-  featuredProjects: 8,
+  featuredProjects: 10,
   
   // Other projects count
   otherProjects: 9,

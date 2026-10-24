@@ -43,9 +43,9 @@ export default defineConfig({
       },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'NagaSainath Reddy - Lead Engineer',
+        name: 'Naga Sainath Reddy — Lead / Senior React Native Engineer',
         short_name: 'Sainath.dev',
-        description: 'Lead Engineer specializing in React Native and Android development with 10+ years of experience',
+        description: 'Lead / Senior React Native Engineer. 10+ years in mobile, 6+ years in React Native. Available immediately.',
         theme_color: '#2563eb',
         background_color: '#ffffff',
         display: 'standalone',

@@ -85,37 +85,32 @@
 }
 
 .project-icon {
-  font-size: var(--text-4xl);
-  width: 60px;
-  height: 60px;
-  background: white !important;
-  background-color: white !important;
-  border-radius: var(--radius-lg);
+  width: 84px;
+  height: 84px;
+  background: #fff;
+  border-radius: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   box-shadow: var(--shadow-md);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
-.project-logo {
+.featured-app-icon {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: var(--radius-lg);
-  position: relative;
-  z-index: 1;
-  background: white !important;
-  padding: var(--space-2);
-  background-color: white !important;
+  display: block;
+  background: #fff;
+  padding: 6px;
 }
 
-.project-icon img {
-  background: white !important;
-  background-color: white !important;
-  border-radius: var(--radius-md);
+.featured-app-icon-cover {
+  object-fit: cover;
+  padding: 0;
+  background: transparent;
 }
 
 .project-emoji {
@@ -463,9 +458,8 @@
   }
   
   .project-icon {
-    width: 60px;
-    height: 60px;
-    font-size: var(--text-4xl);
+    width: 84px;
+    height: 84px;
   }
   
   .project-actions {
@@ -495,9 +489,8 @@
   }
   
   .project-icon {
-    width: 50px;
-    height: 50px;
-    font-size: var(--text-3xl);
+    width: 72px;
+    height: 72px;
   }
   
   .other-projects-grid {

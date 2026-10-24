@@ -10,7 +10,7 @@
   "hero": {
     "title": "Hola, soy",
     "subtitle": "Ingeniero Lead / Senior de React Native",
-    "description": "Ingeniero Lead / Senior de React Native y arquitecto móvil con más de 10 años en ingeniería móvil, incluyendo más de 6 años especializado en React Native. He lanzado más de 15 apps de producción en salud, agri-tech, ride-hailing y productividad. Disponible de inmediato — abierto a reubicación global y patrocinio de visa.",
+    "description": "Ingeniero Lead / Senior de React Native y arquitecto móvil con más de 10 años en ingeniería móvil, incluyendo más de 6 años especializado en React Native. He lanzado más de 15 apps de producción en salud, agri-tech, fintech, ride-hailing y productividad. Disponible de inmediato — abierto a reubicación global y patrocinio de visa.",
     "viewWork": "Ver Mi Trabajo",
     "getInTouch": "Ponerse en Contacto",
     "yearsExperience": "Años de Experiencia",
@@ -20,7 +20,7 @@
     "title": "Acerca de Mí",
     "subtitle": "Conóceme mejor",
     "passionateTitle": "Ingeniero Lead / Senior de React Native",
-    "description": "Soy un Ingeniero Lead / Senior de React Native y arquitecto móvil con más de 10 años en ingeniería móvil — incluyendo más de 6 años especializado en React Native — construyendo apps multiplataforma a escala en salud, agri-tech, ride-hailing y productividad. Recientemente concluí mi rol como Lead React Native Engineer en Ratna Global Technologies (marzo 2026) y estoy disponible de inmediato para roles remotos, híbridos o presenciales en todo el mundo.",
+    "description": "Soy un Ingeniero Lead / Senior de React Native y arquitecto móvil con más de 10 años en ingeniería móvil — incluyendo más de 6 años especializado en React Native — construyendo apps multiplataforma a escala en salud, agri-tech, fintech, ride-hailing y productividad. Recientemente concluí mi rol como Lead React Native Engineer en Ratna Global Technologies (marzo 2026) y estoy disponible de inmediato para roles remotos, híbridos o presenciales en todo el mundo.",
     "highlights": {
       "quickLearner": {
         "title": "Liderazgo técnico",
@@ -40,6 +40,20 @@
       "projectsCompleted": "Proyectos Completados",
       "companiesWorked": "Empresas Trabajadas",
       "languages": "Idiomas"
+    },
+    "education": {
+      "title": "Educación",
+      "degree": "B.Tech — Ingeniería Electrónica y de Comunicaciones, 2010 – 2014",
+      "school": "Jawaharlal Nehru Technological University Anantapur (JNTU-A), India"
+    },
+    "learning": {
+      "title": "Desarrollo profesional",
+      "items": [
+        "Certificación: The Practical React Native Guide [2024] — Academind / Udemy · 28.5 horas, verificada",
+        "AWS: IAM, IAM Identity Center, permission sets y políticas, Amplify y WorkSpaces",
+        "Arquitectura de SDK móvil, New Architecture de React Native (Fabric / JSI) y cumplimiento HIPAA / GDPR",
+        "Workshops internos sobre hooks, Redux, almacenamiento offline, deep linking y testing"
+      ]
     }
   },
   "skills": {
@@ -100,7 +114,14 @@
       "conversational": "B1 Conversacional",
       "c1Professional": "C1 Profesional"
     },
-    "technicalSkillsTitle": "Habilidades técnicas"
+    "technicalSkillsTitle": "Habilidades técnicas",
+    "groups": {
+      "mobile": "React Native y Flutter",
+      "languagesNative": "Lenguajes y nativo",
+      "stateData": "Estado, datos y APIs",
+      "testingCloud": "Testing, CI/CD y AWS",
+      "architecture": "Arquitectura, seguridad y analítica"
+    }
   },
   "experience": {
     "title": "Experiencia Laboral",
@@ -116,36 +137,35 @@
     "featured": {
       "collectiveHealth": {
         "title": "Collective Health",
-        "description": "Proyecto actual - Plataforma de beneficios de salud que simplifica la experiencia de atención médica con explicaciones claras de cobertura, buscador de proveedores y herramientas de estimación de costos.",
-        "role": "Ingeniero Líder",
+        "description": "Plataforma de beneficios de salud para empleados en EE. UU., alineada con HIPAA. Liderazgo de equipo y módulos en Ratna Global — 50K+ descargas, 4.4★ en App Store.",
+        "role": "Ingeniero líder",
         "highlights": [
-          "Liderando el desarrollo de la plataforma de beneficios de salud con 50K+ descargas y calificación 4.4★",
-          "Implementando gestión segura de datos de salud y características de cumplimiento HIPAA para protección de datos de pacientes",
-          "Contribuyendo a la funcionalidad de buscador de proveedores y herramientas de estimación de costos para mejor experiencia de usuario",
-          "Desarrollando soluciones móviles multiplataforma usando React Native para proveedores de salud y pacientes"
+          "Lideré al equipo que entregó módulos en una plataforma de beneficios de salud alineada con HIPAA",
+          "Escribí tests con Jest y RNTL, con 85% de cobertura en los módulos aportados",
+          "Distribuí builds de QA con GitHub Actions y BrowserStack en sprints de 2 semanas",
+          "Entregué módulos en React Native y TypeScript con pruebas en dispositivo vía CI"
         ]
       },
       "goldClub": {
         "title": "Gold Club",
-        "description": "Aplicación de productividad del Grupo NSL diseñada para apoyar a minoristas y distribuidores con servicios de valor agregado, actualizaciones más recientes y experiencia fluida en soluciones agrícolas.",
-        "role": "Desarrollador React Native",
+        "description": "Plataforma B2B de productividad y distribución para la red de más de 25.000 minoristas de NSL Group — 50K+ descargas, 4.0★. Desarrollo de extremo a extremo en Empover.",
+        "role": "Desarrollo de extremo a extremo",
         "highlights": [
-          "Desarrollé aplicación de productividad para minoristas y distribuidores del Grupo NSL con 50K+ descargas",
-          "Implementé servicios de valor agregado y funcionalidad de actualizaciones más recientes para soluciones agrícolas",
-          "Creé interfaz fácil de usar con características de soporte dedicado para participación comunitaria",
-          "Construí experiencia fluida para minoristas y distribuidores en el sector agrícola"
+          "Arquitecté y publiqué una plataforma B2B completa para minoristas y distribuidores de NSL Group",
+          "Construí servicios de valor añadido, funciones de comunidad y entregas OTA a escala",
+          "Integré REST APIs, Firebase Analytics y notificaciones push FCM",
+          "Dueño del diseño técnico hasta el lanzamiento — 50K+ descargas, 4.0★"
         ]
       },
       "nslSubeejKisan": {
         "title": "NSL Subeej Kisan",
-        "description": "Aplicación agrícola integral que empodera a los agricultores de Nuziveedu con herramientas, conocimientos y servicios de asesoría para mejorar las prácticas agrícolas.",
-        "role": "Desarrollador Líder",
+        "description": "Asistente agrícola para la red de Nuziveedu Seeds: precios APMC, clima, calculadoras, escaneo de código de barras y varios idiomas. 50K+ descargas, 4.2★.",
+        "role": "Desarrollo de extremo a extremo",
         "highlights": [
-          "Lideré el equipo de desarrollo y arquitecturé la solución completa de aplicación móvil",
-          "Desarrollé características de actualizaciones del clima y seguimiento de precios del mercado para agricultores",
-          "Implementé soporte multiidioma para diversas comunidades agrícolas",
-          "Creé calculadoras agrícolas y funcionalidad de escaneo de productos para orientación agrícola",
-          "Construí centro de conocimiento y localizador de minoristas cercanos para apoyo integral del agricultor"
+          "Arquitecté una app agri-tech completa para la red de agricultores de Nuziveedu Seeds",
+          "Entregué precios de mercado APMC en vivo, pronóstico del clima y calculadoras agrícolas",
+          "Implementé escaneo de productos, localizador de minoristas y soporte en telugu, hindi e inglés",
+          "Dueño del diseño técnico hasta Play Store — 50K+ descargas, 4.2★"
         ]
       },
       "nslVyaparaMitra": {
@@ -160,58 +180,80 @@
         ]
       },
       "mcrcApp": {
-        "title": "Aplicación MCRC",
-        "description": "Desarrollar variedades de cultivos mejoradas, materiales de plantación de alta calidad y prácticas de producción sostenibles para agricultores.",
-        "role": "Desarrollador Líder",
+        "title": "MCRC App",
+        "description": "Plataforma de gestión de variedades de cultivo para agricultores. Desarrollo de extremo a extremo en Empover, 4.0★, UI para teléfono y tablet.",
+        "role": "Desarrollo de extremo a extremo",
         "highlights": [
-          "Lideré el equipo de desarrollo y gestioné la entrega del proyecto para soluciones agrícolas",
-          "Aseguré funcionalidad perfecta y capacidad de respuesta de UI en diversos dispositivos móviles y tabletas",
-          "Realicé mejoras precisas de UI para optimizar la experiencia del usuario y asegurar usabilidad consistente",
-          "Desarrollé interfaz amigable para agricultores y mentoré a miembros del equipo en mejores prácticas"
+          "Lideré el desarrollo y la entrega de la plataforma de variedades de cultivo",
+          "Optimicé la UI para teléfonos y tablets",
+          "Apoyé variedades mejoradas, materiales de plantación y prácticas sostenibles",
+          "Publicada en Play Store con 4.0★"
         ]
       },
       "cortevaDaksh": {
         "title": "Corteva Daksh",
-        "description": "Impulsar la Generación de Demanda de productos Corteva a través de actividades realizadas por el personal de campo de Corteva con reportes estandarizados.",
-        "role": "Desarrollador",
+        "description": "Módulos para la generación de demanda del personal de campo de Corteva, con reportes estandarizados — 10K+ descargas.",
+        "role": "Módulos",
         "highlights": [
-          "Diseñé y desarrollé módulos específicos de aplicación usando React Native",
-          "Implementé características facilitando la estandarización de actividades para el personal de campo de Corteva",
-          "Creé herramientas para gestionar reportes de actividades y mejorar la productividad del equipo",
-          "Construí características de generación de demanda para productos Corteva con reportes estandarizados"
+          "Entregué módulos de React Native según los requisitos del sprint",
+          "Apoyé actividades de campo y reportes de actividad estandarizados",
+          "Contribuí junto a Corteva Farmer Connect (1M+) y Corteva Roots (100K+)",
+          "Publiqué actualizaciones usadas por el personal de campo de Corteva"
         ]
       },
       "meetHourApp": {
-        "title": "Aplicación MeetHour",
-        "description": "Solución de videoconferencia 100% gratuita y completamente encriptada con características de programación, reprogramación y pizarra.",
-        "role": "Desarrollador",
+        "title": "MeetHour",
+        "description": "Videoconferencia cifrada de extremo a extremo, construida desde cero en React Native — 100K+ descargas, 4.2★ en App Store y Play Store.",
+        "role": "Construida desde cero",
         "highlights": [
-          "Mejoré la UI para la versión 2.0 de la aplicación MeetHour con interfaz amigable para el usuario",
-          "Integré nuevas características como pizarra en la aplicación",
-          "Trabajé en conectar módulos Java nativos a React-Native para funcionalidad mejorada",
-          "Implementé características de programación y reprogramación para solución de videoconferencia"
+          "Dueño de la arquitectura, la UI, las funciones y los lanzamientos en App Store y Play Store",
+          "Diseñé un puente nativo WebRTC (Java → React Native) con una API de JS tipada",
+          "Implementé login social OAuth 2.0 en Facebook, LinkedIn, Microsoft y Google",
+          "Programación, pizarra digital y controles de reunión — 100K+ descargas, 4.2★"
         ]
       },
       "dmsBoothApp": {
-        "title": "DMS Booth App",
-        "description": "Aplicación de puesto del Esquema de Leche de Delhi para crear y gestionar demandas, pagos, libros de contabilidad y reclamaciones.",
-        "role": "Ingeniero Líder",
+        "title": "DMS Booth",
+        "description": "App de puestos del Delhi Milk Scheme. Lideré la actualización del SDK de Flutter y los módulos en Ratna Global — 1K+ descargas en Play Store.",
+        "role": "Actualización de SDK Flutter y módulos",
         "highlights": [
-          "Desarrolló la aplicación de puesto para el Esquema de Leche de Delhi con Flutter para entrega multiplataforma",
-          "Implementó flujos de creación y gestión de demandas para usuarios de puestos",
-          "Desarrolló seguimiento de pagos, libros de contabilidad y gestión de reclamaciones",
-          "Entregó aplicación de nivel empresarial con más de 1K descargas en Play Store"
+          "Lideré la actualización del SDK de Flutter para las operaciones de puestos",
+          "Entregué módulos según los requisitos del cliente en varios ciclos de release",
+          "Mantuve CI con GitHub Actions y releases en Google Play Console",
+          "Publiqué flujos de demandas, pagos, libros y reclamaciones"
         ]
       },
       "dmsDistributor": {
         "title": "DMS Distributor",
-        "description": "Aplicación de distribuidor del Esquema de Leche de Delhi para gestionar demandas, demandas de equipo, pagos, libros de contabilidad y reclamaciones.",
-        "role": "Ingeniero Líder",
+        "description": "App de distribuidores del Delhi Milk Scheme. Lideré la actualización del SDK de Flutter y los módulos en Ratna Global.",
+        "role": "Actualización de SDK Flutter y módulos",
         "highlights": [
-          "Desarrolló la aplicación de distribuidor para el Esquema de Leche de Delhi con Flutter",
-          "Implementó creación de demandas y gestión de demandas de equipo para distribuidores",
-          "Desarrolló módulos de seguimiento de pagos, libros de contabilidad y gestión de reclamaciones",
-          "Lanzó aplicación empresarial con más de 100 descargas en Play Store"
+          "Lideré la migración del SDK de Flutter para operaciones de distribuidores",
+          "Entregué mejoras en varios ciclos de release",
+          "Apoyé demandas de equipo, pagos, libros y reclamaciones",
+          "Publicada con GitHub Actions y Google Play Console"
+        ]
+      },
+      "smiOne": {
+        "title": "SMIOne",
+        "description": "App de tarjeta prepago Visa de Systems & Methods, Inc. Módulos en Empover — 4.7★ en App Store. Los titulares gestionan depósitos y gastos.",
+        "role": "Módulos",
+        "highlights": [
+          "Entregué saldo, transacciones recientes y transferencias de la tarjeta prepago smiONE Visa",
+          "Implementé bloqueo y desbloqueo de la tarjeta, alertas y ajustes de seguridad",
+          "Publiqué módulos de finanzas en React Native para gestionar la tarjeta desde el teléfono",
+          "4.7★ en App Store para Systems & Methods, Inc."
+        ]
+      },
+      "kudzu": {
+        "title": "Kudzu",
+        "description": "Banca online de bajo coste de Kudzu Money. Módulos en Empover — 4.8★ en App Store. Gasto, ahorro, descubierto y tarjeta de débito Visa.",
+        "role": "Módulos",
+        "highlights": [
+          "Construí presupuestos y seguimiento de gasto, más una cuenta de ahorro que genera intereses",
+          "Implementé Savings Habits y protección de descubierto sin comisión (Covered by Kudzu)",
+          "Añadí alertas SpendSense y bloqueo instantáneo de la tarjeta de débito Visa con alertas de fraude",
+          "Entregué recompensas de educación financiera PayPerks · 4.8★ en App Store"
         ]
       }
     },
@@ -259,7 +301,7 @@
   },
   "footer": {
     "tagline": "Ingeniero Lead / Senior de React Native",
-    "description": "Construyo apps móviles multiplataforma a escala. Más de 10 años en ingeniería móvil, más de 6 años especializado en React Native. Disponible de inmediato — abierto a reubicación global.",
+    "description": "Construyo apps móviles multiplataforma a escala en salud, agri-tech, fintech, ride-hailing y productividad. Más de 10 años en ingeniería móvil, más de 6 años especializado en React Native. Disponible de inmediato — abierto a reubicación global.",
     "quickLinks": "Enlaces Rápidos",
     "technologies": "Tecnologías",
     "connect": "Conectar",
