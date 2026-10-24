@@ -27,10 +27,6 @@ vi.mock('./components/Projects', () => ({
   default: () => <div data-testid="projects">Projects Component</div>
 }))
 
-vi.mock('./components/Testimonials', () => ({
-  default: () => <div data-testid="testimonials">Testimonials Component</div>
-}))
-
 vi.mock('./components/CTA', () => ({
   default: () => <div data-testid="cta">CTA Component</div>
 }))
@@ -66,7 +62,7 @@ describe('App', () => {
     expect(screen.getByTestId('skills')).toBeInTheDocument()
     expect(screen.getByTestId('experience')).toBeInTheDocument()
     expect(screen.getByTestId('projects')).toBeInTheDocument()
-    expect(screen.getByTestId('testimonials')).toBeInTheDocument()
+    expect(screen.queryByTestId('testimonials')).not.toBeInTheDocument()
     expect(screen.getByTestId('cta')).toBeInTheDocument()
     expect(screen.getByTestId('contact')).toBeInTheDocument()
     expect(screen.getByTestId('footer')).toBeInTheDocument()

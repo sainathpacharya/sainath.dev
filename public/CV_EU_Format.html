@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NagaSainath Reddy Palle - Curriculum Vitae</title>
+    <title>Naga Sainath Reddy Palle - Curriculum Vitae</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
         }
-        
+        .print-button:hover {
+            background: #0a0a0a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .print-button:active { transform: translateY(0); }
+        @media print { .print-button { display: none; } }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Arial', sans-serif;
             font-size: 11pt;
@@ -18,469 +39,330 @@
             color: #1a1a1a;
             background: white;
         }
-        
         .container {
             max-width: 210mm;
             margin: 0 auto;
             padding: 12mm;
+            padding-top: 8mm;
             font-size: 10pt;
         }
-        
-        h1 {
-            font-size: 20pt;
+        .cv-content { margin: 0; padding: 0; position: relative; }
+
+        .cv-name {
+            font-size: 22pt;
             font-weight: bold;
-            margin-bottom: 3mm;
+            letter-spacing: 0.02em;
+            margin-top: 0;
+            margin-bottom: 2mm;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+        .cv-title {
+            font-size: 11pt;
+            font-weight: 600;
+            margin-bottom: 2mm;
             color: #1a1a1a;
         }
-        
-        h2 {
-            font-size: 12pt;
+        .cv-location-line {
+            font-size: 9.5pt;
+            color: #444;
+            margin-bottom: 3mm;
+            line-height: 1.4;
+        }
+        .contact-line {
+            font-size: 9pt;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 4mm;
+        }
+        .contact-line a { color: #1a1a1a; text-decoration: none; }
+
+        h2.section-title {
+            font-size: 11pt;
             font-weight: bold;
             margin-top: 5mm;
             margin-bottom: 3mm;
             border-bottom: 1.5px solid #1a1a1a;
             padding-bottom: 1mm;
             color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
-        
-        .personal-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 4mm;
+        .cv-content > h2.section-title:first-of-type { margin-top: 2mm; }
+
+        .summary-box {
+            font-size: 9.5pt;
+            line-height: 1.45;
+            color: #333;
         }
-        
-        .contact-info {
+        .summary-box p { margin-bottom: 2.5mm; }
+        .summary-box p:last-child { margin-bottom: 0; }
+
+        .section { margin-bottom: 4mm; }
+
+        .skills-block {
             font-size: 9pt;
             line-height: 1.5;
+            color: #333;
         }
-        
-        .contact-info div {
+        .skills-block .skill-line { margin-bottom: 1.5mm; }
+        .skills-block strong { color: #1a1a1a; }
+
+        .job-entry { margin-bottom: 4mm; break-inside: avoid; }
+        .job-headline {
+            font-weight: bold;
+            font-size: 10.5pt;
+            color: #1a1a1a;
             margin-bottom: 0.5mm;
         }
-        
-        .summary-box {
-            margin-top: 3mm;
+        .job-meta {
+            font-size: 9pt;
             color: #666;
+            font-style: italic;
+            margin-bottom: 2mm;
+        }
+        .job-duties { margin-top: 0; padding-left: 5mm; }
+        .job-duties li { margin-bottom: 1mm; font-size: 9pt; }
+
+        .project-entry { margin-bottom: 3mm; break-inside: avoid; }
+        .project-headline {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #1a1a1a;
+            margin-bottom: 0.4mm;
+        }
+        .project-meta {
+            font-size: 8.5pt;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 0.8mm;
+        }
+        .project-stack {
+            font-size: 8.5pt;
+            color: #333;
+            margin-bottom: 0.8mm;
+        }
+        .project-desc {
             font-size: 9pt;
             line-height: 1.4;
+            color: #333;
         }
-        
-        .section {
-            margin-bottom: 4mm;
-        }
-        
-        .job-entry {
-            margin-bottom: 3mm;
-            page-break-inside: avoid;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1mm;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            font-size: 11pt;
-        }
-        
-        .job-company {
-            font-weight: bold;
-            color: #1a1a1a;
-            font-size: 10pt;
-        }
-        
-        .job-period {
-            font-style: italic;
-            color: #666;
-            font-size: 9pt;
-        }
-        
-        .job-location {
-            color: #666;
-            font-size: 9pt;
-        }
-        
-        .job-duties {
-            margin-top: 1mm;
-            padding-left: 3mm;
-        }
-        
-        .job-duties li {
-            margin-bottom: 0.5mm;
-            font-size: 9pt;
-        }
-        
-        .skill-category {
-            margin-bottom: 2mm;
-        }
-        
-        .skill-category h3 {
-            font-size: 10pt;
-            font-weight: bold;
-            margin-bottom: 1mm;
-            color: #1a1a1a;
-        }
-        
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5mm;
-        }
-        
-        .skill-item {
-            background: #f5f5f5;
-            padding: 1mm 3mm;
-            border-radius: 2mm;
-            font-size: 9pt;
-            border: 1px solid #ddd;
-        }
-        
-        .project-entry {
-            margin-bottom: 2mm;
-            padding-bottom: 2mm;
-            border-bottom: 1px solid #e0e0e0;
-            page-break-inside: avoid;
-        }
-        
-        .project-title {
-            font-weight: bold;
-            font-size: 10pt;
-        }
-        
-        .project-description {
-            color: #666;
-            font-size: 9pt;
-            margin-top: 0.5mm;
-        }
-        
-        ul {
-            list-style-position: outside;
-            margin-left: 5mm;
-        }
-        
-        li {
-            margin-bottom: 0.5mm;
-        }
-        
-        .print-instructions {
+
+        .additional-info { font-size: 9pt; color: #444; line-height: 1.45; }
+        .edu-line { font-size: 9.5pt; line-height: 1.45; color: #333; margin-bottom: 1.5mm; }
+
+        .print-note {
             position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background: #f5f5f5;
-            border: 1px solid #ddd;
-            padding: 12px 16px;
-            font-size: 11px;
-            border-radius: 6px;
+            top: 60px;
+            right: 20px;
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 16px;
+            font-size: 12px;
+            border-radius: 8px;
             z-index: 1000;
-            max-width: 300px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 280px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        
-        .print-instructions strong {
-            color: #1a1a1a;
-        }
-        
+        .print-note strong { color: #856404; display: block; margin-bottom: 8px; }
+        .print-note ol { margin-left: 18px; margin-top: 8px; }
+        .print-note li { margin-bottom: 4px; font-size: 11px; color: #856404; }
+
+        ul { list-style-position: outside; margin-left: 5mm; }
+        li { margin-bottom: 0.5mm; }
+
         @media print {
-            .print-instructions {
-                display: none;
-            }
-            
-            @page {
-                margin: 0;
-                size: A4;
-            }
-            
-            body {
-                background: white;
-                margin: 0;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            
-            html, body {
-                height: 100%;
-                overflow: visible;
-            }
-            
-            /* Remove headers and footers */
-            @page {
-                margin: 0;
-                padding: 0;
-            }
-        }
-        
-        /* Prevent browser from adding headers/footers */
-        @page {
-            margin: 0;
+            .print-note { display: none; }
+            body { background: white; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .container { max-width: 100%; padding: 10mm; padding-top: 0; padding-bottom: 10mm; margin-top: 0; }
+            @page { margin: 0; size: A4; }
         }
     </style>
 </head>
 <body>
-    <div class="print-instructions">
-        <strong>💡 Print Tip:</strong> Before printing, go to <strong>More settings</strong> → uncheck <strong>Headers and footers</strong> to remove page numbers and file paths.
+    <a class="print-button" href="NagaSainath_LeadRN_Resume.pdf" download="NagaSainath_LeadRN_Resume.pdf">📄 Download as PDF</a>
+    <div class="print-note">
+        <strong>💡 Quick Download:</strong> Click the button above to download your CV as PDF.
     </div>
-    
+
     <div class="container">
-        <!-- Personal Information -->
-        <h1>NagaSainath Reddy Palle</h1>
-        <div class="personal-info">
-            <div class="contact-info">
-                <div><strong>Lead Engineer - Mobile Development</strong></div>
-                <div>📧 sainathp.acharya@gmail.com</div>
-                <div>📱 +91 9494947630</div>
-                <div>📍 Hyderabad, India</div>
-                <div>💼 linkedin.com/in/naga-sainath-reddy-palle-32935a166</div>
+        <div class="cv-content">
+            <h1 class="cv-name">Naga Sainath Reddy Palle</h1>
+            <div class="cv-title">Lead / Senior React Native Engineer · iOS &amp; Android · TypeScript · 10+ Yrs Mobile / 6+ Yrs React Native</div>
+            <div class="cv-location-line">Hyderabad, India · Open to Global Relocation · Open to Visa Sponsorship · Available immediately (prior role concluded March 2026)</div>
+            <div class="contact-line">
+                Email: <a href="mailto:sainathp.acharya@gmail.com">sainathp.acharya@gmail.com</a> &nbsp;|&nbsp;
+                Phone: +91 7013134330
+                <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/naga-sainath-reddy-palle">linkedin.com/in/naga-sainath-reddy-palle</a> &nbsp;|&nbsp;
+                Portfolio: <a href="https://thepalles.co.in">thepalles.co.in</a>
+                <br>
+                GitHub: <a href="https://github.com/sainathpacharya">github.com/sainathpacharya</a>
             </div>
-        </div>
-        
-        <div class="summary-box">
-            <strong>Professional Summary:</strong> 10+ years of experience in React Native and Android mobile application development. Proven track record of leading engineering teams, developing enterprise-level applications, and delivering high-quality mobile solutions.
-        </div>
-        
-        <!-- Work Experience -->
-        <h2>Professional Experience</h2>
-        
-        <div class="section">
-            <div class="job-entry">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Lead Engineer</div>
-                        <div class="job-company">Ratna Global Technologies Private Limited</div>
-                        <div class="job-location">Hyderabad, India</div>
-                    </div>
-                    <div class="job-period">December 2025 - Present</div>
+
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="summary-box section">
+                <p>Lead / Senior React Native Engineer and Mobile Architect with 10+ years in mobile engineering — including 6+ years specialising in React Native — building cross-platform mobile apps at scale across healthcare, agri-tech, fintech, ride-hailing, and productivity domains. Experienced in technical leadership and team coordination: end-to-end greenfield delivery, module-level contributions on large-scale platforms, sprint-driven execution, and cross-functional collaboration with product managers, designers, and QA.</p>
+                <p>Expert in React Native CLI, TypeScript, Swift and Java native module bridging, Flutter, JSI / New Architecture (Fabric), Jest/RNTL, GitHub Actions, and BrowserStack CI workflows. Shipped 15+ production apps across React Native, Flutter, and native Android. Practitioner of Clean Architecture, SOLID principles, and TDD. Strong problem-solving skills at scale. Excellent written and verbal communication skills.</p>
+            </div>
+
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-block section">
+                <div class="skill-line"><strong>React Native:</strong> React Native CLI · React Navigation v6 · Reanimated 2/3 · Hermes Engine · JSI / New Architecture (Fabric) · Metro Bundler · Expo SDK · EAS Build · CodePush / OTA</div>
+                <div class="skill-line"><strong>Flutter:</strong> Dart · SDK Upgrade &amp; Migration · Cross-platform UI · Play Store Release</div>
+                <div class="skill-line"><strong>iOS Native:</strong> Native Module Bridging (Swift → RN) · XCTest · TestFlight · App Store Connect · Apple HIG · Universal Links · In-app Purchases</div>
+                <div class="skill-line"><strong>Android Native:</strong> Kotlin · Java · Espresso · Google Play Console · Internal Testing Tracks · App Bundle · APK Release</div>
+                <div class="skill-line"><strong>Languages:</strong> TypeScript · JavaScript (ES2024) · Swift · Kotlin · Java · Dart</div>
+                <div class="skill-line"><strong>State &amp; Data:</strong> Redux · Zustand · Context API · REST APIs · GraphQL · WebSockets · Firebase (Auth, FCM, Firestore, Analytics, Crashlytics) · AsyncStorage · MMKV · SQLite · Realm</div>
+                <div class="skill-line"><strong>Testing:</strong> Jest · React Native Testing Library (RNTL) · XCTest · TDD · 85%+ coverage on contributed modules</div>
+                <div class="skill-line"><strong>CI/CD &amp; DevOps:</strong> GitHub Actions · BrowserStack · Fastlane · App Store Connect · TestFlight · Google Play Console · Sentry · Crashlytics · Firebase App Distribution</div>
+                <div class="skill-line"><strong>Cloud &amp; AWS:</strong> AWS IAM · IAM Identity Center · Permission Sets &amp; Policy Configuration · AWS Amplify · AWS Workspaces</div>
+                <div class="skill-line"><strong>Architecture:</strong> Clean Architecture · SOLID Principles · Mobile SDK Design · Scalable Systems · System Performance Optimisation</div>
+                <div class="skill-line"><strong>Auth &amp; Security:</strong> OAuth 2.0 (Facebook, LinkedIn, Microsoft, Google) · JWT · HIPAA-aligned Development · Secure Token Storage · Biometric Auth · GDPR Compliance</div>
+                <div class="skill-line"><strong>Analytics:</strong> Firebase Analytics · Mixpanel · Amplitude · Sentry Performance Monitoring · Crashlytics</div>
+                <div class="skill-line"><strong>Leadership:</strong> Technical Leadership · Problem-Solving at Scale · Cross-functional Collaboration · Mentoring · Code Review · Agile / Scrum</div>
+                <div class="skill-line"><strong>Tools:</strong> Git · GitFlow · Jira · Figma · BrowserStack · Deep Linking · Push Notifications (FCM / APNs) · WebRTC · GitHub Copilot · Cursor · ChatGPT · Claude</div>
+            </div>
+
+            <h2 class="section-title">Work Experience</h2>
+            <div class="section">
+                <div class="job-entry">
+                    <div class="job-headline">Lead React Native Engineer | Ratna Global Technologies Pvt. Ltd.</div>
+                    <div class="job-meta">Dec 2024 – Mar 2026 · Hyderabad, India</div>
+                    <ul class="job-duties">
+                        <li>Led mobile engineering team — coordinated module delivery across Collective Health and DMS projects while contributing hands-on in 2-week JIRA-driven sprints.</li>
+                        <li>Collective Health (React Native): HIPAA-aligned US employee health benefits platform — 50K+ downloads, 4.4★ App Store. Delivered feature modules; wrote Jest + RNTL tests, achieving 85% code coverage on contributed modules.</li>
+                        <li>DMS Booth &amp; DMS Distributor (Flutter): Delhi Milk Scheme apps — led Flutter SDK upgrade and implemented module updates per client requirements.</li>
+                        <li>Maintained GitHub Actions CI pipeline integrated with BrowserStack for automated QA build distribution — ensuring every release was device-tested before production deployment.</li>
+                        <li>Led team PR reviews using GitHub Copilot; mentored engineers on code quality; collaborated cross-functionally with product managers, designers, and QA.</li>
+                        <li>Gained hands-on AWS exposure: configured IAM and IAM Identity Center, set up permission sets and policies, and provisioned workspaces to support secure, role-based access for engineering workflows.</li>
+                    </ul>
                 </div>
-                <ul class="job-duties">
-                    <li>Leading engineering teams and technical architecture decisions</li>
-                    <li>Developing cutting-edge mobile applications for enterprise clients</li>
-                    <li>Mentoring development teams and conducting code reviews</li>
-                    <li>Implementing best practices for mobile app development and team processes</li>
-                </ul>
-            </div>
-            
-            <div class="job-entry">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Android/React-Native Developer</div>
-                        <div class="job-company">Empover I-Tech Pvt. Ltd</div>
-                        <div class="job-location">Hyderabad, India</div>
-                    </div>
-                    <div class="job-period">May 2022 - December 2025</div>
+                <div class="job-entry">
+                    <div class="job-headline">Senior React Native Developer | Empover I-Tech Pvt. Ltd.</div>
+                    <div class="job-meta">May 2022 – Dec 2024 · Hyderabad, India</div>
+                    <ul class="job-duties">
+                        <li>Owned end-to-end React Native development for enterprise, agri-tech, and fintech applications serving 100K+ MAU across multiple production apps.</li>
+                        <li>End-to-end ownership — architected, built, and shipped: Gold Club (50K+ downloads, 4.0★), NSL Subeej Kisan (50K+ downloads, 4.2★), and MCRC App (4.0★) — from technical design through store release.</li>
+                        <li>Fintech modules — SMIOne (smiONE Visa Prepaid Card, 4.7★): balances, transactions, fund transfers, card lock/unlock, and account alerts. Kudzu (online banking, 4.8★): budgeting, savings habits, fee-free overdraft protection, SpendSense alerts, debit-card lock/unlock, and PayPerks rewards.</li>
+                        <li>Module-level contributions — delivered feature modules across Corteva Farmer Connect (1M+), Corteva Roots (100K+), Corteva Daksh (10K+), ROOTS Employee, NSL Kissan Vikas, and NSL Retail Audit per sprint requirements.</li>
+                        <li>Built reusable component library and internal SDK-like modules consumed across 5 production React Native apps — reduced duplication, accelerated feature delivery.</li>
+                        <li>Migrated a large-scale codebase from class components to React Hooks + TypeScript — engineer onboarding time reduced 40%.</li>
+                        <li>Integrated FCM with APNs via native Swift modules — real-time feature adoption increased 50% within 30 days of rollout.</li>
+                        <li>Achieved 40% load time improvement via Hermes tuning, FlatList optimisation, and image caching; established Jest + RNTL testing (50%+ critical coverage).</li>
+                        <li>Conducted React Native architecture workshops — production bug rate reduced 20% over two quarters.</li>
+                    </ul>
                 </div>
-                <ul class="job-duties">
-                    <li>Developed multiple React Native applications for enterprise clients</li>
-                    <li>Led technical architecture decisions for mobile projects</li>
-                    <li>Mentored junior developers and conducted code reviews</li>
-                    <li>Implemented best practices for mobile app development</li>
-                </ul>
-            </div>
-            
-            <div class="job-entry">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Android/React-Native Developer</div>
-                        <div class="job-company">V-Empower Solutions Pvt. Ltd</div>
-                        <div class="job-location">Hyderabad, India</div>
-                    </div>
-                    <div class="job-period">April 2019 - May 2022</div>
+                <div class="job-entry">
+                    <div class="job-headline">React Native Developer | V-Empower Solutions Pvt. Ltd.</div>
+                    <div class="job-meta">Apr 2019 – May 2022 · Hyderabad, India</div>
+                    <ul class="job-duties">
+                        <li>Developed MeetHour from scratch in React Native — an end-to-end encrypted video conferencing platform, 100K+ downloads, 4.2★; owned architecture, UI, feature development, and App Store &amp; Play Store releases.</li>
+                        <li>Designed WebRTC native module bridge (Java → React Native) with fully typed JS API; implemented scheduling, digital whiteboard, and in-meeting controls.</li>
+                        <li>Implemented OAuth 2.0 social login across Facebook, LinkedIn, Microsoft, and Google — one sign-up and sign-in flow.</li>
+                        <li>Contributed to Wakuk Passenger and Wakuk Partner (Native Android) — ride-hailing apps — feature modules in Java/Kotlin for booking, trip tracking, and driver/partner workflows.</li>
+                        <li>Integrated third-party SDKs (analytics, payments, mapping) and REST APIs with caching — load times reduced 25%, offline resilience improved.</li>
+                    </ul>
                 </div>
-                <ul class="job-duties">
-                    <li>Built cross-platform mobile applications using React Native</li>
-                    <li>Integrated third-party libraries and APIs</li>
-                    <li>Optimized app performance and user experience</li>
-                    <li>Collaborated with cross-functional teams</li>
-                </ul>
-            </div>
-            
-            <div class="job-entry">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Android Developer</div>
-                        <div class="job-company">Eminosoft India Pvt Ltd</div>
-                        <div class="job-location">Hyderabad, India</div>
-                    </div>
-                    <div class="job-period">July 2018 - April 2019</div>
+                <div class="job-entry">
+                    <div class="job-headline">Android Developer | Eminosoft India Pvt. Ltd.</div>
+                    <div class="job-meta">Jul 2018 – Apr 2019 · Hyderabad, India</div>
+                    <ul class="job-duties">
+                        <li>Developed native Android applications in Java and Kotlin with RESTful API integration, SQLite persistence, and Material Design UI.</li>
+                        <li>Third-party library integrations and UX improvements drove measurable gains in app downloads and user satisfaction ratings.</li>
+                    </ul>
                 </div>
-                <ul class="job-duties">
-                    <li>Developed native Android applications using Java and Kotlin</li>
-                    <li>Implemented RESTful API integration</li>
-                    <li>Worked with SQLite databases and data persistence</li>
-                    <li>Created custom UI components and animations</li>
-                </ul>
-            </div>
-            
-            <div class="job-entry">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Android Developer</div>
-                        <div class="job-company">Savithru Technologies</div>
-                        <div class="job-location">Bangalore, India</div>
-                    </div>
-                    <div class="job-period">July 2017 - May 2018</div>
-                </div>
-                <ul class="job-duties">
-                    <li>Developed Android applications from concept to deployment</li>
-                    <li>Implemented modern Android development practices</li>
-                    <li>Worked with Firebase and cloud services</li>
-                    <li>Collaborated with UI/UX designers</li>
-                </ul>
-            </div>
-            
-            <div class="job-entry">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Android Developer</div>
-                        <div class="job-company">Aven App Solutions Pvt. Ltd.</div>
-                        <div class="job-location">Hyderabad, India</div>
-                    </div>
-                    <div class="job-period">October 2016 - July 2017</div>
-                </div>
-                <ul class="job-duties">
-                    <li>Built Android applications using Java</li>
-                    <li>Learned Android SDK and development tools</li>
-                    <li>Worked with JSON parsing and API integration</li>
-                    <li>Gained experience in mobile app testing</li>
-                </ul>
-            </div>
-            
-            <div class="job-entry">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Android Developer</div>
-                        <div class="job-company">New MEK Solutions Pvt. Ltd</div>
-                        <div class="job-location">Hyderabad, India</div>
-                    </div>
-                    <div class="job-period">May 2015 - September 2016</div>
-                </div>
-                <ul class="job-duties">
-                    <li>Started Android development career</li>
-                    <li>Learned core Android concepts and architecture</li>
-                    <li>Worked on small to medium scale projects</li>
-                    <li>Gained foundational knowledge in mobile development</li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Skills -->
-        <h2>Technical Skills</h2>
-        <div class="section">
-            <div class="skill-category">
-                <h3>Mobile Development</h3>
-                <div class="skills-list">
-                    <div class="skill-item">React Native</div>
-                    <div class="skill-item">Android Development</div>
-                    <div class="skill-item">Kotlin</div>
-                    <div class="skill-item">Java</div>
+                <div class="job-entry">
+                    <div class="job-headline">Early Career — Android Developer</div>
+                    <div class="job-meta">2015 – 2018</div>
+                    <ul class="job-duties">
+                        <li>Savithru Technologies (Jul 2017 – May 2018): Android apps with Firebase, UI design, and backend integration — Bangalore.</li>
+                        <li>Aven App Solutions (Oct 2016 – Jul 2017): Native Android (Java), JSON/API integration, and mobile testing — Hyderabad.</li>
+                        <li>New MEK Solutions (May 2015 – Sep 2016): Foundational Android development across fintech, edtech, and SME client projects — Hyderabad.</li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skills-list">
-                    <div class="skill-item">JavaScript</div>
-                    <div class="skill-item">TypeScript</div>
-                    <div class="skill-item">Java</div>
-                    <div class="skill-item">Kotlin</div>
-                    <div class="skill-item">HTML</div>
-                    <div class="skill-item">CSS</div>
+
+            <h2 class="section-title">Key Shipped Applications</h2>
+            <div class="section">
+                <div class="project-entry">
+                    <div class="project-headline">Collective Health — US Employee Benefits Platform (HIPAA-aligned)</div>
+                    <div class="project-meta">50K+ downloads · 4.4★ App Store · Ratna Global · Team lead + module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · TypeScript · Jest · RNTL · GitHub Actions · BrowserStack · JIRA</div>
+                    <div class="project-desc">Led team contributing feature modules on a HIPAA-aligned US health benefits platform. Wrote Jest + RNTL test cases, achieving 85% code coverage on contributed modules. QA build distribution via GitHub Actions → BrowserStack — 2-week sprint delivery.</div>
                 </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Frameworks & Libraries</h3>
-                <div class="skills-list">
-                    <div class="skill-item">React.js</div>
-                    <div class="skill-item">NativeBase.io</div>
-                    <div class="skill-item">Material UI</div>
-                    <div class="skill-item">Redux</div>
+                <div class="project-entry">
+                    <div class="project-headline">DMS Booth &amp; DMS Distributor</div>
+                    <div class="project-meta">1K+ downloads · Play Store · Ratna Global · Flutter SDK upgrade &amp; module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> Flutter · Dart · SDK Migration · GitHub Actions · Google Play Console</div>
+                    <div class="project-desc">Flutter SDK upgrade and module updates for Delhi Milk Scheme government dairy distribution apps (booth and distributor). Led SDK migration and delivered feature enhancements across multiple release cycles.</div>
                 </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Backend & API</h3>
-                <div class="skills-list">
-                    <div class="skill-item">REST API Integration</div>
-                    <div class="skill-item">Firebase Integration</div>
-                    <div class="skill-item">Retrofit</div>
-                    <div class="skill-item">Volley</div>
-                    <div class="skill-item">JSON Parsing</div>
+                <div class="project-entry">
+                    <div class="project-headline">SMIOne — Prepaid Card Account Management</div>
+                    <div class="project-meta">4.7★ App Store · Systems &amp; Methods, Inc. · Empover · Module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · TypeScript · Fintech · Visa Prepaid Card</div>
+                    <div class="project-desc">Feature modules for the smiONE Visa Prepaid Card app: balances, recent transactions, fund transfers, card lock/unlock, and account alerts and security settings.</div>
                 </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Data Storage & Tools</h3>
-                <div class="skills-list">
-                    <div class="skill-item">AsyncStorage</div>
-                    <div class="skill-item">SQLite</div>
-                    <div class="skill-item">Android Studio</div>
-                    <div class="skill-item">VS Code</div>
-                    <div class="skill-item">Git</div>
-                    <div class="skill-item">Jira</div>
+                <div class="project-entry">
+                    <div class="project-headline">Kudzu — Low-Fee Online Banking</div>
+                    <div class="project-meta">4.8★ App Store · Kudzu Money, LLC · Empover · Module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · TypeScript · Fintech · Visa Debit Card</div>
+                    <div class="project-desc">Feature modules for budgeting and spending tracking, an interest-earning savings account with Savings Habits, fee-free overdraft protection (Covered by Kudzu), SpendSense alerts, instant Visa debit card lock/unlock, and PayPerks financial-literacy rewards.</div>
                 </div>
+                <div class="project-entry">
+                    <div class="project-headline">Gold Club — NSL Group Agricultural B2B Platform</div>
+                    <div class="project-meta">50K+ downloads · 4.0★ App Store · Empover · End-to-end development</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · REST API · Firebase Analytics · FCM Push Notifications</div>
+                    <div class="project-desc">Architected and shipped a complete B2B productivity and distribution platform for NSL Group (25,000+ retailer network). Built value-added services, community features, and seamless OTA update delivery at scale.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">NSL Subeej Kisan — Farmer Assistant Platform</div>
+                    <div class="project-meta">50K+ downloads · 4.2★ Play Store · Empover · End-to-end development</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · TypeScript · Firebase · Multi-language (Telugu / Hindi / English)</div>
+                    <div class="project-desc">Architected a complete agri-tech app for the Nuziveedu Seeds farmer network: live APMC market prices, weather forecasting, farming calculators, barcode product scan, multi-language support, and nearby retailer locator.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">MCRC App — Agricultural Crop Variety Management</div>
+                    <div class="project-meta">4.0★ Play Store · Empover · End-to-end development</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · Agricultural advisory · Tablet-responsive UI</div>
+                    <div class="project-desc">Led development and delivery of a crop variety management platform for farmers — improved crop varieties, planting materials, and sustainable farming practices. UI optimised for both phones and tablets.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">MeetHour — End-to-End Encrypted Video Conferencing</div>
+                    <div class="project-meta">100K+ downloads · 4.2★ App Store &amp; Play Store · V-Empower · Built from scratch</div>
+                    <div class="project-stack"><strong>Stack:</strong> React Native · WebRTC · Firebase · OAuth 2.0 (Facebook, LinkedIn, Microsoft, Google) · Native Module Bridging (Java → RN) · iOS &amp; Android</div>
+                    <div class="project-desc">Developed entirely from scratch in React Native. Designed a WebRTC native module bridge (Java → React Native) with a fully typed JS API. Implemented OAuth 2.0 social login across Facebook, LinkedIn, Microsoft, and Google. Features: scheduling, rescheduling, digital whiteboard, and in-meeting controls. Owned all App Store and Play Store releases.</div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-headline">Wakuk Passenger &amp; Wakuk Partner — Ride-Hailing Apps</div>
+                    <div class="project-meta">Native Android · V-Empower · Module contributions</div>
+                    <div class="project-stack"><strong>Stack:</strong> Native Android · Java · Kotlin · GPS/Location Services · REST API</div>
+                    <div class="project-desc">Module-level contributions to ride-hailing apps (similar to Rapido/Ola/Uber) — developed feature modules in Java/Kotlin for rider booking, real-time trip tracking, and driver/partner-side workflows per sprint requirements.</div>
+                </div>
+                <p class="additional-info"><strong>Additional module contributions:</strong> Corteva Farmer Connect (1M+) · Corteva Roots (100K+) · Corteva Daksh · ROOTS Employee · NSL Kissan Vikas · NSL Retail Audit · MTracker · PIQYU · Wakuk Passenger · Wakuk Partner</p>
             </div>
-        </div>
-        
-        <!-- Notable Projects -->
-        <h2>Notable Projects</h2>
-        <div class="section">
-            <div class="project-entry">
-                <div class="project-title">Collective Health</div>
-                <div class="project-description">Health benefits platform - 50K+ downloads, 4.4★ rating. HIPAA compliance, secure data management, provider finder, cost estimation tools.</div>
+
+            <h2 class="section-title">Education</h2>
+            <div class="section">
+                <div class="edu-line"><strong>Bachelor of Technology (B.Tech)</strong> — Electronics &amp; Communication Engineering, 2010 – 2014</div>
+                <div class="edu-line">Jawaharlal Nehru Technological University Anantapur (JNTU-A), India</div>
             </div>
-            
-            <div class="project-entry">
-                <div class="project-title">Gold Club (NSL Group)</div>
-                <div class="project-description">Productivity app for retailers and distributors - 50K+ downloads, 4.0★ rating. Value-added services, latest updates, agricultural solutions.</div>
-            </div>
-            
-            <div class="project-entry">
-                <div class="project-title">NSL Subeej Kisan</div>
-                <div class="project-description">Comprehensive agricultural app empowering Nuziveedu farmers - weather updates, market prices, multi-language support, farming calculators, knowledge center.</div>
-            </div>
-            
-            <div class="project-entry">
-                <div class="project-title">NSL VyaparaMitra</div>
-                <div class="project-description">Distribution system and sales excellence program - seamless functionality across devices, integrated modules, UI enhancements for retailers.</div>
-            </div>
-            
-            <div class="project-entry">
-                <div class="project-title">MCRC App</div>
-                <div class="project-description">Agricultural solutions for crop varieties - improved planting materials, sustainable production practices, farmer-friendly interface.</div>
-            </div>
-            
-            <div class="project-entry">
-                <div class="project-title">Corteva Daksh</div>
-                <div class="project-description">Demand generation platform for Corteva products - 1K+ downloads, 4.1★ rating. Standardized reporting, activity management for field staff.</div>
-            </div>
-            
-            <div class="project-entry">
-                <div class="project-title">MeetHour App</div>
-                <div class="project-description">Encrypted video conferencing solution - 100K+ downloads, 4.6★ rating. Scheduling, rescheduling, whiteboard features, enhanced v2.0 UI.</div>
-            </div>
-        </div>
-        
-        <!-- Key Achievements -->
-        <h2>Key Achievements</h2>
-        <div class="section">
-            <ul>
-                <li>11 Play Store apps with 280K+ downloads, 4.1★ average rating</li>
-                <li>Led engineering teams and technical architecture decisions</li>
-                <li>Mentored junior developers and implemented best practices</li>
+
+            <h2 class="section-title">Professional Development</h2>
+            <ul class="job-duties section">
+                <li>Mobile SDK architecture: versioning, API surface design, backwards compatibility, CocoaPods / npm distribution.</li>
+                <li>Continuous learning: React Native New Architecture (Fabric / JSI), Hermes engine internals, TypeScript advanced patterns, GDPR / HIPAA mobile compliance.</li>
+                <li>AWS: IAM and IAM Identity Center administration, configuring permission sets and policies, AWS Amplify, and workspace provisioning.</li>
+                <li>Certification: The Practical React Native Guide [2024] — Academind / Udemy · 28.5 hours · Verified.</li>
+                <li>Delivered internal React Native architecture workshops: hooks, Redux, offline storage, deep linking, and testing strategies.</li>
             </ul>
-        </div>
-        
-        <!-- Languages -->
-        <h2>Languages</h2>
-        <div class="section">
-            <ul>
-                <li><strong>Telugu</strong> - Native</li>
-                <li><strong>English</strong> - Fluent</li>
-                <li><strong>Hindi</strong> - Conversational</li>
-            </ul>
+
+            <h2 class="section-title">Languages</h2>
+            <div class="section">
+                <p class="edu-line">English — C1 Professional · Telugu — Native Speaker · Hindi — B1 Conversational</p>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
-

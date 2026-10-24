@@ -43,9 +43,9 @@ export default defineConfig({
       },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'NagaSainath Reddy - Lead Engineer',
+        name: 'Naga Sainath Reddy — Lead / Senior React Native Engineer',
         short_name: 'Sainath.dev',
-        description: 'Lead Engineer specializing in React Native and Android development with 10+ years of experience',
+        description: 'Lead / Senior React Native Engineer. 10+ years in mobile, 6+ years in React Native. Available immediately.',
         theme_color: '#2563eb',
         background_color: '#ffffff',
         display: 'standalone',
@@ -64,25 +64,49 @@ export default defineConfig({
       }
     })
   ],
-  base: '/sainath.dev/', // Required for GitHub Pages deployment
+  base: '/', // Custom domain (thepalles.co.in) is served from the site root
   build: {
     minify: 'terser',
     terserOptions: {
       compress: {
         drop_console: true,
-        drop_debugger: true
+        drop_debugger: true,
+        passes: 2
+      },
+      format: {
+        comments: false
       }
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          i18n: ['react-i18next', 'i18next', 'i18next-browser-languagedetector']
-        }
+        manualChunks: (id) => {
+          // Separate vendor chunks for better caching
+          if (id.includes('node_modules')) {
+            if (id.includes('react')) {
+              return 'vendor-react';
+            }
+            if (id.includes('i18next') || id.includes('react-i18next')) {
+              return 'vendor-i18n';
+            }
+            return 'vendor';
+          }
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]'
       }
     },
     cssCodeSplit: true,
-    sourcemap: false
+    sourcemap: false,
+    chunkSizeWarningLimit: 1000,
+    // Optimize assets
+    assetsInlineLimit: 4096,
+    // Reduce bundle size
+    reportCompressedSize: false,
+    target: 'esnext',
+    modulePreload: {
+      polyfill: true
+    }
   },
   test: {
     globals: true,

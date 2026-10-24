@@ -264,6 +264,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **Portfolio**: [sainathpacharya.github.io/sainath.dev](https://sainathpacharya.github.io/sainath.dev)
+- **Portfolio**: [thepalles.co.in](https://thepalles.co.in)
 - **LinkedIn**: [linkedin.com/in/naga-sainath-reddy-palle-32935a166](https://www.linkedin.com/in/naga-sainath-reddy-palle-32935a166/)
 - **Email**: sainathp.acharya@gmail.com

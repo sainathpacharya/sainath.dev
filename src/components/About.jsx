@@ -4,6 +4,8 @@ import { getFormattedYears, getFormattedProjects, getFormattedCompanies, getForm
 
 const About = () => {
   const { t } = useTranslation()
+  const learningItems = t('about.learning.items', { returnObjects: true })
+  const learningList = Array.isArray(learningItems) ? learningItems : []
   
   return (
     <section id="about" className="about">
@@ -48,7 +50,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="about-stats">
             <div className="stat-card">
               <div className="stat-number">{getFormattedYears()}</div>
@@ -66,6 +68,22 @@ const About = () => {
               <div className="stat-number">{getFormattedLanguages()}</div>
               <div className="stat-label">{t('about.stats.languages')}</div>
             </div>
+          </div>
+        </div>
+
+        <div className="about-credentials">
+          <div className="credential-card">
+            <h4>{t('about.education.title')}</h4>
+            <p className="credential-primary">{t('about.education.degree')}</p>
+            <p>{t('about.education.school')}</p>
+          </div>
+          <div className="credential-card">
+            <h4>{t('about.learning.title')}</h4>
+            <ul>
+              {learningList.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

@@ -1,11 +1,21 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
 import './Header.css'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const { t } = useTranslation()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -20,7 +30,7 @@ const Header = () => {
   }
 
   return (
-    <header className="header" role="banner">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`} role="banner">
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="nav-brand">
           <span className="brand-text">NagaSainath</span>

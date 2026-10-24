@@ -1,5 +1,26 @@
 import './Projects.css'
 import { useTranslation } from 'react-i18next'
+import playStoreStats from '../data/play-store-stats.json'
+
+/** Extract Google Play app id from store URL (e.g. ?id=com.example.app&hl=...) */
+function getAppId (playStoreLink) {
+  if (!playStoreLink || typeof playStoreLink !== 'string') return null
+  const m = playStoreLink.match(/[?&]id=([^&]+)/)
+  return m ? m[1] : null
+}
+
+/** Get display rating and downloads from play-store-stats.json for an app id */
+function getLiveStats (appId) {
+  const raw = playStoreStats[appId]
+  if (!raw || raw.error) return null
+  const scoreText = raw.scoreText
+  const installs = raw.installs
+  const hasRating = scoreText && (raw.score ?? 0) > 0
+  return {
+    rating: hasRating ? `${scoreText}★` : null,
+    downloads: installs || null
+  }
+}
 
 const Projects = () => {
   const { t } = useTranslation()
@@ -9,7 +30,7 @@ const Projects = () => {
       title: t('projects.featured.collectiveHealth.title'),
       description: t('projects.featured.collectiveHealth.description'),
       role: t('projects.featured.collectiveHealth.role'),
-      tech: ['React Native', 'JavaScript', 'TypeScript'],
+      tech: ['React Native', 'TypeScript', 'Jest'],
       highlights: t('projects.featured.collectiveHealth.highlights', { returnObjects: true }),
       downloads: '50K+',
       rating: '4.4★',
@@ -20,10 +41,66 @@ const Projects = () => {
       show: true
     },
     {
+      title: t('projects.featured.dmsBoothApp.title'),
+      description: t('projects.featured.dmsBoothApp.description'),
+      role: t('projects.featured.dmsBoothApp.role'),
+      tech: ['Flutter', 'Dart'],
+      highlights: t('projects.featured.dmsBoothApp.highlights', { returnObjects: true }),
+      image: `${import.meta.env.BASE_URL}images/apps/featured/dms-logo.png`,
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.dms.salesport.booth&hl=en_IN',
+      downloads: '1K+',
+      rating: null,
+      year: '2026',
+      show: true
+    },
+    {
+      title: t('projects.featured.dmsDistributor.title'),
+      description: t('projects.featured.dmsDistributor.description'),
+      role: t('projects.featured.dmsDistributor.role'),
+      tech: ['Flutter', 'Dart'],
+      highlights: t('projects.featured.dmsDistributor.highlights', { returnObjects: true }),
+      image: `${import.meta.env.BASE_URL}images/apps/featured/dms-logo.png`,
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.dms.salesport.distributor&hl=en_IN',
+      downloads: '100+',
+      rating: null,
+      year: '2026',
+      show: true
+    },
+    {
+      title: t('projects.featured.smiOne.title'),
+      description: t('projects.featured.smiOne.description'),
+      role: t('projects.featured.smiOne.role'),
+      tech: ['React Native', 'TypeScript', 'Fintech'],
+      highlights: t('projects.featured.smiOne.highlights', { returnObjects: true }),
+      image: `${import.meta.env.BASE_URL}images/apps/featured/smione-logo.png`,
+      iconFit: 'cover',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.smi.m360.cardholder&hl=en_US',
+      appStoreLink: 'https://apps.apple.com/us/app/platinum-smione-visa-prepaid/id1147476680',
+      downloads: null,
+      rating: '4.7★',
+      year: '2024',
+      show: true
+    },
+    {
+      title: t('projects.featured.kudzu.title'),
+      description: t('projects.featured.kudzu.description'),
+      role: t('projects.featured.kudzu.role'),
+      tech: ['React Native', 'TypeScript', 'Fintech'],
+      highlights: t('projects.featured.kudzu.highlights', { returnObjects: true }),
+      image: `${import.meta.env.BASE_URL}images/apps/featured/kudzu-logo.png`,
+      iconFit: 'cover',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.kudzumoneyllc.kudzu&hl=en_US',
+      appStoreLink: 'https://apps.apple.com/us/app/kudzu-online-banking-app/id6449820905',
+      downloads: null,
+      rating: '4.8★',
+      year: '2024',
+      show: true
+    },
+    {
       title: t('projects.featured.goldClub.title'),
       description: t('projects.featured.goldClub.description'),
       role: t('projects.featured.goldClub.role'),
-      tech: ['React Native', 'JavaScript'],
+      tech: ['React Native', 'Firebase', 'REST API'],
       highlights: t('projects.featured.goldClub.highlights', { returnObjects: true }),
       image: `${import.meta.env.BASE_URL}images/apps/featured/nsl-gold-club-logo.png`,
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.nuziveeduseeds.nslchannel&hl=en_IN',
@@ -36,11 +113,11 @@ const Projects = () => {
       title: t('projects.featured.nslSubeejKisan.title'),
       description: t('projects.featured.nslSubeejKisan.description'),
       role: t('projects.featured.nslSubeejKisan.role'),
-      tech: ['React Native', 'JavaScript'],
+      tech: ['React Native', 'TypeScript', 'Firebase'],
       highlights: t('projects.featured.nslSubeejKisan.highlights', { returnObjects: true }),
       image: `${import.meta.env.BASE_URL}images/apps/featured/subbeej-logo.png`,
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.nsl.subeejkisan&hl=en_IN',
-      downloads: '10K+',
+      downloads: '50K+',
       rating: '4.2★',
       year: '2024',
       show: true
@@ -58,7 +135,7 @@ const Projects = () => {
       title: t('projects.featured.mcrcApp.title'),
       description: t('projects.featured.mcrcApp.description'),
       role: t('projects.featured.mcrcApp.role'),
-      tech: ['React Native', 'JavaScript'],
+      tech: ['React Native', 'TypeScript'],
       highlights: t('projects.featured.mcrcApp.highlights', { returnObjects: true }),
       image: `${import.meta.env.BASE_URL}images/apps/featured/mcrc-logo.png`,
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.cortevaindia.mcrc&hl=en_IN',
@@ -76,7 +153,7 @@ const Projects = () => {
       image: `${import.meta.env.BASE_URL}images/apps/featured/corteva-daksh-logo.png`,
       playStoreLink: 'https://play.google.com/store/apps/details?id=com.cortevaindia.amr&hl=en_IN',
       appStoreLink: 'https://apps.apple.com/in/app/corteva-daksh/id1599473068',
-      downloads: '1K+',
+      downloads: '10K+',
       rating: '4.1★',
       year: '2022',
       show: true
@@ -85,13 +162,13 @@ const Projects = () => {
       title: t('projects.featured.meetHourApp.title'),
       description: t('projects.featured.meetHourApp.description'),
       role: t('projects.featured.meetHourApp.role'),
-      tech: ['React Native', 'JavaScript'],
+      tech: ['React Native', 'WebRTC', 'Firebase'],
       highlights: t('projects.featured.meetHourApp.highlights', { returnObjects: true }),
       image: `${import.meta.env.BASE_URL}images/apps/featured/meethour-logo.png`,
       playStoreLink: 'https://play.google.com/store/apps/details?id=go.meethour.io',
       appStoreLink: 'https://apps.apple.com/in/app/meet-hour/id1527001689',
       downloads: '100K+',
-      rating: '4.6★',
+      rating: '4.2★',
       year: '2020',
       show: true
     },
@@ -101,16 +178,16 @@ const Projects = () => {
     // Projects with Play Store links (Priority) - Ordered by year
     { name: t('projects.other.rootsEmployeeApp'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.roots.rootsemployee&hl=en_IN', year: '2025', logo: `${import.meta.env.BASE_URL}images/apps/other/corteva-roots-employee-logo.png`, downloads: '1K+', rating: '4.0★', show: true },
     { name: t('projects.other.mtrackerApp'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.sivashakthi&hl=en_IN', year: '2019', logo: `${import.meta.env.BASE_URL}images/apps/other/m-tracker-logo.png`, downloads: '10K+', rating: '4.2★', show: true },
-    { name: t('projects.other.cortevaFarmerConnect'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.pioneer.india.directsales&hl=en_IN', year: '2021', logo: `${import.meta.env.BASE_URL}images/apps/other/farmer-connect-logo.png`, downloads: '100K+', rating: '4.3★', show: true },
-    { name: t('projects.other.cortevaRoots'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.corteva.rootsapplication&hl=en_IN', year: '2021', logo: `${import.meta.env.BASE_URL}images/apps/other/corteva-roots-logo.png`, downloads: '10K+', rating: '4.0★', show: true },
+    { name: t('projects.other.cortevaFarmerConnect'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.pioneer.india.directsales&hl=en_IN', year: '2021', logo: `${import.meta.env.BASE_URL}images/apps/other/farmer-connect-logo.png`, downloads: '1M+', rating: '4.3★', show: true },
+    { name: t('projects.other.cortevaRoots'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.corteva.rootsapplication&hl=en_IN', year: '2021', logo: `${import.meta.env.BASE_URL}images/apps/other/corteva-roots-logo.png`, downloads: '100K+', rating: '4.0★', show: true },
     { name: t('projects.other.piqyu'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.ssr.piqyu&hl=en_IN', year: '2021', logo: `${import.meta.env.BASE_URL}images/apps/other/piqyu-parner-logo.png`, downloads: '1K+', rating: '3.9★', show: true },
     { name: t('projects.other.nslKissanVikas'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.KisanVikas.farmmanagement&hl=en_IN', year: '2022', logo: `${import.meta.env.BASE_URL}images/apps/other/nsl-kisan-vikas-logo.png`, downloads: '1K+', rating: '4.1★', show: true },
     { name: t('projects.other.nslRetailAudit'), playStoreLink: 'https://play.google.com/store/apps/details?id=com.Nsl.retailAuditSurvey.retailaudits&hl=en_IN', year: '2024', logo: `${import.meta.env.BASE_URL}images/apps/other/nsl-retail-audit-logo.png`, downloads: '500+', rating: '4.0★', show: true },
     
     // Projects without Play Store links - Ordered by year
     { name: t('projects.other.theatreMart'), year: '2019', logo: `${import.meta.env.BASE_URL}images/apps/other/theatre-mart-logo.png`, show: false },
-    { name: t('projects.other.wakukPartner'), year: '2020', logo: `${import.meta.env.BASE_URL}images/apps/other/wakuk-partner-logo.png`, show: false },
-    { name: t('projects.other.wakukPassenger'), year: '2020', logo: `${import.meta.env.BASE_URL}images/apps/other/wakuk-passenger-logo.png`, show: false },
+    { name: t('projects.other.wakukPartner'), year: '2020', logo: `${import.meta.env.BASE_URL}images/apps/other/wakuk-partner-logo.png`, show: true },
+    { name: t('projects.other.wakukPassenger'), year: '2020', logo: `${import.meta.env.BASE_URL}images/apps/other/wakuk-passenger-logo.png`, show: true },
     { name: t('projects.other.cortevaVts'), logo: '📈', show: false }, // 2020 - Hidden
     { name: t('projects.other.cortevaCdUpload'), logo: '📤', show: false }, // 2020 - Hidden
     { name: t('projects.other.mpConnect'), logo: '🔗', show: false } // 2021 - Hidden
@@ -125,17 +202,25 @@ const Projects = () => {
         </div>
 
         <div className="projects-grid" role="grid" aria-label="Featured projects">
-          {featuredProjects.filter(project => project.show).map((project, index) => (
+          {featuredProjects.filter(project => project.show).map((project, index) => {
+            const appId = getAppId(project.playStoreLink)
+            const live = getLiveStats(appId)
+            const downloads = live?.downloads ?? project.downloads
+            const rating = live?.rating ?? project.rating
+            return (
             <article key={index} className={`project-card fade-in`} style={{animationDelay: `${index * 0.2}s`}} role="gridcell">
               <div className="project-header">
                 <div className="project-icon">
                   {project.image.startsWith('/') ? (
                     <img 
                       src={project.image} 
-                      alt={`${project.title} logo`}
-                      className="project-logo"
+                      alt={`${project.title} - Mobile application logo`}
+                      className={`featured-app-icon${project.iconFit === 'cover' ? ' featured-app-icon-cover' : ''}`}
                       loading="lazy"
                       decoding="async"
+                      width="84"
+                      height="84"
+                      fetchpriority="low"
                     />
                   ) : (
                     <span className="project-emoji">{project.image}</span>
@@ -144,10 +229,10 @@ const Projects = () => {
                 <div className="project-info">
                   <h3 className="project-title">{project.title}</h3>
                   <span className="project-role">{project.role}</span>
-                  {project.downloads && project.rating && (
+                  {(downloads || rating) && (
                     <div className="project-stats">
-                      <span className="downloads">{project.downloads}</span>
-                      <span className="rating">{project.rating}</span>
+                      {downloads && <span className="downloads">{downloads}</span>}
+                      {rating && <span className="rating">{rating}</span>}
                     </div>
                   )}
                 </div>
@@ -162,7 +247,7 @@ const Projects = () => {
               </div>
               
               <ul className="project-highlights">
-                {project.highlights.map((highlight, idx) => (
+                {(Array.isArray(project.highlights) ? project.highlights : []).map((highlight, idx) => (
                   <li key={idx}>{highlight}</li>
                 ))}
               </ul>
@@ -193,22 +278,30 @@ const Projects = () => {
                     )}
                   </div>
             </article>
-          ))}
+          )})}
         </div>
 
         <div className="other-projects">
           <h3 className="other-projects-title">{t('projects.otherProjects')}</h3>
         <div className="other-projects-grid" role="list" aria-label="Other projects">
-          {otherProjects.filter(project => project.show !== false).map((project, index) => (
+          {otherProjects.filter(project => project.show !== false).map((project, index) => {
+            const appId = typeof project === 'object' ? getAppId(project.playStoreLink) : null
+            const live = getLiveStats(appId)
+            const downloads = live?.downloads ?? (typeof project === 'object' ? project.downloads : null)
+            const rating = live?.rating ?? (typeof project === 'object' ? project.rating : null)
+            return (
             <div key={index} className="other-project-item" role="listitem">
               <div className="project-logo">
                 {project.logo.startsWith('/') ? (
                   <img 
                     src={project.logo} 
-                    alt={`${project.name} logo`}
+                    alt={`${project.name} mobile application logo`}
                     className="project-logo-image"
                     loading="lazy"
                     decoding="async"
+                    width="40"
+                    height="40"
+                    fetchpriority="low"
                     onError={(e) => {
                       e.target.style.display = 'none'
                       e.target.nextSibling.style.display = 'flex'
@@ -225,10 +318,10 @@ const Projects = () => {
                 {typeof project === 'string' ? project : project.name}
               </span>
               <span className="project-type">{t('projects.mobileApp')}</span>
-              {typeof project === 'object' && project.downloads && project.rating && (
+              {(downloads || rating) && (
                 <div className="project-stats">
-                  <span className="downloads">{project.downloads}</span>
-                  <span className="rating">{project.rating}</span>
+                  {downloads && <span className="downloads">{downloads}</span>}
+                  {rating && <span className="rating">{rating}</span>}
                 </div>
               )}
               {typeof project === 'object' && project.playStoreLink && (
@@ -243,7 +336,7 @@ const Projects = () => {
                 </a>
               )}
             </div>
-          ))}
+          )})}
         </div>
         </div>
       </div>

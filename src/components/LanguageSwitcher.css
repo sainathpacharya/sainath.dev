@@ -102,6 +102,11 @@
   color: white;
 }
 
+.language-option.active .language-name,
+.language-option.active .flag {
+  color: white;
+}
+
 .language-option.active:hover {
   background: var(--primary-dark);
 }
@@ -114,6 +119,11 @@
 }
 
 .language-option.active .check {
+  color: white;
+}
+
+.language-option.active:hover .language-name,
+.language-option.active:hover .flag {
   color: white;
 }
 

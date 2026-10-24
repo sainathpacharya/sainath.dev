@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Hei, olen",
-    "subtitle": "Pääinsinööri - React Native & Android",
-    "description": "Yli 10 vuoden ammattimainen kokemus Android-sovelluskehityksessä React Native, NativeBase.io ja Redux-frameworkien asiantuntemuksella. Tällä hetkellä työskentelemässä Ratna Global Technologiesissa, intohimoisena luomaan innovatiivisia mobiiliratkaisuja ja toimittamaan asiakaskeskeisiä tuloksia.",
+    "subtitle": "Lead / Senior React Native -insinööri",
+    "description": "Lead / Senior React Native -insinööri ja mobiiliarkkitehti, jolla on yli 10 vuoden kokemus mobiilikehityksestä, mukaan lukien yli 6 vuotta React Nativeen erikoistuneena. Yli 15 tuotantosovellusta terveydenhuollossa, agroteknologiassa, fintechissä, kyytipalveluissa ja tuottavuudessa. Saatavilla heti — avoin kansainväliselle muutolle ja visatukelle.",
     "viewWork": "Katso Työni",
     "getInTouch": "Ota Yhteyttä",
     "yearsExperience": "Vuoden Kokemus",
@@ -19,19 +19,20 @@
   "about": {
     "title": "Tietoa Minusta",
     "subtitle": "Tutustu minuun paremmin",
-    "description": "Olen omistautunut React Native ja Android -kehittäjä, jolla on yli 10+ vuoden ammattimainen kokemus mobiilisovelluskehityksessä. Tällä hetkellä työskentelemässä Ratna Global Technologies Private Limitedissä, erikoistun luomaan innovatiivisia mobiiliratkaisuja, jotka tarjoavat poikkeuksellisia käyttökokemuksia.",
+    "passionateTitle": "Lead / Senior React Native -insinööri",
+    "description": "Olen Lead / Senior React Native -insinööri ja mobiiliarkkitehti, jolla on yli 10 vuoden kokemus mobiilikehityksestä — mukaan lukien yli 6 vuotta React Nativeen erikoistuneena — rakentamassa skaalautuvia cross-platform-sovelluksia terveydenhuollossa, agroteknologiassa, fintechissä, kyytipalveluissa ja tuottavuudessa. Ratna Global Technologiesin Lead React Native Engineer -roolini päättyi maaliskuussa 2026, ja olen heti käytettävissä etä-, hybridi- tai paikan päällä -tehtäviin maailmanlaajuisesti.",
     "highlights": {
       "quickLearner": {
-        "title": "Nopea Oppija",
-        "description": "Innokas omaksumaan uusia teknologioita ja toteuttamaan niitä reaaliaikaisissa sovelluksissa"
+        "title": "Tekninen johtaminen",
+        "description": "Greenfield-toimitus, sprintit, mentorointi ja koodikatselmoinnit tuotteen, suunnittelun ja QA:n kanssa"
       },
       "teamPlayer": {
-        "title": "Tiimipelaaja",
-        "description": "Todettu kyky työskennellä tehokkaasti sekä tiimin jäsenenä että yksilöllisenä osallistujana"
+        "title": "Mobiiliarkkitehtuuri",
+        "description": "Asiantuntija: React Native CLI, TypeScript, Swift/Java-natiivisillat, Flutter, JSI / New Architecture (Fabric) ja Clean Architecture"
       },
       "problemSolver": {
-        "title": "Ongelmaratkaisija",
-        "description": "Vahva kyky ymmärtää liiketoimintalogiikkaa ja toimittaa asiakaskeskeisiä ratkaisuja"
+        "title": "Ongelmanratkaisu skaalassa",
+        "description": "SOLID ja TDD, yli 85 % kattavuus toimitetuissa moduuleissa, GitHub Actions ja BrowserStack CI"
       }
     },
     "stats": {
@@ -39,6 +40,20 @@
       "projectsCompleted": "Valmiit Projektit",
       "companiesWorked": "Yritykset",
       "languages": "Kielet"
+    },
+    "education": {
+      "title": "Koulutus",
+      "degree": "B.Tech — elektroniikka ja tietoliikenne, 2010 – 2014",
+      "school": "Jawaharlal Nehru Technological University Anantapur (JNTU-A), Intia"
+    },
+    "learning": {
+      "title": "Ammatillinen kehitys",
+      "items": [
+        "Sertifikaatti: The Practical React Native Guide [2024] — Academind / Udemy · 28,5 tuntia, vahvistettu",
+        "AWS: IAM, IAM Identity Center, permission setit ja käytännöt, Amplify ja WorkSpaces",
+        "Mobiili-SDK-arkkitehtuuri, React Nativen New Architecture (Fabric / JSI) sekä HIPAA- ja GDPR-vaatimukset",
+        "Sisäiset työpajat: hookit, Redux, offline-tallennus, deep linking ja testaus"
+      ]
     }
   },
   "skills": {
@@ -60,30 +75,35 @@
     },
     "technicalSkills": {
       "reactNative": "React Native",
-      "javaScript": "JavaScript",
+      "javaScript": "JavaScript (ES2024)",
       "typeScript": "TypeScript",
-      "androidDevelopment": "Android-kehitys",
+      "flutter": "Flutter",
+      "dart": "Dart",
+      "swift": "Swift",
       "kotlin": "Kotlin",
       "java": "Java",
-      "restApiIntegration": "REST API-integraatio",
       "redux": "Redux",
-      "firebaseIntegration": "Firebase-integraatio",
-      "html": "HTML",
-      "css": "CSS",
-      "reactJs": "React.js",
-      "nativeBaseIo": "NativeBase.io",
-      "materialUi": "Material UI",
-      "retrofit": "Retrofit",
-      "volley": "Volley",
-      "jsonParsing": "JSON-jäsennys",
-      "asyncStorage": "AsyncStorage",
-      "butterknife": "Butterknife"
+      "zustand": "Zustand",
+      "restApiIntegration": "REST APIs",
+      "graphql": "GraphQL",
+      "firebaseIntegration": "Firebase",
+      "jestRntl": "Jest / RNTL",
+      "jsiFabric": "JSI / New Architecture",
+      "hermes": "Hermes Engine",
+      "githubActions": "GitHub Actions",
+      "webrtc": "WebRTC",
+      "cleanArchitecture": "Clean Architecture",
+      "oauthJwt": "OAuth 2.0 / JWT"
     },
     "tools": {
       "androidStudio": "Android Studio",
       "vsCode": "VS Code",
       "reactNativeCli": "React Native CLI",
-      "git": "Git"
+      "git": "Git",
+      "jira": "Jira",
+      "figma": "Figma",
+      "githubActions": "GitHub Actions",
+      "browserStack": "BrowserStack"
     },
     "spokenLanguages": {
       "english": "Englanti",
@@ -91,7 +111,16 @@
       "hindi": "Hindi",
       "fluent": "Sujuva",
       "native": "Äidinkieli",
-      "conversational": "Keskustelu"
+      "conversational": "B1 Keskustelu",
+      "c1Professional": "C1 Ammatillinen"
+    },
+    "technicalSkillsTitle": "Tekniset taidot",
+    "groups": {
+      "mobile": "React Native ja Flutter",
+      "languagesNative": "Kielet ja natiivi",
+      "stateData": "Tila, data ja APIt",
+      "testingCloud": "Testaus, CI/CD ja AWS",
+      "architecture": "Arkkitehtuuri, tietoturva ja analytiikka"
     }
   },
   "experience": {
@@ -108,36 +137,35 @@
     "featured": {
       "collectiveHealth": {
         "title": "Collective Health",
-        "description": "Nykyinen projekti - Terveyshyötyjen alusta, joka yksinkertaistaa terveydenhuollon kokemusta selkeillä kattavuusselityksillä, palveluntarjoajahakijalla ja kustannusarviointityökaluilla.",
-        "role": "Pääinsinööri",
+        "description": "HIPAA-linjattu yhdysvaltalainen työsuhde-etuuksien alusta. Tiiminveto ja moduulit Ratna Globalilla — 50K+ latausta, 4,4★ App Storessa.",
+        "role": "Lead-insinööri",
         "highlights": [
-          "Johtaa terveyshyötyjen alustan kehitystä 50K+ latauksella ja 4.4★ arvosanalla",
-          "Toteuttaa turvallista terveystietojen hallintaa ja HIPAA-yhteensopivuusominaisuuksia potilastietojen suojaamiseksi",
-          "Osallistuu palveluntarjoajahakijan toiminnallisuuteen ja kustannusarviointityökaluihin paremman käyttökokemuksen saamiseksi",
-          "Kehittää monialustaisia mobiiliratkaisuja React Nativella terveydenhuollon palveluntarjoajille ja potilaille"
+          "Vedoin tiimiä, joka toimitti moduuleja HIPAA-linjattuun terveysetuusalustaan",
+          "Jest- ja RNTL-testit, 85 % kattavuus toimitetuissa moduuleissa",
+          "QA-buildit GitHub Actionsilla ja BrowserStackilla, 2 viikon sprintit",
+          "React Native- ja TypeScript-moduulit laitetestattu CI:llä"
         ]
       },
       "goldClub": {
         "title": "Gold Club",
-        "description": "NSL Groupin tuottavuussovellus, joka on suunniteltu tukemaan vähittäiskauppiaita ja jakelijoita lisäarvopalveluilla, uusimmilla päivityksillä ja saumattomalla maatalousratkaisuiden kokemuksella.",
-        "role": "React Native Kehittäjä",
+        "description": "B2B-tuottavuus- ja jakelualusta NSL Groupin yli 25 000 vähittäiskauppiaan verkostolle — 50K+ latausta, 4,0★. Kokonaisvastuu Empoverilla.",
+        "role": "Kokonaiskehitys",
         "highlights": [
-          "Kehitti tuottavuussovelluksen NSL Groupin vähittäiskauppiaille ja jakelijoille 50K+ latauksella",
-          "Toteutti lisäarvopalvelut ja uusimmat päivitykset maatalousratkaisuille",
-          "Loi käyttäjäystävällisen käyttöliittymän omistetuilla tukitoiminnoilla yhteisön osallistumiselle",
-          "Rakensi saumattoman kokemuksen vähittäiskauppiaille ja jakelijoille maataloussektorilla"
+          "Suunnittelin ja julkaisin täyden B2B-alustan NSL:n kauppiaille ja jakelijoille",
+          "Lisäarvopalvelut, yhteisötoiminnot ja OTA-päivitykset skaalassa",
+          "REST-APIt, Firebase Analytics ja FCM-push",
+          "Tekninen suunnittelu julkaisuun asti — 50K+ latausta, 4,0★"
         ]
       },
       "nslSubeejKisan": {
         "title": "NSL Subeej Kisan",
-        "description": "Kattava maataloussovellus, joka vahvistaa Nuziveedu-viljelijöitä työkaluilla, oivalluksilla ja neuvontapalveluilla maatalouskäytäntöjen parantamiseksi.",
-        "role": "Pääkehittäjä",
+        "description": "Maatalousavustaja Nuziveedu Seeds -verkostolle: APMC-hinnat, sää, laskimet, viivakoodiskannaus ja useita kieliä. 50K+ latausta, 4,2★.",
+        "role": "Kokonaiskehitys",
         "highlights": [
-          "Johti kehitystiimiä ja arkkitehtoi täyden mobiilisovellusratkaisun",
-          "Kehitti sääpäivityksiä ja markkinahintojen seurantaa viljelijöille",
-          "Toteutti monikielisen tuen erilaisille maatalousyhteisöille",
-          "Loi maatalouslaskimia ja tuotetutkintatoiminnallisuutta maatalousohjaukseen",
-          "Rakensi tietokeskuksen ja läheisten vähittäiskauppiaiden paikantimen kattavaan viljelijätukeen"
+          "Suunnittelin täyden agri-tech-sovelluksen Nuziveedu Seedsin viljelijäverkostolle",
+          "Live-APMC-markkinahinnat, sääennuste ja viljelylaskimet",
+          "Tuoteskannaus, lähikaupan haku sekä telugu, hindi ja englanti",
+          "Tekninen suunnittelu Play Storeen asti — 50K+ latausta, 4,2★"
         ]
       },
       "nslVyaparaMitra": {
@@ -152,36 +180,80 @@
         ]
       },
       "mcrcApp": {
-        "title": "MCRC-sovellus",
-        "description": "Kehitä parannettuja viljelylajeja, korkealaatuisia istutusmateriaaleja ja kestävää tuotantokäytäntöjä viljelijöille.",
-        "role": "Pääkehittäjä",
+        "title": "MCRC",
+        "description": "Lajikehallinnan alusta viljelijöille. Kokonaiskehitys Empoverilla, 4,0★, käyttöliittymä puhelimelle ja tabletille.",
+        "role": "Kokonaiskehitys",
         "highlights": [
-          "Johti kehitystiimiä ja hallinnoi projektin toimittamista maatalousratkaisuille",
-          "Varmisti saumattoman toiminnallisuuden ja UI:n reagoinnin erilaisissa mobiililaitteissa ja tableteissa",
-          "Suoritti tarkkoja UI-parannuksia käyttökokemuksen optimoimiseksi ja varmistaakseen johdonmukaisen käytettävyyden",
-          "Kehitti viljelijäystävällisen käyttöliittymän ja mentoroi tiimin jäseniä parhaisiin käytäntöihin"
+          "Vedoin lajikealustan kehitystä ja toimitusta",
+          "Käyttöliittymä optimoitu puhelimelle ja tabletille",
+          "Parannetut lajikkeet, istutusmateriaalit ja kestävät käytännöt",
+          "Julkaistu Play Storessa, 4,0★"
         ]
       },
       "cortevaDaksh": {
         "title": "Corteva Daksh",
-        "description": "Aja Corteva-tuotteiden kysynnän luomista Corteva-kenttähenkilöstön toteuttamien toimintojen kautta standardoiduilla raporteilla.",
-        "role": "Kehittäjä",
+        "description": "Moduuleja Cortevan kenttätiimien kysynnän luontiin, vakioiduilla raporteilla — 10K+ latausta.",
+        "role": "Moduulit",
         "highlights": [
-          "Suunnitteli ja kehitti erityisiä sovellusmoduuleja React Nativella",
-          "Toteutti ominaisuuksia, jotka helpottavat toimintojen standardointia Corteva-kenttähenkilöstölle",
-          "Loi työkaluja toimintaraporttien hallintaan ja tiimin tuottavuuden parantamiseen",
-          "Rakensi kysynnän luomisominaisuuksia Corteva-tuotteille standardoiduilla raporteilla"
+          "React Native -moduuleja sprinttivaatimusten mukaan",
+          "Vakioidut kenttätoimet ja raportointi",
+          "Corteva Farmer Connectin (1M+) ja Corteva Rootsin (100K+) rinnalla",
+          "Päivityksiä Cortevan kenttähenkilöstölle"
         ]
       },
       "meetHourApp": {
-        "title": "MeetHour-sovellus",
-        "description": "Täysin salattu, 100% ilmainen videoneuvotteluratkaisu aikataulutuksen, uudelleenaikataulutuksen ja valkotaulun ominaisuuksilla.",
-        "role": "Kehittäjä",
+        "title": "MeetHour",
+        "description": "Päästä päähän salattu videoneuvottelu, rakennettu alusta asti React Nativella — 100K+ latausta, 4,2★ App Storessa ja Play Storessa.",
+        "role": "Rakennettu alusta asti",
         "highlights": [
-          "Paransi UI:ta MeetHour-sovelluksen versio 2.0:lle käyttäjäystävällisellä käyttöliittymällä",
-          "Integroi uusia ominaisuuksia kuten valkotaulu sovellukseen",
-          "Työskenteli natiivi Java-moduulien yhdistämisessä React-Nativeen parannetun toiminnallisuuden saamiseksi",
-          "Toteutti aikataulutus- ja uudelleenaikataulutusominaisuuksia videoneuvotteluratkaisulle"
+          "Arkkitehtuuri, käyttöliittymä, ominaisuudet ja julkaisut App Storessa ja Play Storessa",
+          "WebRTC-natiivisilta (Java → React Native) tyypitetyllä JS-APIlla",
+          "OAuth 2.0 -sosiaalinen kirjautuminen: Facebook, LinkedIn, Microsoft ja Google",
+          "Aikataulutus, valkotaulu ja kokouksen hallinta — 100K+ latausta, 4,2★"
+        ]
+      },
+      "dmsBoothApp": {
+        "title": "DMS Booth",
+        "description": "Delhin maitohankkeen kojesovellus. Vedoin Flutter-SDK-päivitystä ja moduuleja Ratna Globalilla — 1K+ latausta Play Storessa.",
+        "role": "Flutter-SDK-päivitys ja moduulit",
+        "highlights": [
+          "Vedoin Flutter-SDK-päivitystä kojetoimintoihin",
+          "Moduuleja asiakkaan vaatimusten mukaan useissa julkaisuissa",
+          "GitHub Actions -CI ja julkaisut Google Play Consolessa",
+          "Tilaukset, maksut, kirjanpito ja reklamaatiot"
+        ]
+      },
+      "dmsDistributor": {
+        "title": "DMS Distributor",
+        "description": "Delhin maitohankkeen jakelijasovellus. Vedoin Flutter-SDK-päivitystä ja moduuleja Ratna Globalilla.",
+        "role": "Flutter-SDK-päivitys ja moduulit",
+        "highlights": [
+          "Vedoin Flutter-SDK-migraatiota jakelijatoimintoihin",
+          "Parannuksia useissa julkaisusykleissä",
+          "Tiimitilaukset, maksut, kirjanpito ja reklamaatiot",
+          "Julkaisu GitHub Actionsilla ja Google Play Consolessa"
+        ]
+      },
+      "smiOne": {
+        "title": "SMIOne",
+        "description": "Systems & Methods, Inc:n Visa-prepaid-korttisovellus. Moduuleja Empoverilla — 4,7★ App Storessa. Kortinhaltijat hallitsevat talletuksia ja kuluja.",
+        "role": "Moduulit",
+        "highlights": [
+          "Saldo, viimeisimmät tapahtumat ja siirrot smiONE Visa -prepaid-kortille",
+          "Kortin lukitus, hälytykset ja suojausasetukset",
+          "React Native -finanssimoduuleja kortin hallintaan puhelimesta",
+          "4,7★ App Storessa, Systems & Methods, Inc."
+        ]
+      },
+      "kudzu": {
+        "title": "Kudzu",
+        "description": "Kudzu Moneyn edullinen verkkopankki. Moduuleja Empoverilla — 4,8★ App Storessa. Kulut, säästäminen, tilinylitys ja Visa-debit.",
+        "role": "Moduulit",
+        "highlights": [
+          "Budjetointi ja kuluseuranta sekä korkoa tuottava säästötili",
+          "Savings Habits ja maksuton tilinylityssuoja (Covered by Kudzu)",
+          "SpendSense-hälytykset ja Visa-debitin välitön lukitus petoshälytyksillä",
+          "PayPerks-talousosaamisen palkinnot · 4,8★ App Storessa"
         ]
       }
     },
@@ -207,7 +279,7 @@
   },
   "cta": {
     "title": "Valmis Työskentelemään Yhdessä?",
-    "description": "Olen aina kiinnostunut uusista mahdollisuuksista ja jännittävistä projekteista. Keskustellaan siitä, kuinka voimme tuoda mobiilisovellusideasi eloon.",
+    "description": "Olen heti käytettävissä Lead / Senior React Native -tehtäviin maailmanlaajuisesti — etänä, hybridinä tai paikan päällä. Keskustellaan, miten toteutamme mobiilisovellusideasi.",
     "getInTouch": "Ota Yhteyttä",
     "downloadResume": "Lataa CV"
   },
@@ -228,8 +300,8 @@
     "followMe": "Seuraa Minua"
   },
   "footer": {
-    "tagline": "React Native & Android -kehittäjä",
-    "description": "Intohimoisena luomaan innovatiivisia mobiiliratkaisuja, jotka tarjoavat poikkeuksellisia käyttökokemuksia. Yli 10 vuoden ammattimainen kokemus mobiilisovelluskehityksessä.",
+    "tagline": "Lead / Senior React Native -insinööri",
+    "description": "Rakennan skaalautuvia cross-platform-mobiilisovelluksia terveydenhuoltoon, agroteknologiaan, fintechiin, kyytipalveluihin ja tuottavuuteen. Yli 10 vuotta mobiilikehitystä, yli 6 vuotta React Nativeen erikoistuneena. Saatavilla heti — avoin kansainväliselle muutolle.",
     "quickLinks": "Pikalinkit",
     "technologies": "Teknologiat",
     "connect": "Yhdistä",

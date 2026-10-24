@@ -11,7 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# Lock files
+*.lock
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +28,7 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
+
+# Reports and documentation
+reports/
+scripts/lighthouse-audit.js
