@@ -26,7 +26,7 @@ describe('Experience', () => {
     expect(screen.getByText('Empover I-Tech Pvt. Ltd')).toBeInTheDocument()
     expect(screen.getByText('V-Empower Solutions Pvt. Ltd')).toBeInTheDocument()
     expect(screen.getByText('Eminosoft India Pvt Ltd')).toBeInTheDocument()
-    expect(screen.getByText('Savithru Technologies')).toBeInTheDocument()
+    expect(screen.getByText('Insta Global Source Pvt. Ltd.')).toBeInTheDocument()
     expect(screen.getByText('Aven App Solutions Pvt. Ltd.')).toBeInTheDocument()
     expect(screen.getByText('New MEK Solutions Pvt. Ltd')).toBeInTheDocument()
   })
@@ -79,7 +79,7 @@ describe('Experience', () => {
     expect(screen.getByAltText('Empover I-Tech Pvt. Ltd logo')).toBeInTheDocument()
     expect(screen.getByAltText('V-Empower Solutions Pvt. Ltd logo')).toBeInTheDocument()
     expect(screen.getByAltText('Eminosoft India Pvt Ltd logo')).toBeInTheDocument()
-    expect(screen.getByAltText('Savithru Technologies logo')).toBeInTheDocument()
+    expect(screen.getByAltText('Insta Global Source Pvt. Ltd. logo')).toBeInTheDocument()
     expect(screen.getByAltText('Aven App Solutions Pvt. Ltd. logo')).toBeInTheDocument()
     expect(screen.getByAltText('New MEK Solutions Pvt. Ltd logo')).toBeInTheDocument()
   })
@@ -87,6 +87,6 @@ describe('Experience', () => {
   it('shows logo placeholders when images fail to load', () => {
     render(<Experience />)
     const images = screen.getAllByRole('img')
-    expect(images).toHaveLength(7) // One for each company
+    expect(images).toHaveLength(7) // Companies with logos (Independent uses placeholder)
   })
 })
