@@ -80,14 +80,14 @@ const Experience = () => {
       ]
     },
     {
-      company: 'Savithru Technologies',
+      company: 'Insta Global Source Pvt. Ltd.',
       position: 'Android Developer',
       duration: 'July 2017 - May 2018',
       location: 'Bangalore, India',
-      logo: `${import.meta.env.BASE_URL}images/savithru-logo.png`,
-      description: 'Built Android apps with Firebase, UI design, and backend integration.',
+      logo: `${import.meta.env.BASE_URL}images/insta-global-logo.png`,
+      description: 'Client engagement at Savithru Technologies — built Android apps with Firebase, UI design, and backend integration.',
       highlights: [
-        'Developed Android applications from concept to deployment',
+        'Developed Android applications from concept to deployment for client Savithru Technologies',
         'Worked with Firebase and cloud services',
         'Implemented modern Android development practices',
         'Collaborated on UI design and backend integration'

@@ -25,7 +25,7 @@ export const portfolioStats = {
   experienceYears: [
     { year: 2015, company: 'New MEK Solutions' },
     { year: 2016, company: 'Aven App Solutions' },
-    { year: 2017, company: 'Savithru Technologies' },
+    { year: 2017, company: 'Insta Global Source Pvt. Ltd.' },
     { year: 2018, company: 'Eminosoft India Pvt. Ltd.' },
     { year: 2019, company: 'V-Empower Solutions Pvt. Ltd.' },
     { year: 2022, company: 'Empover I-Tech Pvt. Ltd.' },
